@@ -8,11 +8,15 @@ public class HybridCursor : MonoBehaviour
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Transform worldCursor;
     [SerializeField] private Camera mainCamera;
-    [SerializeField] private float cursorSpeed = 1500f;
+    
+    [SerializeField] private float speedMultiplier = 1f;
     [SerializeField] private Vector3 offSet = new Vector3(0f, 0f, 0f);
 
     [SerializeField] private float smoothTime = 0.05f;
 
+    private bool onBeatTarget = false;
+    private Rigidbody2D stickBody;
+    
     private Vector2 currentVelocity;
     private Vector2 targetPosition;
     
@@ -20,7 +24,7 @@ public class HybridCursor : MonoBehaviour
     private Vector2 screenPosition;
     private bool usingGamepad;
     private bool previousMouseState;
-
+    
     private void OnEnable()
     {
         if (virtualMouse == null || !virtualMouse.added)
@@ -39,6 +43,29 @@ public class HybridCursor : MonoBehaviour
         InputSystem.onAfterUpdate -= UpdateCursor;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+       //checks targets to see whetehr to slow down or not
+       
+       //slows down when over beatTarget
+        if (other.CompareTag("BeatTarget"))
+        {
+            onBeatTarget = true;
+            speedMultiplier = 0.3f;
+            Debug.Log("Entered BeatTarget!");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("BeatTarget"))
+        {
+            onBeatTarget = false;
+            speedMultiplier = 1f; // restore normal speed
+            Debug.Log("Exited BeatTarget!");
+        }
+    }
+    
     private void UpdateCursor()
     {
         if (virtualMouse == null)
@@ -76,28 +103,33 @@ public class HybridCursor : MonoBehaviour
 
         Vector2 stickValue = Gamepad.current.rightStick.ReadValue();
         stickValue = ApplyRadialDeadzone(stickValue, 0.2f);
-
-        // Convert stick (-1..1) to screen space
+        //Joystick based movement
         targetPosition = new Vector2(
             (stickValue.x + 1f) * 0.5f * Screen.width,
             (stickValue.y + 1f) * 0.5f * Screen.height
         );
-
-        // Smoothly move toward target
-        screenPosition = Vector2.SmoothDamp(
+        
+      //  float adjustedSmoothTime = smoothTime/speedMultiplier;
+        
+        //Smoothing
+        Vector2 nextPosition = Vector2.SmoothDamp(
             screenPosition,
             targetPosition,
             ref currentVelocity,
             smoothTime
         );
 
+        // Apply slowdown here
+        screenPosition = Vector2.Lerp(
+            screenPosition,
+            nextPosition,
+            speedMultiplier
+        );
         InputState.Change(virtualMouse.position, screenPosition);
         InputState.Change(virtualMouse.delta, currentVelocity * Time.deltaTime);
 
         MoveWorldCursor(screenPosition);
     }
-
-
 
     private void UpdateRealMouseCursor()
     {

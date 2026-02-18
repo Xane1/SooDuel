@@ -3461,6 +3461,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BeatSpawnerScript
   BeatTarget: {fileID: 3297032506720513812, guid: 5bbc8fcb92275cf49b695db4e0709b69, type: 3}
   Radius: 2.27
+  noSpawnLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  spawnLayer:
+    serializedVersion: 2
+    m_Bits: 64
   minDistance: 1
   maxAttempts: 1000000
 --- !u!4 &1559238286
