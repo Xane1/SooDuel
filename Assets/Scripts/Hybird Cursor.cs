@@ -14,9 +14,13 @@ public class HybridCursor : MonoBehaviour
 
     [SerializeField] private float smoothTime = 0.05f;
 
+    [SerializeField] private Transform playerTransform; 
+    [SerializeField] private float cursorRadius = 3f;
+    
     private bool onBeatTarget = false;
     private Rigidbody2D stickBody;
     
+    private Vector2 smoothedStick;
     private Vector2 currentVelocity;
     private Vector2 targetPosition;
     
@@ -45,13 +49,13 @@ public class HybridCursor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-       //checks targets to see whetehr to slow down or not
+       //checks targets to see whether to slow down or not
        
        //slows down when over beatTarget
-        if (other.CompareTag("BeatTarget"))
+        if (other.CompareTag("CursorSlow"))
         {
             onBeatTarget = true;
-            speedMultiplier = 0.3f;
+            speedMultiplier = 0.4f;
             Debug.Log("Entered BeatTarget!");
         }
     }
@@ -98,38 +102,51 @@ public class HybridCursor : MonoBehaviour
 
     private void UpdateGamepadCursor()
     {
-        if (Gamepad.current == null)
+        
+        if (Gamepad.current == null || playerTransform == null)
             return;
 
+        // Read stick input and apply deadzone
         Vector2 stickValue = Gamepad.current.rightStick.ReadValue();
         stickValue = ApplyRadialDeadzone(stickValue, 0.2f);
-        //Joystick based movement
-        targetPosition = new Vector2(
-            (stickValue.x + 1f) * 0.5f * Screen.width,
-            (stickValue.y + 1f) * 0.5f * Screen.height
-        );
-        
-      //  float adjustedSmoothTime = smoothTime/speedMultiplier;
-        
-        //Smoothing
-        Vector2 nextPosition = Vector2.SmoothDamp(
-            screenPosition,
-            targetPosition,
-            ref currentVelocity,
-            smoothTime
+
+        // Smooth the stick input slightly
+        smoothedStick = Vector2.Lerp(smoothedStick, stickValue, 10f * Time.deltaTime);
+
+        // Calculate cursor offset in world space
+        Vector3 offset = new Vector3(
+            stickValue.x * cursorRadius,
+            stickValue.y * cursorRadius,
+            0f
         );
 
-        // Apply slowdown here
-        screenPosition = Vector2.Lerp(
-            screenPosition,
-            nextPosition,
-            speedMultiplier
-        );
-        InputState.Change(virtualMouse.position, screenPosition);
-        InputState.Change(virtualMouse.delta, currentVelocity * Time.deltaTime);
+        // Target cursor position in world space
+        Vector3 targetWorldPos = playerTransform.position + offset;
 
-        MoveWorldCursor(screenPosition);
+        Vector2 nextPosition = Vector2.SmoothDamp(worldCursor.position, targetWorldPos, ref currentVelocity, smoothTime);
+        
+        // Smoothly move the cursor
+        worldCursor.position =  Vector2.Lerp(worldCursor.position, nextPosition, speedMultiplier);
+
+        //screenPosition = Vector2.Lerp(screenPosition, nextPosition, speedMultiplier);
+        // Optionally update virtual mouse for systems that rely on it
+        if (virtualMouse != null)
+        {
+            Vector2 screenPos = mainCamera.WorldToScreenPoint(worldCursor.position);
+            InputState.Change(virtualMouse.position, screenPos);
+            InputState.Change(virtualMouse.delta, currentVelocity * Time.deltaTime);
+        }
     }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+    
+        Gizmos.DrawWireSphere(playerTransform.position, cursorRadius);
+        Gizmos.DrawSphere(worldCursor.position, 0.5f);
+    }
+    
+
 
     private void UpdateRealMouseCursor()
     {

@@ -1,6 +1,5 @@
 using UnityEngine;
 
-using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class StickIK2D : MonoBehaviour

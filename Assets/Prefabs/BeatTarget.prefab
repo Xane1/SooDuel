@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6403241387759523149}
   m_Layer: 6
   m_Name: BeatTargetReal
-  m_TagString: BeatTarget
+  m_TagString: CursorSlow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
