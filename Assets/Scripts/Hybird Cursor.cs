@@ -56,20 +56,48 @@ public class HybridCursor : MonoBehaviour
         {
             onBeatTarget = true;
             speedMultiplier = 0.4f;
-            Debug.Log("Entered BeatTarget!");
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("BeatTarget"))
+        if (other.CompareTag("CursorSlow"))
         {
             onBeatTarget = false;
             speedMultiplier = 1f; // restore normal speed
-            Debug.Log("Exited BeatTarget!");
         }
     }
     
+    //New way of detecting beat hits
+    private void TryHitBeat()
+    {
+        // Get the Collider2D on this object
+        Collider2D myCollider = GetComponent<Collider2D>();
+
+        // Create a list to store results
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.useTriggers = true; // Include trigger colliders
+        Collider2D[] results = new Collider2D[10]; // Adjust size if needed
+
+        // Fill results with all colliders currently overlapping this collider
+        int hitCount = myCollider.Overlap(filter, results);
+
+        for (int i = 0; i < hitCount; i++)
+        {
+            BeatTargetScript beat = results[i].GetComponent<BeatTargetScript>();
+            if (beat != null)
+            {
+                if (beat.isGreen)
+                    beat.BeatHit();
+                else
+                    beat.BeatFail();
+            }
+        }
+    }
+    void OnHit()
+    {
+        TryHitBeat();
+    }
     private void UpdateCursor()
     {
         if (virtualMouse == null)

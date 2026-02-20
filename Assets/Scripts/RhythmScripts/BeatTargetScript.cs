@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class BeatTargetScript : MonoBehaviour
 {
-    private bool isGreen = false;
+    public bool isGreen = false;
     private CircleCollider2D circleCollider;
     private Rigidbody2D stickBody;
     
@@ -19,14 +19,10 @@ public class BeatTargetScript : MonoBehaviour
     void Start()
     {
         circleCollider = GetComponent<CircleCollider2D>();
-        
-        GameObject stick = GameObject.FindGameObjectWithTag("Player");
-        stickBody = stick.GetComponent<Rigidbody2D>();
-        
-        if (stickBody != null)
+
+        if (PlayerReference.LocalPlayer != null)
         {
-            if (stick != null)
-                stickBody = stick.GetComponent<Rigidbody2D>();
+            stickBody = PlayerReference.LocalPlayer.GetComponent<Rigidbody2D>();
         }
     }
 
@@ -57,8 +53,10 @@ public class BeatTargetScript : MonoBehaviour
         Destroy(gameObject);
     }
 
+    /*
     void Update()
     {
+       
         //Mouse Input
         
         if (Pointer.current == null)
@@ -81,18 +79,20 @@ public class BeatTargetScript : MonoBehaviour
         }
         //Controller Input 
         
-       if (Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame)
-       {
-
-           if (stickBody.IsTouching(circleCollider))
-           {
-               if (isGreen) 
-                   BeatHit();
-               else
-               {
-                   BeatFail();
-               }
-           }
+        if (Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame)
+        {
+            if (stickBody != null && circleCollider != null && stickBody.IsTouching(circleCollider))
+            {
+                if (isGreen)
+                {
+                    BeatHit();
+                }
+                else
+                {
+                    BeatFail();
+                }
+            }
         }
     }
+    */
 }
