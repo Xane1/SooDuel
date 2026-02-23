@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public GameOverScreen WinScreen;
     public RhythmAudioScript RhythmAudioScript;
 
-    public int winScore = 13000;
+    public int winScore = 12999;
 
     bool gameEnded = false;
 
@@ -16,11 +16,11 @@ public class GameManager : MonoBehaviour
     {
         if (gameEnded) return;
 
-        if (ScoreManager.instance.score >= winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+        if (ScoreManager.instance.P1score >= winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
         {
             WinGame();
         }
-        else if (ScoreManager.instance.score < winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+        else if (ScoreManager.instance.P1score < winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
         {
             
             GameOver();
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleGameOver()
     {
         yield return new WaitForSecondsRealtime(1f);
-        GameOverScreen.Setup(ScoreManager.instance.score);
+        GameOverScreen.Setup(ScoreManager.instance.P1score);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleWinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        WinScreen.Setup(ScoreManager.instance.score);
+        WinScreen.Setup(ScoreManager.instance.P1score);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }

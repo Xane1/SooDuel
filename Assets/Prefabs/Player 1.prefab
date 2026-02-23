@@ -1199,7 +1199,7 @@ GameObject:
   - component: {fileID: 80585460342753183}
   m_Layer: 3
   m_Name: Stick
-  m_TagString: Player
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1310,6 +1310,7 @@ MonoBehaviour:
   smoothTime: 0.03
   playerTransform: {fileID: 4043902858557419991}
   cursorRadius: 4
+  playerNumber: 1
 --- !u!114 &80585460342753183
 MonoBehaviour:
   m_ObjectHideFlags: 0

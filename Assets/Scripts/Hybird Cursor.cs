@@ -17,7 +17,7 @@ public class HybridCursor : MonoBehaviour
     [SerializeField] private Transform playerTransform; 
     [SerializeField] private float cursorRadius = 3f;
     
-    private bool onBeatTarget = false;
+    private bool onBeatTarget;
     private Rigidbody2D stickBody;
     
     private Vector2 smoothedStick;
@@ -28,30 +28,32 @@ public class HybridCursor : MonoBehaviour
     private Vector2 screenPosition;
     private bool usingGamepad;
     private bool previousMouseState;
+
+    public int playerNumber;
     
     private void OnEnable()
     {
-        if (virtualMouse == null || !virtualMouse.added)
-            virtualMouse = (Mouse)InputSystem.AddDevice("VirtualMouse");
+        if (virtualMouse == null || !virtualMouse.added) virtualMouse = (Mouse)InputSystem.AddDevice("VirtualMouse");
 
         InputUser.PerformPairingWithDevice(virtualMouse, playerInput.user);
 
+        //below line moves virtual cursor to center of the screen
         screenPosition = new Vector2(Screen.width / 2f, Screen.height / 2f);
         InputState.Change(virtualMouse.position, screenPosition);
 
+        //Runs UpdateCursor at end of each frame
         InputSystem.onAfterUpdate += UpdateCursor;
     }
 
     private void OnDisable()
     {
+        //Disables UpdateCursor at end of each frame
         InputSystem.onAfterUpdate -= UpdateCursor;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-       //checks targets to see whether to slow down or not
-       
-       //slows down when over beatTarget
+       //Slows down when over beatTarget
         if (other.CompareTag("CursorSlow"))
         {
             onBeatTarget = true;
@@ -61,25 +63,27 @@ public class HybridCursor : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        //Restores normal speed when no longer over beatTarget
         if (other.CompareTag("CursorSlow"))
         {
             onBeatTarget = false;
-            speedMultiplier = 1f; // restore normal speed
+            speedMultiplier = 1f; 
         }
     }
     
-    //New way of detecting beat hits
+    //Detecting the beats to be able to hit them from this script
     private void TryHitBeat()
     {
-        // Get the Collider2D on this object
+        //Gets the Collider2D on this object
         Collider2D myCollider = GetComponent<Collider2D>();
 
-        // Create a list to store results
+        //Creates a list to store results
         ContactFilter2D filter = new ContactFilter2D();
-        filter.useTriggers = true; // Include trigger colliders
-        Collider2D[] results = new Collider2D[10]; // Adjust size if needed
-
-        // Fill results with all colliders currently overlapping this collider
+        //Includes trigger colliders
+        filter.useTriggers = true; 
+        //Stores overlapping Colliders
+        Collider2D[] results = new Collider2D[10]; 
+        //Fills results with all colliders currently overlapping this collider
         int hitCount = myCollider.Overlap(filter, results);
 
         for (int i = 0; i < hitCount; i++)
@@ -87,17 +91,42 @@ public class HybridCursor : MonoBehaviour
             BeatTargetScript beat = results[i].GetComponent<BeatTargetScript>();
             if (beat != null)
             {
-                if (beat.isGreen)
-                    beat.BeatHit();
-                else
-                    beat.BeatFail();
+                if (playerNumber == 1)
+                {
+                    if (beat.isGreen)
+                    {
+                        beat.P1BeatHit();
+                    }
+                    else
+                    {
+                        beat.BeatFail();
+                        ScoreManager.instance.P1AddPoints(-100);
+                    }
+                }
+                
+                if (playerNumber == 2)
+                {
+                    if (beat.isGreen)
+                    {
+                        beat.P2BeatHit();
+                    }
+                    else
+                    {
+                        beat.BeatFail();
+                        ScoreManager.instance.P2AddPoints(-100);
+                    }
+                }
             }
         }
     }
+    
+    //Using Player Input Behaviour "Send Messages" so the TryHitBeat method functions
     void OnHit()
     {
         TryHitBeat();
     }
+    
+    
     private void UpdateCursor()
     {
         if (virtualMouse == null)
@@ -106,64 +135,65 @@ public class HybridCursor : MonoBehaviour
         DetectInputSource();
 
         if (usingGamepad)
+        {
             UpdateGamepadCursor();
+        }
         else
+        {
             UpdateRealMouseCursor();
+        }
     }
 
     private void DetectInputSource()
+    
     {
-        if (Gamepad.current != null &&
-            Gamepad.current.rightStick.ReadValue().sqrMagnitude > 0.01f)
+        if (Gamepad.current != null && Gamepad.current.rightStick.ReadValue().sqrMagnitude > 0.01f)
         {
             usingGamepad = true;
             Cursor.visible = false;
         }
 
-        if (Mouse.current != null &&
-            Mouse.current.delta.ReadValue().sqrMagnitude > 0.01f)
+        if (Mouse.current != null && Mouse.current.delta.ReadValue().sqrMagnitude > 0.01f)
         {
             usingGamepad = false;
             Cursor.visible = true;
         }
     }
 
+    //Below method is called in UpdateCursor
     private void UpdateGamepadCursor()
     {
         
-        if (Gamepad.current == null || playerTransform == null)
+        if (playerTransform == null)
+            return;
+        
+        //Gets the individual gamepads of the players
+        Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;
+        if (gp == null)
             return;
 
-        // Read stick input and apply deadzone
-        Vector2 stickValue = Gamepad.current.rightStick.ReadValue();
+        //Reads the stick input and applies dead zone
+        Vector2 stickValue = gp.rightStick.ReadValue();
+        //Deadzone so that tiny movements in the stick are ignored to prevent drift
         stickValue = ApplyRadialDeadzone(stickValue, 0.2f);
 
-        // Smooth the stick input slightly
+        //Smooths the stick input slightly
         smoothedStick = Vector2.Lerp(smoothedStick, stickValue, 10f * Time.deltaTime);
 
-        // Calculate cursor offset in world space
-        Vector3 offset = new Vector3(
-            stickValue.x * cursorRadius,
-            stickValue.y * cursorRadius,
-            0f
-        );
+        //Calculates cursor offset in world space
+        Vector3 offset = new Vector3(stickValue.x * cursorRadius, stickValue.y * cursorRadius, 0f);
 
-        // Target cursor position in world space
+        //Targets cursor position in world space
         Vector3 targetWorldPos = playerTransform.position + offset;
-
+        
+        //Smoothing of controller movement
         Vector2 nextPosition = Vector2.SmoothDamp(worldCursor.position, targetWorldPos, ref currentVelocity, smoothTime);
         
-        // Smoothly move the cursor
+        //Smoothly move the cursor
         worldCursor.position =  Vector2.Lerp(worldCursor.position, nextPosition, speedMultiplier);
 
         //screenPosition = Vector2.Lerp(screenPosition, nextPosition, speedMultiplier);
-        // Optionally update virtual mouse for systems that rely on it
-        if (virtualMouse != null)
-        {
-            Vector2 screenPos = mainCamera.WorldToScreenPoint(worldCursor.position);
-            InputState.Change(virtualMouse.position, screenPos);
-            InputState.Change(virtualMouse.delta, currentVelocity * Time.deltaTime);
-        }
+        //Optionally update virtual mouse for systems that rely on it
     }
     
     private void OnDrawGizmos()
@@ -176,6 +206,7 @@ public class HybridCursor : MonoBehaviour
     
 
 
+    //Called in UpdateCursor so mouse cursor is usable
     private void UpdateRealMouseCursor()
     {
         if (Mouse.current == null)

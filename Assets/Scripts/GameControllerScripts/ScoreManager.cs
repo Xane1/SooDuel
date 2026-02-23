@@ -4,9 +4,13 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     
-    public Text scoreText;
+    public Text player1ScoreText;
     
-   public int score = 0;
+    public Text player2ScoreText;
+    
+    public int P1score = 0;
+    
+    public int P2score = 0;
 
     private void Awake()
     {
@@ -15,18 +19,24 @@ public class ScoreManager : MonoBehaviour
     
     void Start()
     {
-        scoreText.text = score.ToString() + " Points";
+        player1ScoreText.text = "Player 1" + "\n" + P1score.ToString() +
+                                " Points";
+        player2ScoreText.text = "Player 2 " + "\n" + P2score.ToString() +
+                                " Points";
     }
 
     // Update is called once per frame
-    public void AddPoints()
+    public void P1AddPoints(int points)
     {
-        score += 100;
-        scoreText.text = score.ToString() + " Points";
+       P1score += points;
+        player1ScoreText.text = "Player 1" + "\n" + P1score.ToString() +
+                               " Points";
     }
-
-    public int GetScore()
+    public void P2AddPoints(int points)
     {
-        return score;
+        P2score += points;
+        player2ScoreText.text = "Player 2" + "\n" + P2score.ToString() +
+                                " Points";
     }
+    
 }

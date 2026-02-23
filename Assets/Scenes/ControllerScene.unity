@@ -236,8 +236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34bbc2ff6218bae47adb65f7938e28f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  scoreText: {fileID: 1727156563}
-  score: 0
+  player1ScoreText: {fileID: 1727156563}
+  player2ScoreText: {fileID: 0}
+  P1score: 0
+  P2score: 0
 --- !u!1 &95897310
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +989,7 @@ MonoBehaviour:
   GameOverScreen: {fileID: 264872172}
   WinScreen: {fileID: 1172489445}
   RhythmAudioScript: {fileID: 2102850983}
-  winScore: 13000
+  winScore: 12999
 --- !u!1 &530193234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,7 +1562,7 @@ GameObject:
   - component: {fileID: 1007507091}
   m_Layer: 3
   m_Name: Stick
-  m_TagString: Player
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1671,6 +1673,7 @@ MonoBehaviour:
   smoothTime: 0.03
   playerTransform: {fileID: 1990601708}
   cursorRadius: 4
+  playerNumber: 1
 --- !u!114 &1007507091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3088,7 @@ GameObject:
   - component: {fileID: 1727156564}
   - component: {fileID: 1727156563}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -215,6 +215,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1727156565}
+  - {fileID: 1886650034}
   - {fileID: 264872169}
   - {fileID: 1172489444}
   m_Father: {fileID: 0}
@@ -236,8 +237,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34bbc2ff6218bae47adb65f7938e28f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  scoreText: {fileID: 1727156563}
-  score: 0
+  player1ScoreText: {fileID: 1727156563}
+  player2ScoreText: {fileID: 1886650035}
+  P1score: 0
+  P2score: 0
 --- !u!1 &95897310
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +423,7 @@ GameObject:
   - component: {fileID: 264872170}
   - component: {fileID: 264872172}
   m_Layer: 5
-  m_Name: EndScreenBackground
+  m_Name: Player2WinBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -780,13 +783,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ad5ef43ed10d6a4ea3458729d721d99, type: 3}
+  m_Script: {fileID: 11500000, guid: f39ac0e46a75c5b469f01cc60411078e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  GameOverScreen: {fileID: 264872172}
-  WinScreen: {fileID: 1172489445}
+  P2WinScreen: {fileID: 264872172}
+  P1WinScreen: {fileID: 1172489445}
   RhythmAudioScript: {fileID: 2102850983}
-  winScore: 13000
+  winScore: 12999
 --- !u!1 &544342988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,9 +1206,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Game Over
-
-'
+  m_Text: Player 2 Wins
 --- !u!222 &789654831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1443,7 +1444,7 @@ GameObject:
   - component: {fileID: 1172489446}
   - component: {fileID: 1172489445}
   m_Layer: 5
-  m_Name: WinScreenBackground
+  m_Name: Player1WinBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2049,7 +2050,7 @@ GameObject:
   - component: {fileID: 1727156564}
   - component: {fileID: 1727156563}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Player 1 Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2088,7 +2089,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0 Points
+  m_Text: 'Player 1
+
+    0 Points
 
 '
 --- !u!222 &1727156564
@@ -2115,7 +2118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 520, y: -308}
+  m_AnchoredPosition: {x: 520, y: -200}
   m_SizeDelta: {x: 1038.5133, y: 294.3015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1734002144
@@ -2163,7 +2166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInputManager
   m_NotificationBehavior: 2
-  m_MaxPlayerCount: 1
+  m_MaxPlayerCount: 2
   m_AllowJoining: 1
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
@@ -2653,7 +2656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Win
+  m_Text: Player 1 Wins
 --- !u!222 &1797900608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2661,6 +2664,89 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797900605}
+  m_CullTransparentMesh: 1
+--- !u!1 &1886650033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1886650034}
+  - component: {fileID: 1886650036}
+  - component: {fileID: 1886650035}
+  m_Layer: 5
+  m_Name: Player 2 Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1886650034
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886650033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 94593230}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1400.7, y: -200}
+  m_SizeDelta: {x: 1038.5133, y: 294.3015}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1886650035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886650033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9b5304c8b9f1cb8429d969acf933d1e9, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 261
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Player 2
+
+    0 Points
+
+'
+--- !u!222 &1886650036
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886650033}
   m_CullTransparentMesh: 1
 --- !u!1 &1893766701
 GameObject:
