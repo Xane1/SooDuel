@@ -36,18 +36,47 @@ public class BeatTargetScript : MonoBehaviour
     {
         Transform sibling = transform.parent.Find("FailBeat");
 
+        Animator childAnimator = sibling.GetComponent<Animator>();
         OnBeatFail?.Invoke();
         beatFailed = true;
         sibling.gameObject.SetActive(true);
+        childAnimator.SetTrigger("UniFail");
         Destroy(gameObject);
     }
+    
+    public void P1BeatFail()
+    {
+        Transform sibling = transform.parent.Find("FailBeat");
+
+        Animator childAnimator = sibling.GetComponent<Animator>();
+        OnBeatFail?.Invoke();
+        beatFailed = true;
+        sibling.gameObject.SetActive(true);
+        childAnimator.SetTrigger("P1Fail");
+        Destroy(gameObject);
+    }
+
+    public void P2BeatFail()
+    {
+        Transform sibling = transform.parent.Find("FailBeat");
+
+        Animator childAnimator = sibling.GetComponent<Animator>();
+        OnBeatFail?.Invoke();
+        beatFailed = true;
+        sibling.gameObject.SetActive(true);
+        childAnimator.SetTrigger("P2Fail");
+        Destroy(gameObject);
+    }
+    
     public void P1BeatHit()
     {
         Transform sibling = transform.parent.Find("WinBeat");
         
+        Animator childAnimator = sibling.GetComponent<Animator>();
         OnBeatSuccess?.Invoke();
         beatSuccess = true;
         sibling.gameObject.SetActive(true);
+        childAnimator.SetTrigger("P1Win");
         ScoreManager.instance.P1AddPoints(100);
         Destroy(gameObject);
     }
@@ -55,9 +84,12 @@ public class BeatTargetScript : MonoBehaviour
     public void P2BeatHit()
     {
         Transform sibling = transform.parent.Find("WinBeat");
+        
+        Animator childAnimator = sibling.GetComponent<Animator>();
         OnBeatSuccess?.Invoke();
         beatSuccess = true;
         sibling.gameObject.SetActive(true);
+        childAnimator.SetTrigger("P2Win");
         ScoreManager.instance.P2AddPoints(100);
         Destroy(gameObject);
     }
@@ -83,7 +115,7 @@ public class BeatTargetScript : MonoBehaviour
             }
             else if (circleCollider.OverlapPoint(mousePos))
             {
-                BeatFail();
+                P1BeatFail();
                 ScoreManager.instance.P1AddPoints(-100);
             }
         }
@@ -111,7 +143,7 @@ public class BeatTargetScript : MonoBehaviour
                 }
                 else
                 {
-                    BeatFail();
+                    P1BeatFail();
                     ScoreManager.instance.P1AddPoints(-100);
                 }
             }
@@ -124,7 +156,7 @@ public class BeatTargetScript : MonoBehaviour
                 }
                 else
                 {
-                    BeatFail();
+                    P2BeatFail();
                     ScoreManager.instance.P2AddPoints(-100);
                 }
             }

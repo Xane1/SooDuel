@@ -99,7 +99,7 @@ public class HybridCursor : MonoBehaviour
                     }
                     else
                     {
-                        beat.BeatFail();
+                        beat.P1BeatFail();
                         ScoreManager.instance.P1AddPoints(-100);
                     }
                 }
@@ -112,7 +112,7 @@ public class HybridCursor : MonoBehaviour
                     }
                     else
                     {
-                        beat.BeatFail();
+                        beat.P2BeatFail();
                         ScoreManager.instance.P2AddPoints(-100);
                     }
                 }

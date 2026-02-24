@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1330e3b65f9a555478fbdd5f9e91a0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  isGreen: 0
   beatFailed: 0
   beatSuccess: 0
 --- !u!58 &6403241387759523149
