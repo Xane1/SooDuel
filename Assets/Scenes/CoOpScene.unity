@@ -239,8 +239,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   player1ScoreText: {fileID: 1727156563}
   player2ScoreText: {fileID: 1886650035}
+  totalScoreText: {fileID: 1068218522}
   P1score: 0
   P2score: 0
+  totalScore: 0
 --- !u!1 &95897310
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +425,7 @@ GameObject:
   - component: {fileID: 264872170}
   - component: {fileID: 264872172}
   m_Layer: 5
-  m_Name: Player2WinBackground
+  m_Name: FailBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,13 +785,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f39ac0e46a75c5b469f01cc60411078e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c8c79539e9c1b9418f0e042c92a4b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  P2WinScreen: {fileID: 264872172}
-  P1WinScreen: {fileID: 1172489445}
+  FailScreen: {fileID: 264872172}
+  WinScreen: {fileID: 1172489445}
   RhythmAudioScript: {fileID: 2102850983}
-  winScore: 12999
+  winScore: 2000
 --- !u!1 &544342988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,7 +1208,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 2 Wins
+  m_Text: Fail.
 --- !u!222 &789654831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1444,7 +1446,7 @@ GameObject:
   - component: {fileID: 1172489446}
   - component: {fileID: 1172489445}
   m_Layer: 5
-  m_Name: Player1WinBackground
+  m_Name: WinBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2656,7 +2658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 1 Wins
+  m_Text: Win!
 --- !u!222 &1797900608
 CanvasRenderer:
   m_ObjectHideFlags: 0

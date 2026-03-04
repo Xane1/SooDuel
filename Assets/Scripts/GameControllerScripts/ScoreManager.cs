@@ -8,9 +8,13 @@ public class ScoreManager : MonoBehaviour
     
     public Text player2ScoreText;
     
+    public Text totalScoreText;
+    
     public int P1score = 0;
     
     public int P2score = 0;
+    
+    public int totalScore = 0;
 
     private void Awake()
     {
@@ -37,6 +41,12 @@ public class ScoreManager : MonoBehaviour
         P2score += points;
         player2ScoreText.text = "Player 2" + "\n" + P2score.ToString() +
                                 " Points";
+    }
+
+    public void TotalAddPoints()
+    {
+        int totalScore = P1score + P2score;
+        totalScoreText.text = "Total Score: " + totalScore.ToString();
     }
     
 }

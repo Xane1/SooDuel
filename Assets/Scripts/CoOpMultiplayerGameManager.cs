@@ -1,27 +1,26 @@
-using UnityEditor;
 using UnityEngine;
 using System.Collections;
 using GameControllerScripts;
-
-public class GameManager : MonoBehaviour
+public class CoOpMultiplayerGameManager : MonoBehaviour
 {
-    public GameOverScreen GameOverScreen;
+    public GameOverScreen FailScreen;
     public GameOverScreen WinScreen;
     public RhythmAudioScript RhythmAudioScript;
 
-    public int winScore = 12999;
+    public int winScore = 10000;
 
     bool gameEnded = false;
 
+    // Update is called once per frame
     void Update()
     {
         if (gameEnded) return;
 
-        if (ScoreManager.instance.P1score >= winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+        if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
         {
             WinGame();
         }
-        else if (ScoreManager.instance.P1score < winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+        else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
         {
             
             GameOver();
@@ -30,7 +29,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleGameOver()
     {
         yield return new WaitForSecondsRealtime(1f);
-        GameOverScreen.Setup(ScoreManager.instance.P1score);
+        FailScreen.Setup(ScoreManager.instance.P1score);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }

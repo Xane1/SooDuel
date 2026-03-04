@@ -1,11 +1,12 @@
-using UnityEditor;
 using UnityEngine;
 using System.Collections;
+using GameControllerScripts;
 
 public class MultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen P2WinScreen;
     public GameOverScreen P1WinScreen;
+    public GameOverScreen DrawScreen;
     public RhythmAudioScript RhythmAudioScript;
 
     public int winScore = 12999;
@@ -24,6 +25,10 @@ public class MultiplayerGameManager : MonoBehaviour
         {
             P2WinGame();
         }
+        else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+        {
+            DrawGame();
+        }
         
     }
     private IEnumerator HandleP2WinGame()
@@ -41,7 +46,22 @@ public class MultiplayerGameManager : MonoBehaviour
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
-    public void P2WinGame()
+
+    private IEnumerator HandleDrawGame()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        DrawScreen.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+        DestroyAllBeats();
+    }
+
+    void DrawGame()
+    {
+        if (gameEnded) return;
+        gameEnded = true;
+        StartCoroutine(HandleDrawGame());
+    }
+    void P2WinGame()
     {
         if (gameEnded) return;
 
