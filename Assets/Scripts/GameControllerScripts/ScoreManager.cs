@@ -27,6 +27,7 @@ public class ScoreManager : MonoBehaviour
                                 " Points";
         player2ScoreText.text = "Player 2 " + "\n" + P2score.ToString() +
                                 " Points";
+        totalScoreText.text = totalScore.ToString();
     }
 
     // Update is called once per frame
@@ -35,17 +36,19 @@ public class ScoreManager : MonoBehaviour
        P1score += points;
         player1ScoreText.text = "Player 1" + "\n" + P1score.ToString() +
                                " Points";
+        TotalAddPoints();
     }
     public void P2AddPoints(int points)
     {
         P2score += points;
         player2ScoreText.text = "Player 2" + "\n" + P2score.ToString() +
                                 " Points";
+        TotalAddPoints();
     }
 
     public void TotalAddPoints()
-    {
-        int totalScore = P1score + P2score;
+    { 
+        totalScore = P1score + P2score;
         totalScoreText.text = "Total Score: " + totalScore.ToString();
     }
     

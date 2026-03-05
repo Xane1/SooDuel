@@ -29,7 +29,7 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleGameOver()
     {
         yield return new WaitForSecondsRealtime(1f);
-        FailScreen.Setup(ScoreManager.instance.P1score);
+        FailScreen.Setup(ScoreManager.instance.totalScore);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
@@ -37,7 +37,7 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleWinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        WinScreen.Setup(ScoreManager.instance.P1score);
+        WinScreen.Setup(ScoreManager.instance.totalScore);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }

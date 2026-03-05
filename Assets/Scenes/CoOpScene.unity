@@ -791,7 +791,7 @@ MonoBehaviour:
   FailScreen: {fileID: 264872172}
   WinScreen: {fileID: 1172489445}
   RhythmAudioScript: {fileID: 2102850983}
-  winScore: 2000
+  winScore: 10000
 --- !u!1 &544342988
 GameObject:
   m_ObjectHideFlags: 0
