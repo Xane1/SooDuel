@@ -123,17 +123,6 @@ public class BeatTargetScript : MonoBehaviour
         
         if (Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame)
         {
-           /* if (stickBody != null && circleCollider != null && stickBody.IsTouching(circleCollider))
-            {
-                if (isGreen)
-                {
-                    BeatHit();
-                }
-                else
-                {
-                    BeatFail();
-                }
-            } */
             if (stickBody != null && circleCollider != null && stickBody.IsTouching(circleCollider))
             {
                 GameObject.FindGameObjectsWithTag("Player1");

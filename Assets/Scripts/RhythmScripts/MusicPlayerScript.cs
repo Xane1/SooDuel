@@ -4,7 +4,7 @@ public class MusicPlayerScript : MonoBehaviour
 {
     public AudioSource musicSource;
     
-    public float songBPM;
+   // public float songBPM;
     public float secPerBeat;
     public float songPosition;
     public float songPositionInBeats;
@@ -19,17 +19,17 @@ public class MusicPlayerScript : MonoBehaviour
         musicSource = GetComponent<AudioSource>();
         
         //Calculate the number of seconds in each beat
-        secPerBeat =  60f / songBPM;
+      //  secPerBeat =  60f / songBPM;
 
         //Record the time when the music starts
-        dspSongTime = (float)AudioSettings.dspTime;
+    //    dspSongTime = (float)AudioSettings.dspTime;
 
         //Start the music
         musicSource.Play(); 
     }
 
     // Update is called once per frame
-    void Update()
+ /*   void Update()
     {
 
         songPosition = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);
@@ -38,8 +38,8 @@ public class MusicPlayerScript : MonoBehaviour
             return;
 
         //determine how many beats since the song started
-        songPositionInBeats = songPosition / secPerBeat;
+    //    songPositionInBeats = songPosition / secPerBeat;
 
         int currentBeat = Mathf.FloorToInt(songPositionInBeats);
-    }
+    } */
 }
