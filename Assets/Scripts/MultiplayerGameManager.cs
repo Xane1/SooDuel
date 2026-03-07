@@ -13,6 +13,7 @@ public class MultiplayerGameManager : MonoBehaviour
     public GameObject MusicBeatPlayer;
     public GameObject BeatSpawner;
     
+    public GameObject PlayerMessage;
     public GameObject Tutorial;
     public GameObject P1ScoreKeeper;
     public GameObject P2ScoreKeeper;
@@ -30,6 +31,7 @@ public class MultiplayerGameManager : MonoBehaviour
             Tutorial.SetActive(false);
             P1ScoreKeeper.SetActive(true);
             activated = true;
+            PlayerMessage.SetActive(true);
         }
         if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0))
         {
@@ -37,7 +39,8 @@ public class MultiplayerGameManager : MonoBehaviour
             MusicBeatPlayer.SetActive(true);
             BeatSpawner.SetActive(true);
             P2ScoreKeeper.SetActive(true);
-            
+            PlayerMessage.SetActive(false);
+
             activated2 = true;
         }
 
