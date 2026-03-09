@@ -1,11 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
+
 public class TitleScreenScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+    private void Start()
+    {
+        // Ensure SimpleDifficultyManager exists
+        if (DifficultyManager.Instance == null)
+        {
+            var managerObject = new GameObject("SimpleDifficultyManager");
+            managerObject.AddComponent<DifficultyManager>();
+        }
+    }
+
     public void SinglePlayerButton()
     {
         Time.timeScale = 1f;
@@ -21,28 +29,35 @@ public class TitleScreenScript : MonoBehaviour
     public void MousePlayButton()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MouseScene");
+        PlayerPrefs.SetString("TargetScene", "MouseScene");
+        SceneManager.LoadScene("DifficultySelect");
     }
 
     public void ControllerPlayButton()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("ControllerScene");
+        PlayerPrefs.SetString("TargetScene", "ControllerScene");
+        SceneManager.LoadScene("DifficultySelect");
     }
+
     public void CoOpPlayButton()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("CoOpScene");
+        PlayerPrefs.SetString("TargetScene", "CoOpScene");
+        SceneManager.LoadScene("DifficultySelect");
     }
+
     public void VersusPlayButton()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("VersusScene");
+        PlayerPrefs.SetString("TargetScene", "VersusScene");
+        SceneManager.LoadScene("DifficultySelect");
     }
+
     void Update()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame ||
-            Gamepad.current.buttonEast.wasPressedThisFrame)
+            (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame))
         {
             GoBack();
         }

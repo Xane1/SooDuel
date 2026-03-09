@@ -3000,6 +3000,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 1795742786}
+  easyClips:
+  - {fileID: 8300000, guid: de2c685fb0b866649895bafdfe31f4c9, type: 3}
+  normalClips:
+  - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
+  hardClips:
+  - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   secPerBeat: 0
   songPosition: 0
   songPositionInBeats: 0
@@ -3496,6 +3502,12 @@ MonoBehaviour:
   dspSongTime: 0
   firstBeatOffset: 6.1
   endBeatOffset: 7
+  easyClips:
+  - {fileID: 8300000, guid: a3485b22fa199e640b7d12067e1435c5, type: 3}
+  normalClips:
+  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  hardClips:
+  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
   musicSource: {fileID: 2102850986}
 --- !u!4 &2102850985
 Transform:

@@ -4,42 +4,35 @@ public class MusicPlayerScript : MonoBehaviour
 {
     public AudioSource musicSource;
     
-   // public float songBPM;
+    public AudioClip[] easyClips;   // Drag your 2 easy audio files here
+    public AudioClip[] normalClips; // Drag your 2 normal audio files here
+    public AudioClip[] hardClips;   // Drag your 2 hard audio files here
+    
     public float secPerBeat;
     public float songPosition;
     public float songPositionInBeats;
     public float dspSongTime;
     public float firstBeatOffset;
     public float endBeatOffset;
+
     void Start()
     {
         firstBeatOffset -= 0.34f;
         
-        //Load the AudioSource attached to the Conductor GameObject
         musicSource = GetComponent<AudioSource>();
         
-        //Calculate the number of seconds in each beat
-      //  secPerBeat =  60f / songBPM;
-
-        //Record the time when the music starts
-    //    dspSongTime = (float)AudioSettings.dspTime;
-
-        //Start the music
+        // Load the correct clip based on difficulty
+        AudioClip clipToPlay = normalClips[0]; // default
+        
+        if (DifficultyManager.Instance != null)
+        {
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy)
+                clipToPlay = easyClips[0];
+            else if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard)
+                clipToPlay = hardClips[0];
+        }
+        
+        musicSource.clip = clipToPlay;
         musicSource.Play(); 
     }
-
-    // Update is called once per frame
- /*   void Update()
-    {
-
-        songPosition = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);
-
-        if (songPosition >= musicSource.clip.length - endBeatOffset)
-            return;
-
-        //determine how many beats since the song started
-    //    songPositionInBeats = songPosition / secPerBeat;
-
-        int currentBeat = Mathf.FloorToInt(songPositionInBeats);
-    } */
 }

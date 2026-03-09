@@ -47,6 +47,9 @@ public class GameManager : MonoBehaviour
             activated = true;
         }
         if (gameEnded) return;
+        
+        if (RhythmAudioScript == null || RhythmAudioScript.musicSource == null || RhythmAudioScript.musicSource.clip == null)
+            return;
 
         if (ScoreManager.instance.P1score >= winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
         {
