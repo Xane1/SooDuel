@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RhythmAudioScript : MonoBehaviour
 {
@@ -46,14 +47,16 @@ public class RhythmAudioScript : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy)
             {
                 clipToPlay = easyClips[0];
-                songBPM = 96f;
-                firstBeatOffset = 7f;
+                songBPM = 90f;
+                firstBeatOffset = 1f;
             }
                 
             else if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard)
             {
                 clipToPlay = hardClips[0];
-                songBPM = 102F;
+                songBPM = 123;
+                firstBeatOffset = 9.8f;
+                endBeatOffset = 12f;
             }
         }
         
@@ -122,6 +125,10 @@ public class RhythmAudioScript : MonoBehaviour
         {
             nextBeat += 1;
             beatSpawnerScript.SpawnObjectAtRandom();
+            if (SceneManager.GetActiveScene().name == "CoOpScene")
+            {
+                beatSpawnerScript.SpawnObjectAtRandom();
+            }
         }
     }
 }

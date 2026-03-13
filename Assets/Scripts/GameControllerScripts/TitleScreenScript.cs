@@ -56,8 +56,7 @@ public class TitleScreenScript : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame ||
-            (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame))
+        if (Keyboard.current.escapeKey.wasPressedThisFrame || (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame))
         {
             GoBack();
         }

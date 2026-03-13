@@ -1231,7 +1231,9 @@ MonoBehaviour:
   BeatSpawner: {fileID: 1559238284}
   Tutorial: {fileID: 186559611}
   ScoreKeeper: {fileID: 1727156562}
-  winScore: 12999
+  easyWinScore: 7000
+  normalWinScore: 12999
+  hardWinScore: 18999
 --- !u!1 &530193234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1435,7 @@ MonoBehaviour:
   normalClips:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
-  - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
+  - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
   secPerBeat: 0
   songPosition: 0
   songPositionInBeats: 0
@@ -2222,14 +2224,14 @@ MonoBehaviour:
   songPosition: 0
   songPositionInBeats: 0
   dspSongTime: 0
-  firstBeatOffset: 6.3
+  firstBeatOffset: 6.2
   endBeatOffset: 7
   easyClips:
-  - {fileID: 8300000, guid: a3485b22fa199e640b7d12067e1435c5, type: 3}
+  - {fileID: 8300000, guid: f2f37669ce1a8d44b862b9cc99a54a5b, type: 3}
   normalClips:
   - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
   hardClips:
-  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
   musicSource: {fileID: 915608560}
 --- !u!4 &915608562
 Transform:

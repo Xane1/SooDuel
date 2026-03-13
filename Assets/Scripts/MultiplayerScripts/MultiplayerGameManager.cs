@@ -4,9 +4,7 @@ using GameControllerScripts;
 using UnityEngine.InputSystem;
 public class MultiplayerGameManager : MonoBehaviour
 {
-    public GameOverScreen P2WinScreen;
-    public GameOverScreen P1WinScreen;
-    public GameOverScreen DrawScreen;
+    public GameOverScreen GameOverScreen;
     public RhythmAudioScript RhythmAudioScript;
 
     public GameObject MusicPlayer;
@@ -63,7 +61,9 @@ public class MultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleP2WinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        P2WinScreen.Setup(ScoreManager.instance.P2score);
+        GameOverScreen.Setup(ScoreManager.instance.P2score);
+        GameObject p2WinText = GameObject.Find("GameOverBackground").transform.Find("Player2 WinText").gameObject;
+        p2WinText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
@@ -71,7 +71,9 @@ public class MultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleP1WinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        P1WinScreen.Setup(ScoreManager.instance.P1score);
+        GameOverScreen.Setup(ScoreManager.instance.P1score);
+        GameObject p1WinText = GameObject.Find("GameOverBackground").transform.Find("Player1 WinText").gameObject;
+        p1WinText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
@@ -79,7 +81,8 @@ public class MultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleDrawGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        DrawScreen.gameObject.SetActive(true);
+        GameObject drawText = GameObject.Find("GameOverBackground").transform.Find("Draw Text").gameObject;
+        drawText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }

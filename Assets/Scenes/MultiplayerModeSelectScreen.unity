@@ -202,9 +202,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TitleScreenScript, Assembly-CSharp
-        m_MethodName: CoOpPlayButton
+      - m_Target: {fileID: 1722276580}
+        m_TargetAssemblyTypeName: ModeSelectScreenScript, Assembly-CSharp
+        m_MethodName: MultiplayerCoOpButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -495,9 +495,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TitleScreenScript, Assembly-CSharp
-        m_MethodName: VersusPlayButton
+      - m_Target: {fileID: 1722276580}
+        m_TargetAssemblyTypeName: ModeSelectScreenScript, Assembly-CSharp
+        m_MethodName: MultiplayerVersusButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

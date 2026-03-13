@@ -34,6 +34,8 @@ MonoBehaviour:
     m_path: Assets/Scenes/MouseScene.unity
   - m_enabled: 1
     m_path: Assets/Scenes/ControllerScene.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/CoOpScene.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []

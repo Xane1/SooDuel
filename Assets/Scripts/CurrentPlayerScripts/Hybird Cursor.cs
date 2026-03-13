@@ -152,12 +152,11 @@ public class HybridCursor : MonoBehaviour
             usingGamepad = true;
             Cursor.visible = false;
         }
-
-        if (Mouse.current != null && Mouse.current.delta.ReadValue().sqrMagnitude > 0.01f)
+/*  if (Mouse.current != null && Mouse.current.delta.ReadValue().sqrMagnitude > 0.01f)
         {
             usingGamepad = false;
             Cursor.visible = true;
-        }
+        } */
     }
 
     //Below method is called in UpdateCursor

@@ -4,8 +4,7 @@ using GameControllerScripts;
 using UnityEngine.InputSystem;
 public class CoOpMultiplayerGameManager : MonoBehaviour
 {
-    public GameOverScreen FailScreen;
-    public GameOverScreen WinScreen;
+    public GameOverScreen GameOverScreen;
     public RhythmAudioScript RhythmAudioScript;
     
     public GameObject MusicPlayer;
@@ -17,7 +16,9 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     public GameObject P1ScoreKeeper;
     public GameObject P2ScoreKeeper;
     
-    public int winScore = 10000;
+    public int easyWinScore = 7000;
+    public int normalWinScore = 12999;
+    public int hardWinScore = 18000;
 
     bool gameEnded = false;
     
@@ -46,21 +47,53 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             activated2 = true;
         }
         if (gameEnded) return;
-
-        if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+        
+        if (DifficultyManager.Instance != null)
         {
-            WinGame();
-        }
-        else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < winScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
-        {
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                {
             
-            GameOver();
+                    LoseGame();
+                }
+            }
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                {
+            
+                    LoseGame();
+                }
+            }
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                {
+            
+                    LoseGame();
+                }
+            }
         }
     }
-    private IEnumerator HandleGameOver()
+    private IEnumerator HandleLoseGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        FailScreen.Setup(ScoreManager.instance.totalScore);
+        GameOverScreen.Setup(ScoreManager.instance.P1score);
+        GameObject lossText = GameObject.Find("GameOverBackground").transform.Find("Loss Text").gameObject;
+        lossText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
@@ -68,16 +101,18 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleWinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        WinScreen.Setup(ScoreManager.instance.totalScore);
+        GameOverScreen.Setup(ScoreManager.instance.P1score);
+        GameObject winText = GameObject.Find("GameOverBackground").transform.Find("Win Text").gameObject;
+        winText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
     }
-    public void GameOver()
+    void LoseGame()
     {
         if (gameEnded) return;
 
         gameEnded = true;
-        StartCoroutine(HandleGameOver());
+        StartCoroutine(HandleLoseGame());
     }
 
     void WinGame()
