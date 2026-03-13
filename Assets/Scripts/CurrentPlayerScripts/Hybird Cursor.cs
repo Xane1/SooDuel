@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.InputSystem.Users;
-
+using UnityEngine.SceneManagement;
 public class HybridCursor : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput;
@@ -141,6 +141,10 @@ public class HybridCursor : MonoBehaviour
         else
         {
             UpdateRealMouseCursor();
+        }
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene("TitleScreen");
         }
     }
 

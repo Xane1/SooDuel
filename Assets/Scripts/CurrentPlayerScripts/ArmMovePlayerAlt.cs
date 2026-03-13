@@ -1,6 +1,7 @@
 using UnityEngine;
 
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class StickIK2D : MonoBehaviour
 {
@@ -23,5 +24,10 @@ public class StickIK2D : MonoBehaviour
         Vector3 worldPos = cam.ScreenToWorldPoint(screenPos);
 
         cursorPoint.position = worldPos;
+        
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene("TitleScreen");
+        }
     }
 }
