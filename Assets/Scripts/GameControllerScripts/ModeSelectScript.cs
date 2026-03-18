@@ -6,8 +6,7 @@ public class ModeSelectScreenScript : MonoBehaviour
 {
     void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame ||
-            Gamepad.current?.buttonEast.wasPressedThisFrame == true)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame || Gamepad.current?.buttonEast.wasPressedThisFrame == true)
         {
             GoBack();
         }

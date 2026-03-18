@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using GameControllerScripts;
 using UnityEngine.InputSystem;
+using System.Linq;
 public class CoOpMultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
@@ -29,12 +30,13 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((!activated && Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame))
+        if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
         {
             Tutorial.SetActive(false);
             P1ScoreKeeper.SetActive(true);
             activated = true;
             PlayerMessage.SetActive(true);
+            FindObjectOfType<MultiplayerManager>().EnableJoining();
         }
         if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0))
         {
@@ -91,7 +93,7 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleLoseGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        GameOverScreen.Setup(ScoreManager.instance.P1score);
+        GameOverScreen.Setup(ScoreManager.instance.P1score + ScoreManager.instance.P2score);
         GameObject lossText = GameObject.Find("GameOverBackground").transform.Find("Loss Text").gameObject;
         lossText.SetActive(true);
         Time.timeScale = 0f;
@@ -101,7 +103,7 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleWinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
-        GameOverScreen.Setup(ScoreManager.instance.P1score);
+        GameOverScreen.Setup(ScoreManager.instance.P1score + ScoreManager.instance.P2score);
         GameObject winText = GameObject.Find("GameOverBackground").transform.Find("Win Text").gameObject;
         winText.SetActive(true);
         Time.timeScale = 0f;

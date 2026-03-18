@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 using GameControllerScripts;
 using UnityEngine.InputSystem;
-
+using System.Linq;
 public class GameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
       //Tutorial Screen
-        if ((!activated && Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame))
-        {
+         if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
+         {
             MusicPlayer.SetActive(true);
             MusicBeatPlayer.SetActive(true);
             BeatSpawner.SetActive(true);
@@ -37,9 +37,9 @@ public class GameManager : MonoBehaviour
             ScoreKeeper.SetActive(true);
             
             activated = true;
-        }
-        else if ((!activated && Pointer.current.press.wasPressedThisFrame))
-        {
+         }
+         else if ((!activated && Pointer.current.press.wasPressedThisFrame)) 
+         {
             MusicPlayer.SetActive(true);
             MusicBeatPlayer.SetActive(true);
             BeatSpawner.SetActive(true);

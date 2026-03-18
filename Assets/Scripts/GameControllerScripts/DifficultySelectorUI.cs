@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class DifficultySelectorUI : MonoBehaviour
 {
@@ -15,6 +16,19 @@ public class DifficultySelectorUI : MonoBehaviour
 
         // Get the scene name that was passed in
         targetScene = PlayerPrefs.GetString("TargetScene", "ControllerScene");
+    }
+
+    void Update()
+    {
+        if (Keyboard.current.escapeKey.wasPressedThisFrame || Gamepad.current?.buttonEast.wasPressedThisFrame == true)
+        {
+            GoBack();
+        }
+    }
+
+    private void GoBack()
+    {
+        SceneManager.LoadScene("TitleScreen");
     }
 
     public void SelectEasy()

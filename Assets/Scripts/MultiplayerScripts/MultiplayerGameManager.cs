@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using GameControllerScripts;
 using UnityEngine.InputSystem;
+using System.Linq;
 public class MultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
@@ -24,12 +25,13 @@ public class MultiplayerGameManager : MonoBehaviour
     bool activated2 = false;
     void Update()
     {
-        if ((!activated && Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame))
+        if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
         {
             Tutorial.SetActive(false);
             P1ScoreKeeper.SetActive(true);
             activated = true;
             PlayerMessage.SetActive(true);
+            FindObjectOfType<MultiplayerManager>().EnableJoining();
         }
         if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0))
         {

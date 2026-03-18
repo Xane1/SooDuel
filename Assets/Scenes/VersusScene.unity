@@ -1924,7 +1924,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press left shoulder for player 2 to join!
+  m_Text: Press left shoulder to join!
 --- !u!222 &1348604422
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3066,7 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInputManager
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 0
   m_MaxPlayerCount: 2
   m_AllowJoining: 1
   m_JoinBehavior: 0
