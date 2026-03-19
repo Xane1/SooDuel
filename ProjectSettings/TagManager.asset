@@ -8,6 +8,7 @@ TagManager:
   - CursorSlow
   - Player2
   - Player1
+  - AttackObj
   layers:
   - Default
   - TransparentFX

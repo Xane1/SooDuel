@@ -137,6 +137,7 @@ public class HybridCursor : MonoBehaviour
         if (usingGamepad)
         {
             UpdateGamepadCursor();
+
         }
         else
         {
@@ -163,6 +164,7 @@ public class HybridCursor : MonoBehaviour
         } */
     }
 
+    
     //Below method is called in UpdateCursor
     private void UpdateGamepadCursor()
     {
@@ -199,17 +201,25 @@ public class HybridCursor : MonoBehaviour
         //Optionally update virtual mouse for systems that rely on it
     }
     
-    private void OnDrawGizmos()
+   /* private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
     
         Gizmos.DrawWireSphere(playerTransform.position, cursorRadius);
         Gizmos.DrawSphere(worldCursor.position, 0.5f);
-    }
-    
+    } */
+
+   private void Update ()
+   {
+       if (Gamepad.current != null && Gamepad.current.rightShoulder.wasPressedThisFrame)
+       {
+           transform.Find("Attack Object").gameObject.SetActive(true);
+       }
+   }
 
 
-    //Called in UpdateCursor so mouse cursor is usable
+
+   //Called in UpdateCursor so mouse cursor is usable
     private void UpdateRealMouseCursor()
     {
         if (Mouse.current == null)
