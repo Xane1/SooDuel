@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8e831b88-a8e4-4d11-9572-5fff0d1d760c}">
+		<property name="assetPath">
+			<value>Hard Song/Aswan Music &amp; Dance Ensemble - Saidi Mizmar Dance (Cane Dance from Upper Egypt) - (320 Kbps).mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>310.85714285714283</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9fa57090-358f-4545-a030-f886776c6a0e}</destination>
+		</relationship>
+	</object>
+</objects>

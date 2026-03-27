@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{3f5f5ec5-5292-4a19-9cbf-403ba02fdd84}">
+		<property name="assetPath">
+			<value>Easy Song/Saidi Medley Upper Egypt Dance.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>337.65877551020407</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9fa57090-358f-4545-a030-f886776c6a0e}</destination>
+		</relationship>
+	</object>
+</objects>

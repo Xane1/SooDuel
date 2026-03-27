@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{2b6b5bdf-afdd-49c8-ae04-abd1b6180773}">
+		<property name="assetPath">
+			<value>Normal Song/Tahtib Mizmar.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>91.115102040816325</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9fa57090-358f-4545-a030-f886776c6a0e}</destination>
+		</relationship>
+	</object>
+</objects>

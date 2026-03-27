@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e37104fc4fd7124cb7ffc6b1bdb6e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoolDownScript
-  attackTelegraph: {fileID: 0}
+  attackTelegraph: {fileID: 6340780622622462802}
 --- !u!114 &6302108056390595523
 MonoBehaviour:
   m_ObjectHideFlags: 0
