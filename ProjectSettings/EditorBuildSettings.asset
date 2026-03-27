@@ -9,11 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 2b8e10e3ce0b3ca42b52f907e9deae6e
   - enabled: 1
-    path: Assets/Scenes/MouseScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/SingleplayerModeSelectScreen.unity
+    guid: 509820563438ee5428f49088615cfba9
   - enabled: 1
     path: Assets/Scenes/MultiplayerModeSelectScreen.unity
     guid: 0251fa77053e0d047b1b564ff948610c
+  - enabled: 1
+    path: Assets/Scenes/DifficultySelect.unity
+    guid: 7aa7419967e2f094585efd66400fa24e
+  - enabled: 1
+    path: Assets/Scenes/MouseScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/VersusScene.unity
+    guid: 6257094258feaf244a2c6b38e803d752
   - enabled: 1
     path: Assets/Scenes/CoOpScene.unity
     guid: dfddb2b7504c06f449b61a5d7f73b08d

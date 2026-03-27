@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1442019471220420219, guid: 4bf02fde50ebddb4db6a0149ba2a2f5e, type: 3}
+  m_Sprite: {fileID: -1440478876851822918, guid: d8d2d058810f2464f842af9c8c8edcbd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -243,10 +243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2000, y: 1000}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 1795742786}
   easyClips:
-  - {fileID: 8300000, guid: de2c685fb0b866649895bafdfe31f4c9, type: 3}
+  - {fileID: 8300000, guid: b535e06aedec0754f941bec7840a7fcb, type: 3}
   normalClips:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
@@ -4270,7 +4270,7 @@ MonoBehaviour:
   firstBeatOffset: 6.1
   endBeatOffset: 7
   easyClips:
-  - {fileID: 8300000, guid: f2f37669ce1a8d44b862b9cc99a54a5b, type: 3}
+  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
   normalClips:
   - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
   hardClips:

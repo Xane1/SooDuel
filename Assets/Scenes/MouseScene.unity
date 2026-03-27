@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2000, y: 1000}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1253,9 +1253,9 @@ MonoBehaviour:
   BeatSpawner: {fileID: 1559238284}
   Tutorial: {fileID: 186559611}
   ScoreKeeper: {fileID: 1727156562}
-  easyWinScore: 7000
-  normalWinScore: 12999
-  hardWinScore: 18999
+  easyWinScore: 6000
+  normalWinScore: 11000
+  hardWinScore: 18000
 --- !u!1 &530193234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 546611787}
   easyClips:
-  - {fileID: 8300000, guid: de2c685fb0b866649895bafdfe31f4c9, type: 3}
+  - {fileID: 8300000, guid: b535e06aedec0754f941bec7840a7fcb, type: 3}
   normalClips:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
@@ -2249,7 +2249,7 @@ MonoBehaviour:
   firstBeatOffset: 6.2
   endBeatOffset: 7
   easyClips:
-  - {fileID: 8300000, guid: f2f37669ce1a8d44b862b9cc99a54a5b, type: 3}
+  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
   normalClips:
   - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
   hardClips:
@@ -5312,6 +5312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df7f4e4855a36a4f83f56292d2c5f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerReference
+  AttackObject: {fileID: 0}
+  AttackIndicator: {fileID: 0}
 --- !u!1 &2003301412
 GameObject:
   m_ObjectHideFlags: 0

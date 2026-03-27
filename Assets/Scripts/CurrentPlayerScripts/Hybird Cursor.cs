@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.InputSystem.Users;
 using UnityEngine.SceneManagement;
+using System.Collections;
 public class HybridCursor : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput;
@@ -17,6 +18,12 @@ public class HybridCursor : MonoBehaviour
     [SerializeField] private Transform playerTransform; 
     [SerializeField] private float cursorRadius = 3f;
     
+    [SerializeField] private GameObject attackObject;
+    
+    [SerializeField] private CoolDownScript cooldown;
+    
+    [SerializeField] private float hurtDuration = 0.5f;
+    
     private bool onBeatTarget;
     private Rigidbody2D stickBody;
     
@@ -28,7 +35,8 @@ public class HybridCursor : MonoBehaviour
     private Vector2 screenPosition;
     private bool usingGamepad;
     private bool previousMouseState;
-
+    private bool isHurt = false;
+    
     public int playerNumber;
     
     private void OnEnable()
@@ -168,6 +176,7 @@ public class HybridCursor : MonoBehaviour
     //Below method is called in UpdateCursor
     private void UpdateGamepadCursor()
     {
+        if (isHurt) return;
         
         if (playerTransform == null)
             return;
@@ -201,23 +210,44 @@ public class HybridCursor : MonoBehaviour
         //Optionally update virtual mouse for systems that rely on it
     }
     
-   /* private void OnDrawGizmos()
+   private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
     
         Gizmos.DrawWireSphere(playerTransform.position, cursorRadius);
         Gizmos.DrawSphere(worldCursor.position, 0.5f);
-    } */
+    } 
 
+   //Attack stuff below
    private void Update ()
    {
-       if (Gamepad.current != null && Gamepad.current.rightShoulder.wasPressedThisFrame)
+       if (isHurt) return;
+       if (cooldown.IsCoolDown) return;
+       Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;
+    
+       if (gp != null && gp.rightShoulder.wasPressedThisFrame)
        {
-           transform.Find("Attack Object").gameObject.SetActive(true);
+           StartCoroutine(ActivateAttack());
+           cooldown.StartCoolDown();
        }
    }
-
-
+   
+   private IEnumerator ActivateAttack()
+   {
+       attackObject.SetActive(true);
+       yield return new WaitForSeconds(2f);
+       attackObject.SetActive(false);
+   }
+   public void TriggerHurt()
+   {
+       StartCoroutine(PlayerHurt());
+   }
+   private IEnumerator PlayerHurt()
+   {
+       this.enabled = false;
+       yield return new WaitForSeconds(hurtDuration);
+       this.enabled = true;
+   }
 
    //Called in UpdateCursor so mouse cursor is usable
     private void UpdateRealMouseCursor()

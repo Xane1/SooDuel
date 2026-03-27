@@ -47,8 +47,8 @@ public class RhythmAudioScript : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy)
             {
                 clipToPlay = easyClips[0];
-                songBPM = 90f;
-                firstBeatOffset = 1f;
+                songBPM = 45f;
+                firstBeatOffset = 5f;
             }
                 
             else if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard)
