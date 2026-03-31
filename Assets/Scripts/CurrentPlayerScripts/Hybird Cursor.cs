@@ -221,6 +221,7 @@ public class HybridCursor : MonoBehaviour
    //Attack stuff below
    private void Update ()
    {
+       if (attackObject == null) return;
        if (isHurt) return;
        if (cooldown.IsCoolDown) return;
        Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;

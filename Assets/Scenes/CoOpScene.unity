@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   GameOverScreen: {fileID: 579576022}
-  RhythmAudioScript: {fileID: 1356484344}
+  RhythmAudioScriptAlt: {fileID: 0}
   MusicPlayer: {fileID: 1603323177}
   MusicBeatPlayer: {fileID: 1356484342}
   BeatSpawner: {fileID: 1559238284}
@@ -404,7 +404,7 @@ MonoBehaviour:
   P2ScoreKeeper: {fileID: 1886650033}
   easyWinScore: 6000
   normalWinScore: 11000
-  hardWinScore: 18000
+  hardWinScore: 15999
 --- !u!1 &579576020
 GameObject:
   m_ObjectHideFlags: 0

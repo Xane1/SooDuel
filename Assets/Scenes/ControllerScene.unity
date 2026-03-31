@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   GameOverScreen: {fileID: 2020224923}
-  RhythmAudioScript: {fileID: 1901706720}
+  RhythmAudioScriptAlt: {fileID: 1901706722}
   MusicPlayer: {fileID: 1209515355}
   MusicBeatPlayer: {fileID: 1901706718}
   BeatSpawner: {fileID: 1559238284}
@@ -602,7 +602,7 @@ MonoBehaviour:
   ScoreKeeper: {fileID: 1727156562}
   easyWinScore: 6000
   normalWinScore: 11000
-  hardWinScore: 18000
+  hardWinScore: 15999
 --- !u!1 &528944893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,6 +2880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1901706721}
+  - component: {fileID: 1901706722}
   - component: {fileID: 1901706720}
   - component: {fileID: 1901706719}
   m_Layer: 0
@@ -2993,7 +2994,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901706718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 954a407ddb79df2469961cdb56e06708, type: 3}
   m_Name: 
@@ -3027,6 +3028,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1901706722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901706718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b861f347e909f4980928d5aef7c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
+  beatTimestamps: []
+  songPosition: 0
+  firstBeatOffset: 0
+  easyClips:
+  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
+  normalClips:
+  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  hardClips:
+  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
+  musicSource: {fileID: 1901706719}
 --- !u!1 &1990601704
 GameObject:
   m_ObjectHideFlags: 0

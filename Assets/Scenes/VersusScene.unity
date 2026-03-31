@@ -639,7 +639,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
-  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -770,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   GameOverScreen: {fileID: 1972298939}
-  RhythmAudioScript: {fileID: 2102850983}
+  RhythmAudioScriptAlt: {fileID: 2102850987}
   MusicPlayer: {fileID: 1795742785}
   MusicBeatPlayer: {fileID: 2102850982}
   BeatSpawner: {fileID: 1559238284}
@@ -779,20 +778,6 @@ MonoBehaviour:
   P1ScoreKeeper: {fileID: 1727156562}
   P2ScoreKeeper: {fileID: 1886650033}
   winScore: 12999
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 0}
 --- !u!1 &544342988
 GameObject:
   m_ObjectHideFlags: 0
@@ -4247,6 +4232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102850985}
+  - component: {fileID: 2102850987}
   - component: {fileID: 2102850983}
   - component: {fileID: 2102850986}
   m_Layer: 0
@@ -4263,7 +4249,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102850982}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 954a407ddb79df2469961cdb56e06708, type: 3}
   m_Name: 
@@ -4394,6 +4380,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2102850987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102850982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b861f347e909f4980928d5aef7c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
+  beatTimestamps: []
+  songPosition: 0
+  firstBeatOffset: 0
+  easyClips:
+  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
+  normalClips:
+  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  hardClips:
+  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
+  musicSource: {fileID: 2102850986}
 --- !u!1001 &6828910988484876365
 PrefabInstance:
   m_ObjectHideFlags: 0

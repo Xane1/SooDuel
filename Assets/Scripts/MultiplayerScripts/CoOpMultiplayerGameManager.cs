@@ -6,7 +6,7 @@ using System.Linq;
 public class CoOpMultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
-    public RhythmAudioScript RhythmAudioScript;
+    public RhythmAudioScriptAlt RhythmAudioScriptAlt;
     
     public GameObject MusicPlayer;
     public GameObject MusicBeatPlayer;
@@ -54,11 +54,11 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
         {
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy)
             {
-                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     WinGame();
                 }
-                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
                     LoseGame();
@@ -66,11 +66,11 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             }
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal)
             {
-                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     WinGame();
                 }
-                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
                     LoseGame();
@@ -78,11 +78,11 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             }
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard)
             {
-                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     WinGame();
                 }
-                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && RhythmAudioScript.songPosition >= RhythmAudioScript.musicSource.clip.length - RhythmAudioScript.endBeatOffset)
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
                     LoseGame();
