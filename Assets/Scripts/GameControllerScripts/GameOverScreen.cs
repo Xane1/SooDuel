@@ -17,8 +17,9 @@ namespace GameControllerScripts
 
         public void RestartButton()
         {
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
             Time.timeScale = 1f;
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
 
         public void TitleScreenButton()

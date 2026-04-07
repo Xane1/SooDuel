@@ -24,29 +24,33 @@ public class GameManager : MonoBehaviour
     
     bool activated = false;
    
+    void ActivateGame()
+    {
+        StartCoroutine(ActivateAfterDelay());
+    }
+
+    IEnumerator ActivateAfterDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+    
+        MusicPlayer.SetActive(true);
+        MusicBeatPlayer.SetActive(true);
+        BeatSpawner.SetActive(true);
+        Tutorial.SetActive(false);
+        ScoreKeeper.SetActive(true);
+        activated = true;
+    }
     
     void Update()
     {
       //Tutorial Screen
          if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
          {
-            MusicPlayer.SetActive(true);
-            MusicBeatPlayer.SetActive(true);
-            BeatSpawner.SetActive(true);
-            Tutorial.SetActive(false);
-            ScoreKeeper.SetActive(true);
-            
-            activated = true;
+            ActivateGame();
          }
          else if ((!activated && Pointer.current.press.wasPressedThisFrame)) 
          {
-            MusicPlayer.SetActive(true);
-            MusicBeatPlayer.SetActive(true);
-            BeatSpawner.SetActive(true);
-            Tutorial.SetActive(false);
-            ScoreKeeper.SetActive(true);
-            
-            activated = true;
+             ActivateGame();
         }
         if (gameEnded) return;
         

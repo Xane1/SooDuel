@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   GameOverScreen: {fileID: 579576022}
-  RhythmAudioScriptAlt: {fileID: 0}
+  RhythmAudioScriptAlt: {fileID: 1356484346}
   MusicPlayer: {fileID: 1603323177}
   MusicBeatPlayer: {fileID: 1356484342}
   BeatSpawner: {fileID: 1559238284}
@@ -1449,6 +1449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1356484345}
+  - component: {fileID: 1356484346}
   - component: {fileID: 1356484344}
   - component: {fileID: 1356484343}
   m_Layer: 0
@@ -1562,7 +1563,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356484342}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 954a407ddb79df2469961cdb56e06708, type: 3}
   m_Name: 
@@ -1596,6 +1597,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356484346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356484342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b861f347e909f4980928d5aef7c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
+  beatTimestamps: []
+  MusicPlayer: {fileID: 1356484342}
+  MusicBeatPlayer: {fileID: 1603323177}
+  songPosition: 0
+  firstBeatOffset: 0
+  easyClips:
+  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
+  normalClips:
+  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  hardClips:
+  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
+  musicSource: {fileID: 1356484343}
 --- !u!1 &1559238284
 GameObject:
   m_ObjectHideFlags: 0

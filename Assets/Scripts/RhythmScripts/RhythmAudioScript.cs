@@ -12,9 +12,9 @@ public class RhythmAudioScript : MonoBehaviour
     public float firstBeatOffset;
     public float endBeatOffset;
 
-    public AudioClip[] easyClips;   // Drag your 2 easy audio files here
-    public AudioClip[] normalClips; // Drag your 2 normal audio files here
-    public AudioClip[] hardClips;   // Drag your 2 hard audio files here
+    public AudioClip[] easyClips;  
+    public AudioClip[] normalClips; 
+    public AudioClip[] hardClips;  
 
     private BeatSpawnerScript beatSpawnerScript;
     private BeatTargetScript beatTargetScript;

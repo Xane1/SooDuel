@@ -3041,6 +3041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
   beatTimestamps: []
+  MusicPlayer: {fileID: 1209515355}
+  MusicBeatPlayer: {fileID: 1901706718}
   songPosition: 0
   firstBeatOffset: 0
   easyClips:

@@ -1283,7 +1283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 546611788}
   - component: {fileID: 546611787}
-  - component: {fileID: 546611786}
+  - component: {fileID: 546611789}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -1291,31 +1291,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &546611786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546611785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d179e8c076440ea4caec58084ae939a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  musicSource: {fileID: 546611787}
-  easyClips:
-  - {fileID: 8300000, guid: b535e06aedec0754f941bec7840a7fcb, type: 3}
-  normalClips:
-  - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
-  hardClips:
-  - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
-  secPerBeat: 0
-  songPosition: 0
-  songPositionInBeats: 0
-  dspSongTime: 0
-  firstBeatOffset: 6
-  endBeatOffset: 7
 --- !u!82 &546611787
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1428,6 +1403,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546611789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546611785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d179e8c076440ea4caec58084ae939a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  musicSource: {fileID: 546611787}
+  easyClips:
+  - {fileID: 8300000, guid: b535e06aedec0754f941bec7840a7fcb, type: 3}
+  normalClips:
+  - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
+  hardClips:
+  - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
+  secPerBeat: 0
+  songPosition: 0
+  songPositionInBeats: 0
+  dspSongTime: 0
+  firstBeatOffset: 0
+  endBeatOffset: 0
 --- !u!1 &562976147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,7 +1895,6 @@ GameObject:
   m_Component:
   - component: {fileID: 915608562}
   - component: {fileID: 915608563}
-  - component: {fileID: 915608561}
   - component: {fileID: 915608560}
   m_Layer: 0
   m_Name: MusicBeatPlayer
@@ -2001,32 +2000,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &915608561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915608559}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 954a407ddb79df2469961cdb56e06708, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  songBPM: 102
-  secPerBeat: 0
-  songPosition: 0
-  songPositionInBeats: 0
-  dspSongTime: 0
-  firstBeatOffset: 6.2
-  endBeatOffset: 7
-  easyClips:
-  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
-  normalClips:
-  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
-  hardClips:
-  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
-  musicSource: {fileID: 915608560}
 --- !u!4 &915608562
 Transform:
   m_ObjectHideFlags: 0
