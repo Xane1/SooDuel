@@ -637,6 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
+  - component: {fileID: 519420034}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   m_Layer: 0
@@ -778,6 +779,14 @@ MonoBehaviour:
   P1ScoreKeeper: {fileID: 1727156562}
   P2ScoreKeeper: {fileID: 1886650033}
   winScore: 12999
+--- !u!81 &519420034
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
 --- !u!1 &544342988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3398,12 +3407,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
   - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
-  secPerBeat: 0
-  songPosition: 0
-  songPositionInBeats: 0
-  dspSongTime: 0
-  firstBeatOffset: 6
-  endBeatOffset: 7
 --- !u!1 &1797900605
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,8 +4396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
   beatTimestamps: []
-  MusicPlayer: {fileID: 1795742785}
-  MusicBeatPlayer: {fileID: 2102850982}
   songPosition: 0
   firstBeatOffset: 0
   easyClips:

@@ -79,6 +79,7 @@ public class BeatTargetScript : MonoBehaviour
         childAnimator.SetTrigger("P1Win");
         ScoreManager.instance.P1AddPoints(100);
         Destroy(gameObject);
+     //   RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.15f);
     }
     
     public void P2BeatHit()
@@ -92,6 +93,7 @@ public class BeatTargetScript : MonoBehaviour
         childAnimator.SetTrigger("P2Win");
         ScoreManager.instance.P2AddPoints(100);
         Destroy(gameObject);
+      //  RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.25f);
     }
 
     

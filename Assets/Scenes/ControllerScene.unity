@@ -1119,6 +1119,7 @@ GameObject:
   - component: {fileID: 1007507087}
   - component: {fileID: 1007507088}
   - component: {fileID: 1007507089}
+  - component: {fileID: 1007507092}
   - component: {fileID: 1007507090}
   - component: {fileID: 1007507091}
   m_Layer: 3
@@ -1268,6 +1269,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1007507092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007507086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde9070e080e277459eb39c2120f09f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RumbleManager
 --- !u!1 &1010433727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,12 +1613,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
   - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
-  secPerBeat: 0
-  songPosition: 0
-  songPositionInBeats: 0
-  dspSongTime: 0
-  firstBeatOffset: 6
-  endBeatOffset: 7
 --- !u!82 &1209515357
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3041,8 +3048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
   beatTimestamps: []
-  MusicPlayer: {fileID: 1209515355}
-  MusicBeatPlayer: {fileID: 1901706718}
   songPosition: 0
   firstBeatOffset: 0
   easyClips:

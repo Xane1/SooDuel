@@ -1406,6 +1406,7 @@ GameObject:
   - component: {fileID: 938027697827540877}
   - component: {fileID: 6427827192686784423}
   - component: {fileID: 502940439412270965}
+  - component: {fileID: 6200775322367332050}
   - component: {fileID: 4090724090384792560}
   - component: {fileID: 80585460342753183}
   m_Layer: 3
@@ -1515,6 +1516,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoolDownScript
   attackTelegraph: {fileID: 2794043825936998303}
+--- !u!114 &6200775322367332050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873823175489007267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde9070e080e277459eb39c2120f09f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RumbleManager
 --- !u!114 &4090724090384792560
 MonoBehaviour:
   m_ObjectHideFlags: 0

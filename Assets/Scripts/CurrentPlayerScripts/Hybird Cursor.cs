@@ -39,6 +39,14 @@ public class HybridCursor : MonoBehaviour
     
     public int playerNumber;
     
+    private Gamepad myGamepad;
+    private void Awake()
+    {
+        PlayerInput playerInput = GetComponent<PlayerInput>();
+        myGamepad = playerInput.devices.Count > 0 
+            ? playerInput.devices[0] as Gamepad 
+            : null;
+    }
     private void OnEnable()
     {
         if (virtualMouse == null || !virtualMouse.added) virtualMouse = (Mouse)InputSystem.AddDevice("VirtualMouse");
@@ -104,6 +112,7 @@ public class HybridCursor : MonoBehaviour
                     if (beat.isGreen)
                     {
                         beat.P1BeatHit();
+                        RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.15f, myGamepad);
                     }
                     else
                     {
@@ -117,6 +126,7 @@ public class HybridCursor : MonoBehaviour
                     if (beat.isGreen)
                     {
                         beat.P2BeatHit();
+                        RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.15f, myGamepad);
                     }
                     else
                     {
