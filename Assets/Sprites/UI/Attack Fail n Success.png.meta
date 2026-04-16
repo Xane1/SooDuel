@@ -1,0 +1,1747 @@
+fileFormatVersion: 2
+guid: c5283adb4c671a84ca3f2f5529266568
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2917384643919257090
+    second: Attack Fail n Success_0
+  - first:
+      213: 3539277574983523386
+    second: Attack Fail n Success_1
+  - first:
+      213: 4024502531610774486
+    second: Attack Fail n Success_2
+  - first:
+      213: -1318871454398899615
+    second: Attack Fail n Success_3
+  - first:
+      213: 2929132297895590270
+    second: Attack Fail n Success_4
+  - first:
+      213: 6151878279124448935
+    second: Attack Fail n Success_5
+  - first:
+      213: -7610285654740775759
+    second: Attack Fail n Success_6
+  - first:
+      213: -2676104314822171061
+    second: Attack Fail n Success_7
+  - first:
+      213: -7026151479030587123
+    second: Attack Fail n Success_8
+  - first:
+      213: -2611927360091232702
+    second: Attack Fail n Success_9
+  - first:
+      213: -8093726049576152017
+    second: Attack Fail n Success_10
+  - first:
+      213: -3835911778073260311
+    second: Attack Fail n Success_11
+  - first:
+      213: 7311942265941345652
+    second: Attack Fail n Success_12
+  - first:
+      213: -2708226695484171898
+    second: Attack Fail n Success_13
+  - first:
+      213: -1482094904093629967
+    second: Attack Fail n Success_14
+  - first:
+      213: -8636237916403458269
+    second: Attack Fail n Success_15
+  - first:
+      213: 2698858196515686620
+    second: Attack Fail n Success_16
+  - first:
+      213: -5002115485973447854
+    second: Attack Fail n Success_17
+  - first:
+      213: -8310267277059054604
+    second: Attack Fail n Success_18
+  - first:
+      213: 6422839470855596233
+    second: Attack Fail n Success_19
+  - first:
+      213: -2895982190010780079
+    second: Attack Fail n Success_20
+  - first:
+      213: 4740637939972875668
+    second: Attack Fail n Success_21
+  - first:
+      213: -5708634746669050267
+    second: Attack Fail n Success_22
+  - first:
+      213: 3365215091309904480
+    second: Attack Fail n Success_23
+  - first:
+      213: -7806258809231663037
+    second: Attack Fail n Success_24
+  - first:
+      213: 1289791593296304350
+    second: Attack Fail n Success_25
+  - first:
+      213: -4737080096588515758
+    second: Attack Fail n Success_26
+  - first:
+      213: 7700510923237503120
+    second: Attack Fail n Success_27
+  - first:
+      213: 902755856004529322
+    second: Attack Fail n Success_28
+  - first:
+      213: 9051411551062691664
+    second: Attack Fail n Success_29
+  - first:
+      213: -1882516468534889395
+    second: Attack Fail n Success_30
+  - first:
+      213: 4761479817392709022
+    second: Attack Fail n Success_31
+  - first:
+      213: 4667723081214722753
+    second: Attack Fail n Success_32
+  - first:
+      213: 8470647020915546043
+    second: Attack Fail n Success_33
+  - first:
+      213: 842416050110375412
+    second: Attack Fail n Success_34
+  - first:
+      213: 6458694726171063722
+    second: Attack Fail n Success_35
+  - first:
+      213: -6741912388215847373
+    second: Attack Fail n Success_36
+  - first:
+      213: -1344685858359571672
+    second: Attack Fail n Success_37
+  - first:
+      213: 8127213570653512125
+    second: Attack Fail n Success_38
+  - first:
+      213: 7018294448816388390
+    second: Attack Fail n Success_39
+  - first:
+      213: 1658852172894875317
+    second: Attack Fail n Success_40
+  - first:
+      213: 4814397994713211740
+    second: Attack Fail n Success_41
+  - first:
+      213: 3759386448127055182
+    second: Attack Fail n Success_42
+  - first:
+      213: -4718843181346635623
+    second: Attack Fail n Success_43
+  - first:
+      213: -6421215264784056758
+    second: Attack Fail n Success_44
+  - first:
+      213: -8933067328840494141
+    second: Attack Fail n Success_45
+  - first:
+      213: 4439303027533803011
+    second: Attack Fail n Success_46
+  - first:
+      213: -6072766832475799759
+    second: Attack Fail n Success_47
+  - first:
+      213: -4906803698522000844
+    second: Attack Fail n Success_48
+  - first:
+      213: 4362281719408549008
+    second: Attack Fail n Success_49
+  - first:
+      213: -1999823807505960709
+    second: Attack Fail n Success_50
+  - first:
+      213: 3380402253315599664
+    second: Attack Fail n Success_51
+  - first:
+      213: 3362577399797601825
+    second: Attack Fail n Success_52
+  - first:
+      213: -72144619557159165
+    second: Attack Fail n Success_53
+  - first:
+      213: 7555909489556181576
+    second: Attack Fail n Success_54
+  - first:
+      213: 41167673824571976
+    second: Attack Fail n Success_55
+  - first:
+      213: 2370835272304323184
+    second: Attack Fail n Success_56
+  - first:
+      213: -7530960349464543290
+    second: Attack Fail n Success_57
+  - first:
+      213: -9143428641496032718
+    second: Attack Fail n Success_58
+  - first:
+      213: 2938885595318983807
+    second: Attack Fail n Success_59
+  - first:
+      213: 6087937919283345594
+    second: Attack Fail n Success_60
+  - first:
+      213: 174567444679068515
+    second: Attack Fail n Success_61
+  - first:
+      213: -8969891422794590055
+    second: Attack Fail n Success_62
+  - first:
+      213: -8088727494184462841
+    second: Attack Fail n Success_63
+  - first:
+      213: 6441929276574252554
+    second: Attack Fail n Success_64
+  - first:
+      213: 3213337903922147853
+    second: Attack Fail n Success_65
+  - first:
+      213: -2945293373131527386
+    second: Attack Fail n Success_66
+  - first:
+      213: -2078842822340649243
+    second: Attack Fail n Success_67
+  - first:
+      213: -4089052971239061829
+    second: Attack Fail n Success_68
+  - first:
+      213: -318338011088207936
+    second: Attack Fail n Success_69
+  - first:
+      213: 5438207258824210768
+    second: Attack Fail n Success_70
+  - first:
+      213: -6359469237004216473
+    second: Attack Fail n Success_71
+  - first:
+      213: -3058604990279318897
+    second: Attack Fail n Success_72
+  - first:
+      213: 3031988007494590168
+    second: Attack Fail n Success_73
+  - first:
+      213: -8147212819325149398
+    second: Attack Fail n Success_74
+  - first:
+      213: 8566295915435675748
+    second: Attack Fail n Success_75
+  - first:
+      213: 4584105625133379524
+    second: Attack Fail n Success_76
+  - first:
+      213: 157017620449688851
+    second: Attack Fail n Success_77
+  - first:
+      213: -286958873540793622
+    second: Attack Fail n Success_78
+  - first:
+      213: -1014239320657958559
+    second: Attack Fail n Success_79
+  - first:
+      213: 8407927626211177924
+    second: Attack Fail n Success_80
+  - first:
+      213: -1137253829580808207
+    second: Attack Fail n Success_81
+  - first:
+      213: -9092861291019681411
+    second: Attack Fail n Success_82
+  - first:
+      213: 4061794485727123584
+    second: Attack Fail n Success_83
+  - first:
+      213: -3504510306421871343
+    second: Attack Fail n Success_84
+  - first:
+      213: -2845336993020392042
+    second: Attack Fail n Success_85
+  - first:
+      213: -7418289256176112243
+    second: Attack Fail n Success_86
+  - first:
+      213: 6850516606819727362
+    second: Attack Fail n Success_87
+  - first:
+      213: -7124573320252261816
+    second: Attack Fail n Success_88
+  - first:
+      213: -4361300559431680484
+    second: Attack Fail n Success_89
+  - first:
+      213: 180673910840640249
+    second: Attack Fail n Success_90
+  - first:
+      213: 2773210068459676077
+    second: Attack Fail n Success_91
+  - first:
+      213: 3794151148978746246
+    second: Attack Fail n Success_92
+  - first:
+      213: -4973329941341136622
+    second: Attack Fail n Success_93
+  - first:
+      213: 8318087548082094769
+    second: Attack Fail n Success_94
+  - first:
+      213: -7859039520035393445
+    second: Attack Fail n Success_95
+  - first:
+      213: 3076748496883098340
+    second: Attack Fail n Success_96
+  - first:
+      213: 4406694457129046626
+    second: Attack Fail n Success_97
+  - first:
+      213: 411169128897960095
+    second: Attack Fail n Success_98
+  - first:
+      213: 2913068283484436380
+    second: Attack Fail n Success_99
+  - first:
+      213: -2846968066249844296
+    second: Attack Fail n Success_100
+  - first:
+      213: 8604753672880635808
+    second: Attack Fail n Success_101
+  - first:
+      213: 3452619747053820001
+    second: Attack Fail n Success_102
+  - first:
+      213: 1372201027862372674
+    second: Attack Fail n Success_103
+  - first:
+      213: 6546424548166714059
+    second: Attack Fail n Success_104
+  - first:
+      213: -5906406267777713241
+    second: Attack Fail n Success_105
+  - first:
+      213: -4119435007296844526
+    second: Attack Fail n Success_106
+  - first:
+      213: -848505963456023656
+    second: Attack Fail n Success_107
+  - first:
+      213: -4867634730282809586
+    second: Attack Fail n Success_108
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack Fail n Success_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef163029f1e5387d0800000000000000
+      internalID: -2917384643919257090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c166ad33a0e1130800000000000000
+      internalID: 3539277574983523386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db0252dab7e9d730800000000000000
+      internalID: 4024502531610774486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a9620666d62bde0800000000000000
+      internalID: -1318871454398899615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79b0344e4e56a820800000000000000
+      internalID: 2929132297895590270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a677a863bcdf5550800000000000000
+      internalID: 6151878279124448935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bccced9485d26690800000000000000
+      internalID: -7610285654740775759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b466225ed419cdad0800000000000000
+      internalID: -2676104314822171061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_8
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01eb4ab4781e7e90800000000000000
+      internalID: -7026151479030587123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24663a297e190cbd0800000000000000
+      internalID: -2611927360091232702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_10
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2410b15a0f4daf80800000000000000
+      internalID: -8093726049576152017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_11
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eec436bf8a14cac0800000000000000
+      internalID: -3835911778073260311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_12
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475499320cc397560800000000000000
+      internalID: 7311942265941345652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_13
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6899f645b227a6ad0800000000000000
+      internalID: -2708226695484171898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f12516898a8e6be0800000000000000
+      internalID: -1482094904093629967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_15
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f130d2f5be52880800000000000000
+      internalID: -8636237916403458269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_16
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd808760b35447520800000000000000
+      internalID: 2698858196515686620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_17
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b7215c77ae49ab0800000000000000
+      internalID: -5002115485973447854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_18
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3a752f0fffbac80800000000000000
+      internalID: -8310267277059054604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_19
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8a4b51872822950800000000000000
+      internalID: 6422839470855596233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_20
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156bc80ba876fc7d0800000000000000
+      internalID: -2895982190010780079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_21
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495a2d4e6112ac140800000000000000
+      internalID: 4740637939972875668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_22
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566d65c81fad6c0b0800000000000000
+      internalID: -5708634746669050267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_23
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0628f4ebb45a3be20800000000000000
+      internalID: 3365215091309904480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_24
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340abfae8f89aa390800000000000000
+      internalID: -7806258809231663037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_25
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed816b8de9246e110800000000000000
+      internalID: 1289791593296304350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_26
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256b44210c2824eb0800000000000000
+      internalID: -4737080096588515758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_27
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0903698b2e5bdda60800000000000000
+      internalID: 7700510923237503120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_28
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacbd040bab378c00800000000000000
+      internalID: 902755856004529322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_29
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f85f869d21d9d70800000000000000
+      internalID: 9051411551062691664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_30
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44b721fe35ffd5e0800000000000000
+      internalID: -1882516468534889395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_31
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d52e0aaac241240800000000000000
+      internalID: 4761479817392709022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_32
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c202b5696517c040800000000000000
+      internalID: 4667723081214722753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_33
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7546b0698cd8570800000000000000
+      internalID: 8470647020915546043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_34
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5aaeb2fecd0bb00800000000000000
+      internalID: 842416050110375412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_35
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa57d1242a4e1a950800000000000000
+      internalID: 6458694726171063722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_36
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336c691376aef62a0800000000000000
+      internalID: -6741912388215847373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_37
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b8cf51657b65de0800000000000000
+      internalID: -1344685858359571672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_38
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db16984cea9a9c070800000000000000
+      internalID: 8127213570653512125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_39
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629fbcedd9df56160800000000000000
+      internalID: 7018294448816388390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_40
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bea844234d650710800000000000000
+      internalID: 1658852172894875317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_41
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53eb3ae77d20d240800000000000000
+      internalID: 4814397994713211740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_42
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45d7067e060c2430800000000000000
+      internalID: 3759386448127055182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_43
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9904f09c02d438eb0800000000000000
+      internalID: -4718843181346635623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_44
+      rect:
+        serializedVersion: 2
+        x: 2538
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4efa3cdcb243e6a0800000000000000
+      internalID: -6421215264784056758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_45
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c390d5089e570480800000000000000
+      internalID: -8933067328840494141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_46
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ee77645929b9d30800000000000000
+      internalID: 4439303027533803011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_47
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f7182adb239bba0800000000000000
+      internalID: -6072766832475799759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_48
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432f507980887ebb0800000000000000
+      internalID: -4906803698522000844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_49
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cd6878c10f98c30800000000000000
+      internalID: 4362281719408549008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_50
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0fc34b7d23f34e0800000000000000
+      internalID: -1999823807505960709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_51
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d6ec270f999ee20800000000000000
+      internalID: 3380402253315599664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_52
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12651b454564aae20800000000000000
+      internalID: 3362577399797601825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_53
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ff6dac9d0bffef0800000000000000
+      internalID: -72144619557159165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_54
+      rect:
+        serializedVersion: 2
+        x: 3078
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842dff7d5abfbd860800000000000000
+      internalID: 7555909489556181576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Fail n Success_55
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796901aa0a6e0d94cbaa1c50a230c0ef
+      internalID: -804394691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca0a02193903e6f4b8ee021a18308561
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":54.0,"y":54.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Attack Fail n Success_0: -2917384643919257090
+      Attack Fail n Success_1: 3539277574983523386
+      Attack Fail n Success_10: -8093726049576152017
+      Attack Fail n Success_11: -3835911778073260311
+      Attack Fail n Success_12: 7311942265941345652
+      Attack Fail n Success_13: -2708226695484171898
+      Attack Fail n Success_14: -1482094904093629967
+      Attack Fail n Success_15: -8636237916403458269
+      Attack Fail n Success_16: 2698858196515686620
+      Attack Fail n Success_17: -5002115485973447854
+      Attack Fail n Success_18: -8310267277059054604
+      Attack Fail n Success_19: 6422839470855596233
+      Attack Fail n Success_2: 4024502531610774486
+      Attack Fail n Success_20: -2895982190010780079
+      Attack Fail n Success_21: 4740637939972875668
+      Attack Fail n Success_22: -5708634746669050267
+      Attack Fail n Success_23: 3365215091309904480
+      Attack Fail n Success_24: -7806258809231663037
+      Attack Fail n Success_25: 1289791593296304350
+      Attack Fail n Success_26: -4737080096588515758
+      Attack Fail n Success_27: 7700510923237503120
+      Attack Fail n Success_28: 902755856004529322
+      Attack Fail n Success_29: 9051411551062691664
+      Attack Fail n Success_3: -1318871454398899615
+      Attack Fail n Success_30: -1882516468534889395
+      Attack Fail n Success_31: 4761479817392709022
+      Attack Fail n Success_32: 4667723081214722753
+      Attack Fail n Success_33: 8470647020915546043
+      Attack Fail n Success_34: 842416050110375412
+      Attack Fail n Success_35: 6458694726171063722
+      Attack Fail n Success_36: -6741912388215847373
+      Attack Fail n Success_37: -1344685858359571672
+      Attack Fail n Success_38: 8127213570653512125
+      Attack Fail n Success_39: 7018294448816388390
+      Attack Fail n Success_4: 2929132297895590270
+      Attack Fail n Success_40: 1658852172894875317
+      Attack Fail n Success_41: 4814397994713211740
+      Attack Fail n Success_42: 3759386448127055182
+      Attack Fail n Success_43: -4718843181346635623
+      Attack Fail n Success_44: -6421215264784056758
+      Attack Fail n Success_45: -8933067328840494141
+      Attack Fail n Success_46: 4439303027533803011
+      Attack Fail n Success_47: -6072766832475799759
+      Attack Fail n Success_48: -4906803698522000844
+      Attack Fail n Success_49: 4362281719408549008
+      Attack Fail n Success_5: 6151878279124448935
+      Attack Fail n Success_50: -1999823807505960709
+      Attack Fail n Success_51: 3380402253315599664
+      Attack Fail n Success_52: 3362577399797601825
+      Attack Fail n Success_53: -72144619557159165
+      Attack Fail n Success_54: 7555909489556181576
+      Attack Fail n Success_55: -804394691
+      Attack Fail n Success_6: -7610285654740775759
+      Attack Fail n Success_7: -2676104314822171061
+      Attack Fail n Success_8: -7026151479030587123
+      Attack Fail n Success_9: -2611927360091232702
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

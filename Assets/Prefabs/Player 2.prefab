@@ -507,7 +507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3269536100099638183}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3df7f4e4855a36a4f83f56292d2c5f49, type: 3}
   m_Name: 
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5248922588372351282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ac09a3177ffeb43b5fe8a466a6847c, type: 3}
   m_Name: 
@@ -835,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4835128201861655656
 Transform:
   m_ObjectHideFlags: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8508705750308150165}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e37104fc4fd7124cb7ffc6b1bdb6e9b, type: 3}
   m_Name: 
@@ -1487,6 +1487,7 @@ MonoBehaviour:
   attackObject: {fileID: 5248922588372351282}
   cooldown: {fileID: 7085442542169086487}
   hurtDuration: 0.5
+  isHurt: 0
   playerNumber: 2
 --- !u!114 &4461650106744936348
 MonoBehaviour:

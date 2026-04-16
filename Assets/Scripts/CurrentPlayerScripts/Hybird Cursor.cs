@@ -7,7 +7,7 @@ using System.Collections;
 public class HybridCursor : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private Transform worldCursor;
+    [SerializeField] public Transform worldCursor;
     [SerializeField] private Camera mainCamera;
     
     [SerializeField] private float speedMultiplier = 1f;
@@ -22,7 +22,7 @@ public class HybridCursor : MonoBehaviour
     
     [SerializeField] private CoolDownScript cooldown;
     
-    [SerializeField] private float hurtDuration = 0.5f;
+    [SerializeField] private float hurtDuration = 3f;
     
     private bool onBeatTarget;
     private Rigidbody2D stickBody;
@@ -35,7 +35,7 @@ public class HybridCursor : MonoBehaviour
     private Vector2 screenPosition;
     private bool usingGamepad;
     private bool previousMouseState;
-    private bool isHurt = false;
+    public bool isHurt = false;
     
     public int playerNumber;
     
@@ -96,9 +96,9 @@ public class HybridCursor : MonoBehaviour
         //Creates a list to store results
         ContactFilter2D filter = new ContactFilter2D();
         //Includes trigger colliders
-        filter.useTriggers = true; 
+        filter.useTriggers = true;
         //Stores overlapping Colliders
-        Collider2D[] results = new Collider2D[10]; 
+        Collider2D[] results = new Collider2D[10];
         //Fills results with all colliders currently overlapping this collider
         int hitCount = myCollider.Overlap(filter, results);
 
@@ -120,7 +120,7 @@ public class HybridCursor : MonoBehaviour
                         ScoreManager.instance.P1AddPoints(-100);
                     }
                 }
-                
+
                 if (playerNumber == 2)
                 {
                     if (beat.isGreen)
@@ -137,13 +137,56 @@ public class HybridCursor : MonoBehaviour
             }
         }
     }
-    
+
+    private void TryAttack()
+    {
+        //Gets the Collider2D on this object
+        Collider2D myCollider = GetComponent<Collider2D>();
+
+        //Creates a list to store results
+        ContactFilter2D filter = new ContactFilter2D();
+        //Includes trigger colliders
+        filter.useTriggers = true;
+        //Stores overlapping Colliders
+        Collider2D[] results = new Collider2D[10];
+        //Fills results with all colliders currently overlapping this collider
+        int hitCount = myCollider.Overlap(filter, results);
+
+        for (int i = 0; i < hitCount; i++)
+        {
+            AttackTelegraphScript atck = results[i].GetComponent<AttackTelegraphScript>();
+            Debug.Log("Hit: " + results[i].name);
+            if (atck != null)
+            {
+                if (playerNumber == 1)
+                {
+                    if (atck.isReady)
+                    {
+                        atck.P1Success();
+                    }
+                }
+
+                if (playerNumber == 2)
+                {
+                    if (atck.isReady)
+                    {
+                        atck.P2Success();
+                    }
+                }
+            }
+        }
+    }
+
     //Using Player Input Behaviour "Send Messages" so the TryHitBeat method functions
     void OnHit()
     {
         TryHitBeat();
     }
-    
+
+    void OnAttack()
+    {
+        TryAttack();
+    }
     
     private void UpdateCursor()
     {
@@ -236,11 +279,11 @@ public class HybridCursor : MonoBehaviour
        if (cooldown.IsCoolDown) return;
        Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;
     
-       if (gp != null && gp.rightShoulder.wasPressedThisFrame)
+    /*   if (gp != null && gp.rightShoulder.wasPressedThisFrame)
        {
            StartCoroutine(ActivateAttack());
            cooldown.StartCoolDown();
-       }
+       } */
    }
    
    private IEnumerator ActivateAttack()

@@ -89,6 +89,11 @@ public class MultiplayerGameManager : MonoBehaviour
         DestroyAllBeats();
     }
 
+    private IEnumerator AttackTargetSpawn()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+    }
+    
     void DrawGame()
     {
         if (gameEnded) return;
