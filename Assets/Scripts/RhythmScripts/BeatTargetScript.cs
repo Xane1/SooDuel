@@ -112,7 +112,7 @@ public class BeatTargetScript : MonoBehaviour
             }
         }
         //Controller Input 
-        
+        /*
         if (Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame)
         {
             if (stickBody != null && circleCollider != null && stickBody.IsTouching(circleCollider))
@@ -141,6 +141,6 @@ public class BeatTargetScript : MonoBehaviour
                     ScoreManager.instance.P2AddPoints(-100);
                 }
             }
-        }
-    }
+        } */
+    } 
 }

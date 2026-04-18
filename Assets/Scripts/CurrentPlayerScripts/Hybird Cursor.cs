@@ -26,6 +26,7 @@ public class HybridCursor : MonoBehaviour
     
     private bool onBeatTarget;
     private Rigidbody2D stickBody;
+    private EdgeCollider2D opponentStick;
     
     private Vector2 smoothedStick;
     private Vector2 currentVelocity;
@@ -47,6 +48,11 @@ public class HybridCursor : MonoBehaviour
             ? playerInput.devices[0] as Gamepad 
             : null;
     }
+    void Start()
+    {
+        StartCoroutine(FindOpponent());
+    }
+    
     private void OnEnable()
     {
         if (virtualMouse == null || !virtualMouse.added) virtualMouse = (Mouse)InputSystem.AddDevice("VirtualMouse");
@@ -140,43 +146,32 @@ public class HybridCursor : MonoBehaviour
 
     private void TryAttack()
     {
-        //Gets the Collider2D on this object
-        Collider2D myCollider = GetComponent<Collider2D>();
+        Debug.Log($"Player {playerNumber} attacking | opponentStick={opponentStick}");
+        
+        AttackTelegraphScript[] targets = FindObjectsOfType<AttackTelegraphScript>();
 
-        //Creates a list to store results
-        ContactFilter2D filter = new ContactFilter2D();
-        //Includes trigger colliders
-        filter.useTriggers = true;
-        //Stores overlapping Colliders
-        Collider2D[] results = new Collider2D[10];
-        //Fills results with all colliders currently overlapping this collider
-        int hitCount = myCollider.Overlap(filter, results);
-
-        for (int i = 0; i < hitCount; i++)
+        foreach (AttackTelegraphScript atck in targets)
         {
-            AttackTelegraphScript atck = results[i].GetComponent<AttackTelegraphScript>();
-            Debug.Log("Hit: " + results[i].name);
-            if (atck != null)
-            {
-                if (playerNumber == 1)
-                {
-                    if (atck.isReady)
-                    {
-                        atck.P1Success();
-                    }
-                }
+            if (atck == null || !atck.isReady) continue;
+            
+            Debug.Log($"Player {playerNumber} | target={atck.name} | collider={atck.GetComponentInChildren<CircleCollider2D>()}");
 
-                if (playerNumber == 2)
-                {
-                    if (atck.isReady)
-                    {
-                        atck.P2Success();
-                    }
-                }
+            if (playerNumber == 1 && atck.player1Target)
+            {
+                if (opponentStick != null && opponentStick.IsTouching(atck.GetComponentInChildren<CircleCollider2D>()))
+                    atck.P2Success();
+                else
+                    atck.P1Success();
+            }
+            else if (playerNumber == 2 && atck.player2Target)
+            {
+                if (opponentStick != null && opponentStick.IsTouching(atck.GetComponentInChildren<CircleCollider2D>()))
+                    atck.P1Success();
+                else
+                    atck.P2Success();
             }
         }
     }
-
     //Using Player Input Behaviour "Send Messages" so the TryHitBeat method functions
     void OnHit()
     {
@@ -284,6 +279,24 @@ public class HybridCursor : MonoBehaviour
            StartCoroutine(ActivateAttack());
            cooldown.StartCoolDown();
        } */
+   }
+   
+   
+   //Waits for player 2 to spawn in before assigning the opponent sticks
+   private IEnumerator FindOpponent()
+   {
+       string opponentTag = playerNumber == 1 ? "Player2" : "Player1";
+    
+       GameObject opponent = null;
+    
+       while (opponent == null)
+       {
+           opponent = GameObject.FindGameObjectWithTag(opponentTag);
+           if (opponent == null)
+               yield return null; // keep waiting until opponent exists
+       }
+    
+       opponentStick = opponent.GetComponentInChildren<EdgeCollider2D>();
    }
    
    private IEnumerator ActivateAttack()
