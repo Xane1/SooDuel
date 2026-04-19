@@ -416,7 +416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &98154734
 Transform:
   m_ObjectHideFlags: 0
@@ -450,7 +450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &114388221
 Transform:
   m_ObjectHideFlags: 0
@@ -835,13 +835,13 @@ GameObject:
   - component: {fileID: 499848570}
   - component: {fileID: 499848569}
   - component: {fileID: 499848573}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Telegraph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &499848568
 Transform:
   m_ObjectHideFlags: 0
@@ -909,7 +909,7 @@ MonoBehaviour:
   fail: 0
   player1Target: 0
   player2Target: 1
-  circleCollider: {fileID: 0}
+  circleCollider: {fileID: 499848569}
 --- !u!212 &499848572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1003,6 +1003,7 @@ GameObject:
   - component: {fileID: 519420034}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1150,6 +1151,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4797635388e98e64ebf8cdfe2dc5e731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  player1Telegraph: {fileID: 1727116252}
+  player2Telegraph: {fileID: 499848567}
 --- !u!1 &544342988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,13 +3838,13 @@ GameObject:
   - component: {fileID: 1727116255}
   - component: {fileID: 1727116254}
   - component: {fileID: 1727116257}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Telegraph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1727116253
 Transform:
   m_ObjectHideFlags: 0
@@ -3861,7 +3876,7 @@ MonoBehaviour:
   fail: 0
   player1Target: 1
   player2Target: 0
-  circleCollider: {fileID: 0}
+  circleCollider: {fileID: 1727116257}
 --- !u!95 &1727116255
 Animator:
   serializedVersion: 7

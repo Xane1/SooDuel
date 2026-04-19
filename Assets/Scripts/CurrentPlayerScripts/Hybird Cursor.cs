@@ -24,6 +24,8 @@ public class HybridCursor : MonoBehaviour
     
     [SerializeField] private float hurtDuration = 3f;
     
+    public HybridCursor otherPlayer;
+    
     private bool onBeatTarget;
     private Rigidbody2D stickBody;
     private EdgeCollider2D opponentStick;
@@ -51,6 +53,7 @@ public class HybridCursor : MonoBehaviour
     void Start()
     {
         StartCoroutine(FindOpponent());
+        StartCoroutine(FindOtherPlayer());
     }
     
     private void OnEnable()
@@ -143,7 +146,7 @@ public class HybridCursor : MonoBehaviour
             }
         }
     }
-
+    //Attack stuff below
     private void TryAttack()
     {
         Debug.Log($"Player {playerNumber} attacking | opponentStick={opponentStick}");
@@ -159,19 +162,99 @@ public class HybridCursor : MonoBehaviour
             if (playerNumber == 1 && atck.player1Target)
             {
                 if (opponentStick != null && opponentStick.IsTouching(atck.GetComponentInChildren<CircleCollider2D>()))
+                {
                     atck.P2Success();
+                    otherPlayer.TriggerHurt();                }
                 else
+                {
                     atck.P1Success();
+                    StartCoroutine(PlayerHurt());
+
+                }
             }
             else if (playerNumber == 2 && atck.player2Target)
             {
                 if (opponentStick != null && opponentStick.IsTouching(atck.GetComponentInChildren<CircleCollider2D>()))
+                {
                     atck.P1Success();
+                    otherPlayer.TriggerHurt();                }
                 else
+                {
                     atck.P2Success();
+                    StartCoroutine(PlayerHurt());                }
             }
         }
     }
+    private void Update ()
+    {
+        if (attackObject == null) return;
+        if (isHurt) return;
+        if (cooldown.IsCoolDown) return;
+        Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;
+    
+        /*   if (gp != null && gp.rightShoulder.wasPressedThisFrame)
+           {
+               StartCoroutine(ActivateAttack());
+               cooldown.StartCoolDown();
+           } */
+    }
+   
+   
+    //Waits for player 2 to spawn in before assigning the opponent sticks
+    private IEnumerator FindOpponent()
+    {
+        string opponentTag = playerNumber == 1 ? "Player2" : "Player1";
+    
+        GameObject opponent = null;
+    
+        while (opponent == null)
+        {
+            opponent = GameObject.FindGameObjectWithTag(opponentTag);
+            if (opponent == null) 
+                yield return null;
+        }
+    
+        opponentStick = opponent.GetComponentInChildren<EdgeCollider2D>();
+    }
+   
+    private IEnumerator ActivateAttack()
+    {
+        attackObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        attackObject.SetActive(false);
+    }
+    public void TriggerHurt()
+    {
+        StartCoroutine(PlayerHurt());
+    }
+    private IEnumerator PlayerHurt()
+    {
+        if (otherPlayer != null)
+        {
+            otherPlayer.enabled = false;
+            yield return new WaitForSeconds(hurtDuration);
+            otherPlayer.enabled = true;
+        }
+    }
+    
+    private IEnumerator FindOtherPlayer()
+    {
+        while (otherPlayer == null)
+        {
+            foreach (HybridCursor script in FindObjectsByType<HybridCursor>(FindObjectsSortMode.None))
+            {
+                if (script != this)
+                {
+                    otherPlayer = script;
+                    break;
+                }
+            }
+        
+            if (otherPlayer == null)
+                yield return new WaitForSeconds(0.5f);
+        }
+    }
+
     //Using Player Input Behaviour "Send Messages" so the TryHitBeat method functions
     void OnHit()
     {
@@ -265,57 +348,7 @@ public class HybridCursor : MonoBehaviour
         Gizmos.DrawWireSphere(playerTransform.position, cursorRadius);
         Gizmos.DrawSphere(worldCursor.position, 0.5f);
     } 
-
-   //Attack stuff below
-   private void Update ()
-   {
-       if (attackObject == null) return;
-       if (isHurt) return;
-       if (cooldown.IsCoolDown) return;
-       Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;
-    
-    /*   if (gp != null && gp.rightShoulder.wasPressedThisFrame)
-       {
-           StartCoroutine(ActivateAttack());
-           cooldown.StartCoolDown();
-       } */
-   }
    
-   
-   //Waits for player 2 to spawn in before assigning the opponent sticks
-   private IEnumerator FindOpponent()
-   {
-       string opponentTag = playerNumber == 1 ? "Player2" : "Player1";
-    
-       GameObject opponent = null;
-    
-       while (opponent == null)
-       {
-           opponent = GameObject.FindGameObjectWithTag(opponentTag);
-           if (opponent == null)
-               yield return null; // keep waiting until opponent exists
-       }
-    
-       opponentStick = opponent.GetComponentInChildren<EdgeCollider2D>();
-   }
-   
-   private IEnumerator ActivateAttack()
-   {
-       attackObject.SetActive(true);
-       yield return new WaitForSeconds(2f);
-       attackObject.SetActive(false);
-   }
-   public void TriggerHurt()
-   {
-       StartCoroutine(PlayerHurt());
-   }
-   private IEnumerator PlayerHurt()
-   {
-       this.enabled = false;
-       yield return new WaitForSeconds(hurtDuration);
-       this.enabled = true;
-   }
-
    //Called in UpdateCursor so mouse cursor is usable
     private void UpdateRealMouseCursor()
     {

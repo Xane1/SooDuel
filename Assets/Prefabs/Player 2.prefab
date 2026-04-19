@@ -1486,7 +1486,8 @@ MonoBehaviour:
   cursorRadius: 4
   attackObject: {fileID: 5248922588372351282}
   cooldown: {fileID: 7085442542169086487}
-  hurtDuration: 0.5
+  hurtDuration: 3
+  otherPlayer: {fileID: 0}
   isHurt: 0
   playerNumber: 2
 --- !u!114 &4461650106744936348

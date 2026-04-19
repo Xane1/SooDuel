@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class AttackTelegraphScript : MonoBehaviour
 {
@@ -42,7 +43,7 @@ public class AttackTelegraphScript : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void P1Success()
+    public bool P1Success()
     {
         isReady = false;
         Transform sibling = transform.parent.Find("P1Success");
@@ -50,36 +51,23 @@ public class AttackTelegraphScript : MonoBehaviour
         sibling.gameObject.SetActive(true);
         gameObject.SetActive(false);
 
+        return (true);
     }
 
-    public void P2Success()
+    public bool P2Success()
     {
         isReady = false;
+        
         Transform sibling = transform.parent.Find("P2Success");
 
         sibling.gameObject.SetActive(true);
         gameObject.SetActive(false);
+        return (true);
     }
 
     void Update()
     {
-        /* if (!isReady || circleCollider == null) return;
-
-         if (p1Gamepad != null && p1Gamepad.rightShoulder.wasPressedThisFrame)
-         {
-             if (!player1Target && p2StickBody != null && p2StickBody.IsTouching(circleCollider))
-             {
-                 P2Success();
-             }
-         }
-
-         if (p2Gamepad != null && p2Gamepad.rightShoulder.wasPressedThisFrame)
-         {
-             if (!player2Target && p1StickBody != null && p1StickBody.IsTouching(circleCollider))
-             {
-                 P1Success();
-             }
-         }
-     } */
+        
     }
+
 }

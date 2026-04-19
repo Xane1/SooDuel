@@ -1550,7 +1550,7 @@ MonoBehaviour:
   cursorRadius: 4
   attackObject: {fileID: 7672422127167522801}
   cooldown: {fileID: 502940439412270965}
-  hurtDuration: 0.5
+  hurtDuration: 3
   isHurt: 0
   playerNumber: 1
 --- !u!114 &80585460342753183
