@@ -15,7 +15,7 @@ public class BeatSpawnerScript : MonoBehaviour
   public float minDistance = 3f;  
   public int maxAttempts = 1000000;
 
-  private RhythmAudioScriptAlt conductor;
+  //private RhythmAudioScriptAlt conductor;
 
   void Update()
   {
