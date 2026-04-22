@@ -36,10 +36,13 @@ public class AttackTelegraphScript : MonoBehaviour
         isReady = true;
     }
 
+    public void TelegraphOver()
+    {
+        isReady = false;
+    }
+
     public void TelegraphStop()
     {
-        //  fail = true;
-        isReady = false;
         gameObject.SetActive(false);
     }
 

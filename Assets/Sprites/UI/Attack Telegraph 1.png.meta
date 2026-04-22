@@ -1,0 +1,1442 @@
+fileFormatVersion: 2
+guid: 91788a3080644964ead47542173ac29e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6692486307460188311
+    second: Attack Telegraph 1_0
+  - first:
+      213: -8979605292652350929
+    second: Attack Telegraph 1_1
+  - first:
+      213: -2246405163745157404
+    second: Attack Telegraph 1_2
+  - first:
+      213: 1460586689341400998
+    second: Attack Telegraph 1_3
+  - first:
+      213: 5478302554255422060
+    second: Attack Telegraph 1_4
+  - first:
+      213: 5233350349082320221
+    second: Attack Telegraph 1_5
+  - first:
+      213: 3456729349744755849
+    second: Attack Telegraph 1_6
+  - first:
+      213: 2247470055655454965
+    second: Attack Telegraph 1_7
+  - first:
+      213: -8684450628753118438
+    second: Attack Telegraph 1_8
+  - first:
+      213: 2336233435098894161
+    second: Attack Telegraph 1_9
+  - first:
+      213: -283641282751485759
+    second: Attack Telegraph 1_10
+  - first:
+      213: 2434074916577619854
+    second: Attack Telegraph 1_11
+  - first:
+      213: 1253106216985790196
+    second: Attack Telegraph 1_12
+  - first:
+      213: 4227797946426825859
+    second: Attack Telegraph 1_13
+  - first:
+      213: 1617369600609705900
+    second: Attack Telegraph 1_14
+  - first:
+      213: -6501590761882771895
+    second: Attack Telegraph 1_15
+  - first:
+      213: -7216010240935782875
+    second: Attack Telegraph 1_16
+  - first:
+      213: 2695039475908922474
+    second: Attack Telegraph 1_17
+  - first:
+      213: 3572756424629519223
+    second: Attack Telegraph 1_18
+  - first:
+      213: 1184076627467779448
+    second: Attack Telegraph 1_19
+  - first:
+      213: 6729727285018659693
+    second: Attack Telegraph 1_20
+  - first:
+      213: 576393087363815026
+    second: Attack Telegraph 1_21
+  - first:
+      213: 8901472623727797897
+    second: Attack Telegraph 1_22
+  - first:
+      213: -562869638784762081
+    second: Attack Telegraph 1_23
+  - first:
+      213: 1363832951674170618
+    second: Attack Telegraph 1_24
+  - first:
+      213: -783195537023111472
+    second: Attack Telegraph 1_25
+  - first:
+      213: -4245191178598900782
+    second: Attack Telegraph 1_26
+  - first:
+      213: -7164251262351266572
+    second: Attack Telegraph 1_27
+  - first:
+      213: -128132150906587026
+    second: Attack Telegraph 1_28
+  - first:
+      213: 676001029635956168
+    second: Attack Telegraph 1_29
+  - first:
+      213: -2177157591112282570
+    second: Attack Telegraph 1_30
+  - first:
+      213: 8066833081468008174
+    second: Attack Telegraph 1_31
+  - first:
+      213: -2266476042197132499
+    second: Attack Telegraph 1_32
+  - first:
+      213: -3867043769682945099
+    second: Attack Telegraph 1_33
+  - first:
+      213: -8508438172029074027
+    second: Attack Telegraph 1_34
+  - first:
+      213: 7728494988313334082
+    second: Attack Telegraph 1_35
+  - first:
+      213: -6502167348666672828
+    second: Attack Telegraph 1_36
+  - first:
+      213: -3116383622163623377
+    second: Attack Telegraph 1_37
+  - first:
+      213: -6118512550479095492
+    second: Attack Telegraph 1_38
+  - first:
+      213: 4449861911035648786
+    second: Attack Telegraph 1_39
+  - first:
+      213: -6793338491039533136
+    second: Attack Telegraph 1_40
+  - first:
+      213: -4378878720891253577
+    second: Attack Telegraph 1_41
+  - first:
+      213: -5997796992771958726
+    second: Attack Telegraph 1_42
+  - first:
+      213: 2331764280852211325
+    second: Attack Telegraph 1_43
+  - first:
+      213: 8302941884105874584
+    second: Attack Telegraph 1_44
+  - first:
+      213: -6336616778624335343
+    second: Attack Telegraph 1_45
+  - first:
+      213: -7467892381964349438
+    second: Attack Telegraph 1_46
+  - first:
+      213: 2534231980969677970
+    second: Attack Telegraph 1_47
+  - first:
+      213: -4049168747599300001
+    second: Attack Telegraph 1_48
+  - first:
+      213: 524272929408357313
+    second: Attack Telegraph 1_49
+  - first:
+      213: 1866218577618302285
+    second: Attack Telegraph 1_50
+  - first:
+      213: 1205908066196290796
+    second: Attack Telegraph 1_51
+  - first:
+      213: -8538311795631384593
+    second: Attack Telegraph 1_52
+  - first:
+      213: -4716891161482772701
+    second: Attack Telegraph 1_53
+  - first:
+      213: 3216461258229211885
+    second: Attack Telegraph 1_54
+  - first:
+      213: -1473533229986976856
+    second: Attack Telegraph 1_55
+  - first:
+      213: -5564340490172392110
+    second: Attack Telegraph 1_56
+  - first:
+      213: 8998413718220085428
+    second: Attack Telegraph 1_57
+  - first:
+      213: 1017250581949206849
+    second: Attack Telegraph 1_58
+  - first:
+      213: -3633936969963420305
+    second: Attack Telegraph 1_59
+  - first:
+      213: 7914306539411739538
+    second: Attack Telegraph 1_60
+  - first:
+      213: -4086854760222089
+    second: Attack Telegraph 1_61
+  - first:
+      213: -6585420603085137798
+    second: Attack Telegraph 1_62
+  - first:
+      213: 954372968074102457
+    second: Attack Telegraph 1_63
+  - first:
+      213: 7964066039419014928
+    second: Attack Telegraph 1_64
+  - first:
+      213: 6637237621378583388
+    second: Attack Telegraph 1_65
+  - first:
+      213: 1520254112069944291
+    second: Attack Telegraph 1_66
+  - first:
+      213: 8284810037718888706
+    second: Attack Telegraph 1_67
+  - first:
+      213: -1224333979013776272
+    second: Attack Telegraph 1_68
+  - first:
+      213: -5634542660616105385
+    second: Attack Telegraph 1_69
+  - first:
+      213: -5099163135918751503
+    second: Attack Telegraph 1_70
+  - first:
+      213: 2579055394667372893
+    second: Attack Telegraph 1_71
+  - first:
+      213: -6105299094038061782
+    second: Attack Telegraph 1_72
+  - first:
+      213: 4972618661551996437
+    second: Attack Telegraph 1_73
+  - first:
+      213: 5376381194783573742
+    second: Attack Telegraph 1_74
+  - first:
+      213: -8743655534570149475
+    second: Attack Telegraph 1_75
+  - first:
+      213: -4550600289093575853
+    second: Attack Telegraph 1_76
+  - first:
+      213: 5897735097341830509
+    second: Attack Telegraph 1_77
+  - first:
+      213: -3065412933393463730
+    second: Attack Telegraph 1_78
+  - first:
+      213: 2891967954499404944
+    second: Attack Telegraph 1_79
+  - first:
+      213: -6380598854196585261
+    second: Attack Telegraph 1_80
+  - first:
+      213: -4647224697507313770
+    second: Attack Telegraph 1_81
+  - first:
+      213: -6880125213281941681
+    second: Attack Telegraph 1_82
+  - first:
+      213: 6438196915768796531
+    second: Attack Telegraph 1_83
+  - first:
+      213: 7638401522781837904
+    second: Attack Telegraph 1_84
+  - first:
+      213: -2514073992797472123
+    second: Attack Telegraph 1_85
+  - first:
+      213: 1292049054144206109
+    second: Attack Telegraph 1_86
+  - first:
+      213: 6390712943197311817
+    second: Attack Telegraph 1_87
+  - first:
+      213: -203842833952973978
+    second: Attack Telegraph 1_88
+  - first:
+      213: -6107361709002615717
+    second: Attack Telegraph 1_89
+  - first:
+      213: 4694935456308429211
+    second: Attack Telegraph 1_90
+  - first:
+      213: -4325656063045209072
+    second: Attack Telegraph 1_91
+  - first:
+      213: 4444065932119523070
+    second: Attack Telegraph 1_92
+  - first:
+      213: -691610838531349268
+    second: Attack Telegraph 1_93
+  - first:
+      213: 2754218551532312021
+    second: Attack Telegraph 1_94
+  - first:
+      213: 96858374190755250
+    second: Attack Telegraph 1_95
+  - first:
+      213: 4746958633859802259
+    second: Attack Telegraph 1_96
+  - first:
+      213: -1569063036141591789
+    second: Attack Telegraph 1_97
+  - first:
+      213: 3187039705923283797
+    second: Attack Telegraph 1_98
+  - first:
+      213: 2404235130513002261
+    second: Attack Telegraph 1_99
+  - first:
+      213: -5260143939804556328
+    second: Attack Telegraph 1_100
+  - first:
+      213: -4928542958206503662
+    second: Attack Telegraph 1_101
+  - first:
+      213: 4580609264967801574
+    second: Attack Telegraph 1_102
+  - first:
+      213: -2414593180771169075
+    second: Attack Telegraph 1_103
+  - first:
+      213: -7678806529533089297
+    second: Attack Telegraph 1_104
+  - first:
+      213: 8484612926247524124
+    second: Attack Telegraph 1_105
+  - first:
+      213: -7734936305804415185
+    second: Attack Telegraph 1_106
+  - first:
+      213: -1709100526965757401
+    second: Attack Telegraph 1_107
+  - first:
+      213: -3634264832707694850
+    second: Attack Telegraph 1_108
+  - first:
+      213: 8367012761151616722
+    second: Attack Telegraph 1_109
+  - first:
+      213: 2564369544578162379
+    second: Attack Telegraph 1_110
+  - first:
+      213: -6713776629713173736
+    second: Attack Telegraph 1_111
+  - first:
+      213: -2512396355785462157
+    second: Attack Telegraph 1_112
+  - first:
+      213: -5019482521178651147
+    second: Attack Telegraph 1_113
+  - first:
+      213: 6816497866318270972
+    second: Attack Telegraph 1_114
+  - first:
+      213: -2316786305323475481
+    second: Attack Telegraph 1_115
+  - first:
+      213: -5301680651007119560
+    second: Attack Telegraph 1_116
+  - first:
+      213: -8139651876123725513
+    second: Attack Telegraph 1_117
+  - first:
+      213: -8794948395071140553
+    second: Attack Telegraph 1_118
+  - first:
+      213: 2482525544245358612
+    second: Attack Telegraph 1_119
+  - first:
+      213: 2600502955112889895
+    second: Attack Telegraph 1_120
+  - first:
+      213: -1999903172433988769
+    second: Attack Telegraph 1_121
+  - first:
+      213: -384953741027391091
+    second: Attack Telegraph 1_122
+  - first:
+      213: -8934612469064500766
+    second: Attack Telegraph 1_123
+  - first:
+      213: 5633568151179498853
+    second: Attack Telegraph 1_124
+  - first:
+      213: -8019077516975390153
+    second: Attack Telegraph 1_125
+  - first:
+      213: 2794048227126110754
+    second: Attack Telegraph 1_126
+  - first:
+      213: -8431426814879713590
+    second: Attack Telegraph 1_127
+  - first:
+      213: -620651307644719468
+    second: Attack Telegraph 1_128
+  - first:
+      213: -6057297805922320462
+    second: Attack Telegraph 1_129
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack Telegraph 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798845c96dc70ec50800000000000000
+      internalID: 6692486307460188311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f223d34ff88026380800000000000000
+      internalID: -8979605292652350929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eedd51d76a23d0e0800000000000000
+      internalID: -2246405163745157404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7abddfadb054410800000000000000
+      internalID: 1460586689341400998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c627286d527d60c40800000000000000
+      internalID: 5478302554255422060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dd73e3a6890a840800000000000000
+      internalID: 5233350349082320221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98404307705c8ff20800000000000000
+      internalID: 3456729349744755849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_7
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8bba6ab1e903f10800000000000000
+      internalID: 2247470055655454965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ba0c35a22aa7780800000000000000
+      internalID: -8684450628753118438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fc57b6ee7fb6020800000000000000
+      internalID: 2336233435098894161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_10
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c826f191cd401cf0800000000000000
+      internalID: -283641282751485759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_11
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f2c478d3297c120800000000000000
+      internalID: 2434074916577619854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_12
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f68541177de36110800000000000000
+      internalID: 1253106216985790196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_13
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c95ea15d72caa30800000000000000
+      internalID: 4227797946426825859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_14
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf5bd2251d027610800000000000000
+      internalID: 1617369600609705900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_15
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e140326a5b5c5a0800000000000000
+      internalID: -6501590761882771895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_16
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526117dfae49bdb90800000000000000
+      internalID: -7216010240935782875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_17
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cc439df14b66520800000000000000
+      internalID: 2695039475908922474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_18
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7738907f90bf49130800000000000000
+      internalID: 3572756424629519223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_19
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d3f0f4b6fae6010800000000000000
+      internalID: 1184076627467779448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_20
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b8ac26f4bc46d50800000000000000
+      internalID: 6729727285018659693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_21
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2769f478572cff700800000000000000
+      internalID: 576393087363815026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_22
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986e8237032688b70800000000000000
+      internalID: 8901472623727797897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_23
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fb165bb094038f0800000000000000
+      internalID: -562869638784762081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_24
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afce289f7de4de210800000000000000
+      internalID: 1363832951674170618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_25
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dee0120fc78125f0800000000000000
+      internalID: -783195537023111472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_26
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db9df37d1d0615c0800000000000000
+      internalID: -4245191178598900782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_27
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fca8e94f67739c90800000000000000
+      internalID: -7164251262351266572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_28
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68f7e4dc78c83ef0800000000000000
+      internalID: -128132150906587026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_29
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cddf37da53a16900800000000000000
+      internalID: 676001029635956168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_30
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e05b9b4be29c1e0800000000000000
+      internalID: -2177157591112282570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_31
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6354b92f523ff60800000000000000
+      internalID: 8066833081468008174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_32
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b18e44c0cdb80e0800000000000000
+      internalID: -2266476042197132499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_33
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb19211e20855ac0800000000000000
+      internalID: -3867043769682945099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_34
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59545daef84fbe980800000000000000
+      internalID: -8508438172029074027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_35
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2419dca9e31214b60800000000000000
+      internalID: 7728494988313334082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_36
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44954901f39a3c5a0800000000000000
+      internalID: -6502167348666672828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_37
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2297116b9160c4d0800000000000000
+      internalID: -3116383622163623377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_38
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c399ceaa04da61ba0800000000000000
+      internalID: -6118512550479095492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Telegraph 1_39
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b12dae4d511cd30800000000000000
+      internalID: 4449861911035648786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d9c4efba87c314546a0669fb02dec500
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":54.0,"y":54.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Attack Telegraph 1_0: 6692486307460188311
+      Attack Telegraph 1_1: -8979605292652350929
+      Attack Telegraph 1_10: -283641282751485759
+      Attack Telegraph 1_11: 2434074916577619854
+      Attack Telegraph 1_12: 1253106216985790196
+      Attack Telegraph 1_13: 4227797946426825859
+      Attack Telegraph 1_14: 1617369600609705900
+      Attack Telegraph 1_15: -6501590761882771895
+      Attack Telegraph 1_16: -7216010240935782875
+      Attack Telegraph 1_17: 2695039475908922474
+      Attack Telegraph 1_18: 3572756424629519223
+      Attack Telegraph 1_19: 1184076627467779448
+      Attack Telegraph 1_2: -2246405163745157404
+      Attack Telegraph 1_20: 6729727285018659693
+      Attack Telegraph 1_21: 576393087363815026
+      Attack Telegraph 1_22: 8901472623727797897
+      Attack Telegraph 1_23: -562869638784762081
+      Attack Telegraph 1_24: 1363832951674170618
+      Attack Telegraph 1_25: -783195537023111472
+      Attack Telegraph 1_26: -4245191178598900782
+      Attack Telegraph 1_27: -7164251262351266572
+      Attack Telegraph 1_28: -128132150906587026
+      Attack Telegraph 1_29: 676001029635956168
+      Attack Telegraph 1_3: 1460586689341400998
+      Attack Telegraph 1_30: -2177157591112282570
+      Attack Telegraph 1_31: 8066833081468008174
+      Attack Telegraph 1_32: -2266476042197132499
+      Attack Telegraph 1_33: -3867043769682945099
+      Attack Telegraph 1_34: -8508438172029074027
+      Attack Telegraph 1_35: 7728494988313334082
+      Attack Telegraph 1_36: -6502167348666672828
+      Attack Telegraph 1_37: -3116383622163623377
+      Attack Telegraph 1_38: -6118512550479095492
+      Attack Telegraph 1_39: 4449861911035648786
+      Attack Telegraph 1_4: 5478302554255422060
+      Attack Telegraph 1_5: 5233350349082320221
+      Attack Telegraph 1_6: 3456729349744755849
+      Attack Telegraph 1_7: 2247470055655454965
+      Attack Telegraph 1_8: -8684450628753118438
+      Attack Telegraph 1_9: 2336233435098894161
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

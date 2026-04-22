@@ -26,7 +26,7 @@ public class BeatTargetScript : MonoBehaviour
     public void BeatReady()
     {
         isGreen = true;
-        circleCollider.radius = 0.07f;
+        circleCollider.radius = 0.3f;
     }
     
     public void BeatFail()

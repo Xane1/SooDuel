@@ -1,0 +1,1590 @@
+fileFormatVersion: 2
+guid: fe9ea29f0832c7a428e76ea408ce5dc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8102150146282501085
+    second: Beat Target V2_0
+  - first:
+      213: 3354242157275071170
+    second: Beat Target V2_1
+  - first:
+      213: -6706043116742922206
+    second: Beat Target V2_2
+  - first:
+      213: 3401193930271073147
+    second: Beat Target V2_3
+  - first:
+      213: 4257030322124889727
+    second: Beat Target V2_4
+  - first:
+      213: -6599342556802999186
+    second: Beat Target V2_5
+  - first:
+      213: 2981063475330354111
+    second: Beat Target V2_6
+  - first:
+      213: -431928526760797760
+    second: Beat Target V2_7
+  - first:
+      213: -2112442461757838305
+    second: Beat Target V2_8
+  - first:
+      213: 294079030674223743
+    second: Beat Target V2_9
+  - first:
+      213: -7793203250376522645
+    second: Beat Target V2_10
+  - first:
+      213: 3538420525119713554
+    second: Beat Target V2_11
+  - first:
+      213: 3228999592047927325
+    second: Beat Target V2_12
+  - first:
+      213: 6150933445191364832
+    second: Beat Target V2_13
+  - first:
+      213: 6156361389306480956
+    second: Beat Target V2_14
+  - first:
+      213: 4691666993069349668
+    second: Beat Target V2_15
+  - first:
+      213: 8204380821753019905
+    second: Beat Target V2_16
+  - first:
+      213: 6982794506094534471
+    second: Beat Target V2_17
+  - first:
+      213: -1955440178551360690
+    second: Beat Target V2_18
+  - first:
+      213: -2264795566235754297
+    second: Beat Target V2_19
+  - first:
+      213: -5838712316264918233
+    second: Beat Target V2_20
+  - first:
+      213: -2587627265861101774
+    second: Beat Target V2_21
+  - first:
+      213: -7409481245937530977
+    second: Beat Target V2_22
+  - first:
+      213: 1582273896664396997
+    second: Beat Target V2_23
+  - first:
+      213: -7846553594807864097
+    second: Beat Target V2_24
+  - first:
+      213: -626124303189980005
+    second: Beat Target V2_25
+  - first:
+      213: -1184784207469242722
+    second: Beat Target V2_26
+  - first:
+      213: 2974586889226726900
+    second: Beat Target V2_27
+  - first:
+      213: -4951112409282168666
+    second: Beat Target V2_28
+  - first:
+      213: -3493046798795040417
+    second: Beat Target V2_29
+  - first:
+      213: 839015786931113754
+    second: Beat Target V2_30
+  - first:
+      213: 7891087586168601042
+    second: Beat Target V2_31
+  - first:
+      213: 2798399194709772760
+    second: Beat Target V2_32
+  - first:
+      213: -8667766086601432693
+    second: Beat Target V2_33
+  - first:
+      213: 2643885565858772917
+    second: Beat Target V2_34
+  - first:
+      213: 2298436022291222015
+    second: Beat Target V2_35
+  - first:
+      213: 8924786213386958695
+    second: Beat Target V2_36
+  - first:
+      213: -4943369865259517372
+    second: Beat Target V2_37
+  - first:
+      213: -1879146814238460748
+    second: Beat Target V2_38
+  - first:
+      213: -2062763681955907582
+    second: Beat Target V2_39
+  - first:
+      213: -2785183186762158738
+    second: Beat Target V2_40
+  - first:
+      213: -595105232025768591
+    second: Beat Target V2_41
+  - first:
+      213: 8407339678985669335
+    second: Beat Target V2_42
+  - first:
+      213: 3550571933415859516
+    second: Beat Target V2_43
+  - first:
+      213: 8295377971779947176
+    second: Beat Target V2_44
+  - first:
+      213: -3586665620922280465
+    second: Beat Target V2_45
+  - first:
+      213: -2417141941595923970
+    second: Beat Target V2_46
+  - first:
+      213: 3712862007569516875
+    second: Beat Target V2_47
+  - first:
+      213: -5930275331667487325
+    second: Beat Target V2_48
+  - first:
+      213: -7877126020323854281
+    second: Beat Target V2_49
+  - first:
+      213: 4002644807700193844
+    second: Beat Target V2_50
+  - first:
+      213: -7628218828567001460
+    second: Beat Target V2_51
+  - first:
+      213: -581066349333774241
+    second: Beat Target V2_52
+  - first:
+      213: 1268125864946598444
+    second: Beat Target V2_53
+  - first:
+      213: -1683580899132718446
+    second: Beat Target V2_54
+  - first:
+      213: 4767981895893980917
+    second: Beat Target V2_55
+  - first:
+      213: -6927703264615729780
+    second: Beat Target V2_56
+  - first:
+      213: 2908970276131624864
+    second: Beat Target V2_57
+  - first:
+      213: -5379791184377032012
+    second: Beat Target V2_58
+  - first:
+      213: -7885655692535479162
+    second: Beat Target V2_59
+  - first:
+      213: 8387320786447892952
+    second: Beat Target V2_60
+  - first:
+      213: 5585209993690885459
+    second: Beat Target V2_61
+  - first:
+      213: 5446343405063063539
+    second: Beat Target V2_62
+  - first:
+      213: 7294843507027800245
+    second: Beat Target V2_63
+  - first:
+      213: 9040864909451443868
+    second: Beat Target V2_64
+  - first:
+      213: 734294945924687205
+    second: Beat Target V2_65
+  - first:
+      213: 450746045529291015
+    second: Beat Target V2_66
+  - first:
+      213: -2308691276382888084
+    second: Beat Target V2_67
+  - first:
+      213: -3802229574780452012
+    second: Beat Target V2_68
+  - first:
+      213: -1841686919070326250
+    second: Beat Target V2_69
+  - first:
+      213: 5622179993550736974
+    second: Beat Target V2_70
+  - first:
+      213: -5627592741226378728
+    second: Beat Target V2_71
+  - first:
+      213: 792888650659064627
+    second: Beat Target V2_72
+  - first:
+      213: 79239809893651593
+    second: Beat Target V2_73
+  - first:
+      213: 1130330211698401182
+    second: Beat Target V2_74
+  - first:
+      213: -4236386021896164350
+    second: Beat Target V2_75
+  - first:
+      213: 1213683000620746281
+    second: Beat Target V2_76
+  - first:
+      213: -2118549933519137175
+    second: Beat Target V2_77
+  - first:
+      213: 4062987487789141388
+    second: Beat Target V2_78
+  - first:
+      213: 6738805806343549599
+    second: Beat Target V2_79
+  - first:
+      213: 1088121120199171153
+    second: Beat Target V2_80
+  - first:
+      213: -5382730341625792059
+    second: Beat Target V2_81
+  - first:
+      213: -164118721289295808
+    second: Beat Target V2_82
+  - first:
+      213: -3682921904928770790
+    second: Beat Target V2_83
+  - first:
+      213: 6002834535569680814
+    second: Beat Target V2_84
+  - first:
+      213: -7255777713188781065
+    second: Beat Target V2_85
+  - first:
+      213: -3380006022721229746
+    second: Beat Target V2_86
+  - first:
+      213: -3313001597966538047
+    second: Beat Target V2_87
+  - first:
+      213: 2647217175148258050
+    second: Beat Target V2_88
+  - first:
+      213: -4063966146872114568
+    second: Beat Target V2_89
+  - first:
+      213: -2248410303456420048
+    second: Beat Target V2_90
+  - first:
+      213: 8624977239847273531
+    second: Beat Target V2_91
+  - first:
+      213: -3734089687772680039
+    second: Beat Target V2_92
+  - first:
+      213: 7742646389245408740
+    second: Beat Target V2_93
+  - first:
+      213: -6284210920960670704
+    second: Beat Target V2_94
+  - first:
+      213: 221141096269089267
+    second: Beat Target V2_95
+  - first:
+      213: 6228106674341226422
+    second: Beat Target V2_96
+  - first:
+      213: 7614517573146963542
+    second: Beat Target V2_97
+  - first:
+      213: 7341078508680754366
+    second: Beat Target V2_98
+  - first:
+      213: -1049525353824590811
+    second: Beat Target V2_99
+  - first:
+      213: 8314016699058475530
+    second: Beat Target V2_100
+  - first:
+      213: 914266400806731288
+    second: Beat Target V2_101
+  - first:
+      213: -4008575904496720359
+    second: Beat Target V2_102
+  - first:
+      213: -4309054101189898994
+    second: Beat Target V2_103
+  - first:
+      213: -5374989663944495330
+    second: Beat Target V2_104
+  - first:
+      213: -5239822265451959241
+    second: Beat Target V2_105
+  - first:
+      213: 5384267439578248203
+    second: Beat Target V2_106
+  - first:
+      213: 3310362417573392744
+    second: Beat Target V2_107
+  - first:
+      213: -378911451364251519
+    second: Beat Target V2_108
+  - first:
+      213: 2037752390228915433
+    second: Beat Target V2_109
+  - first:
+      213: -4945670819817663858
+    second: Beat Target V2_110
+  - first:
+      213: 7531825239930417641
+    second: Beat Target V2_111
+  - first:
+      213: 3663958123688107150
+    second: Beat Target V2_112
+  - first:
+      213: -906198434943810545
+    second: Beat Target V2_113
+  - first:
+      213: -3200152695966566288
+    second: Beat Target V2_114
+  - first:
+      213: 3954926053540494795
+    second: Beat Target V2_115
+  - first:
+      213: -3033864670119752534
+    second: Beat Target V2_116
+  - first:
+      213: 3505729120741828348
+    second: Beat Target V2_117
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beat Target V2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd33c0a81ae907070800000000000000
+      internalID: 8102150146282501085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c245037879ac8e20800000000000000
+      internalID: 3354242157275071170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220b512c0595fe2a0800000000000000
+      internalID: -6706043116742922206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73a50afbd7733f20800000000000000
+      internalID: 3401193930271073147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e1254f582041b30800000000000000
+      internalID: 4257030322124889727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c93aec8ec6a64a0800000000000000
+      internalID: -6599342556802999186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb05fbbf6dde5920800000000000000
+      internalID: 2981063475330354111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9901a1b4b710af0800000000000000
+      internalID: -431928526760797760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_8
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ce872f5c81fa2e0800000000000000
+      internalID: -2112442461757838305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_9
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f727a3ff157c41400800000000000000
+      internalID: 294079030674223743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_10
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6443e61feaf8d390800000000000000
+      internalID: -7793203250376522645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_11
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21136b168befa1130800000000000000
+      internalID: 3538420525119713554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_12
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10e5ef5506bfcc20800000000000000
+      internalID: 3228999592047927325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_13
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e073bd11618c5550800000000000000
+      internalID: 6150933445191364832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_14
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c390b86d01acf6550800000000000000
+      internalID: 6156361389306480956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_15
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bd25ec5462c1140800000000000000
+      internalID: 4691666993069349668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_16
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ebd9283e0dbd170800000000000000
+      internalID: 8204380821753019905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_17
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f505b5b9ed7e060800000000000000
+      internalID: 6982794506094534471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_18
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e437be99481ecd4e0800000000000000
+      internalID: -1955440178551360690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_19
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c063a19e64d190e0800000000000000
+      internalID: -2264795566235754297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_20
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723d45b451ab8fea0800000000000000
+      internalID: -5838712316264918233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_21
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237db3726b6e61cd0800000000000000
+      internalID: -2587627265861101774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_22
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9789fd501c3c2990800000000000000
+      internalID: -7409481245937530977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_23
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4fd0cc9bd55f510800000000000000
+      internalID: 1582273896664396997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_24
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4b96e04117b1390800000000000000
+      internalID: -7846553594807864097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_25
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c4f1b734f8f47f0800000000000000
+      internalID: -626124303189980005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_26
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e969d426a0dce8fe0800000000000000
+      internalID: -1184784207469242722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_27
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fda4e5040bd74920800000000000000
+      internalID: 2974586889226726900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_28
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a835b1fe7d1a4bb0800000000000000
+      internalID: -4951112409282168666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_29
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5991068174368fc0800000000000000
+      internalID: -3493046798795040417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_30
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f49f4b968c4ab00800000000000000
+      internalID: 839015786931113754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_31
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9f211d956c28d60800000000000000
+      internalID: 7891087586168601042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_32
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d94a64bd39e5d620800000000000000
+      internalID: 2798399194709772760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_33
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81a1f30ba8e5b780800000000000000
+      internalID: -8667766086601432693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_34
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b77bcb0ae7f0b420800000000000000
+      internalID: 2643885565858772917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_35
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd41a7726fa5ef10800000000000000
+      internalID: 2298436022291222015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_36
+      rect:
+        serializedVersion: 2
+        x: 4212
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767bb3986c53bdb70800000000000000
+      internalID: 8924786213386958695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_37
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44af5d37c4f956bb0800000000000000
+      internalID: -4943369865259517372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_38
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b47288bdedebe5e0800000000000000
+      internalID: -1879146814238460748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_39
+      rect:
+        serializedVersion: 2
+        x: 4536
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208f0793c579f53e0800000000000000
+      internalID: -2062763681955907582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_40
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6da6aee5aa0959d0800000000000000
+      internalID: -2785183186762158738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_41
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17da029c1f2cdb7f0800000000000000
+      internalID: -595105232025768591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_42
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7daccffd4eedca470800000000000000
+      internalID: 8407339678985669335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_43
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3569b89c5a264130800000000000000
+      internalID: 3550571933415859516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_44
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa4b85805a1f1370800000000000000
+      internalID: 8295377971779947176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_45
+      rect:
+        serializedVersion: 2
+        x: 5292
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe552d8ee9a993ec0800000000000000
+      internalID: -3586665620922280465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_46
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef91a7fe536947ed0800000000000000
+      internalID: -2417141941595923970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target V2_47
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac1877eb953c404698274bf2cc21d8a
+      internalID: 541551639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7e14934d852d8aa4e884d413d73880a4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":108.0,"y":108.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Beat Target V2_0: 8102150146282501085
+      Beat Target V2_1: 3354242157275071170
+      Beat Target V2_10: -7793203250376522645
+      Beat Target V2_11: 3538420525119713554
+      Beat Target V2_12: 3228999592047927325
+      Beat Target V2_13: 6150933445191364832
+      Beat Target V2_14: 6156361389306480956
+      Beat Target V2_15: 4691666993069349668
+      Beat Target V2_16: 8204380821753019905
+      Beat Target V2_17: 6982794506094534471
+      Beat Target V2_18: -1955440178551360690
+      Beat Target V2_19: -2264795566235754297
+      Beat Target V2_2: -6706043116742922206
+      Beat Target V2_20: -5838712316264918233
+      Beat Target V2_21: -2587627265861101774
+      Beat Target V2_22: -7409481245937530977
+      Beat Target V2_23: 1582273896664396997
+      Beat Target V2_24: -7846553594807864097
+      Beat Target V2_25: -626124303189980005
+      Beat Target V2_26: -1184784207469242722
+      Beat Target V2_27: 2974586889226726900
+      Beat Target V2_28: -4951112409282168666
+      Beat Target V2_29: -3493046798795040417
+      Beat Target V2_3: 3401193930271073147
+      Beat Target V2_30: 839015786931113754
+      Beat Target V2_31: 7891087586168601042
+      Beat Target V2_32: 2798399194709772760
+      Beat Target V2_33: -8667766086601432693
+      Beat Target V2_34: 2643885565858772917
+      Beat Target V2_35: 2298436022291222015
+      Beat Target V2_36: 8924786213386958695
+      Beat Target V2_37: -4943369865259517372
+      Beat Target V2_38: -1879146814238460748
+      Beat Target V2_39: -2062763681955907582
+      Beat Target V2_4: 4257030322124889727
+      Beat Target V2_40: -2785183186762158738
+      Beat Target V2_41: -595105232025768591
+      Beat Target V2_42: 8407339678985669335
+      Beat Target V2_43: 3550571933415859516
+      Beat Target V2_44: 8295377971779947176
+      Beat Target V2_45: -3586665620922280465
+      Beat Target V2_46: -2417141941595923970
+      Beat Target V2_47: 541551639
+      Beat Target V2_5: -6599342556802999186
+      Beat Target V2_6: 2981063475330354111
+      Beat Target V2_7: -431928526760797760
+      Beat Target V2_8: -2112442461757838305
+      Beat Target V2_9: 294079030674223743
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

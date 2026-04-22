@@ -1,0 +1,1704 @@
+fileFormatVersion: 2
+guid: d8b69321deeb4eb458e8053a15dfae85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8796290141391115834
+    second: Beat Target Point Update_0
+  - first:
+      213: -2639183327566335356
+    second: Beat Target Point Update_1
+  - first:
+      213: -4248319373786051808
+    second: Beat Target Point Update_2
+  - first:
+      213: -1835415502739628612
+    second: Beat Target Point Update_3
+  - first:
+      213: 4562229738877614901
+    second: Beat Target Point Update_4
+  - first:
+      213: 1577971553274170449
+    second: Beat Target Point Update_5
+  - first:
+      213: -4297866306018041248
+    second: Beat Target Point Update_6
+  - first:
+      213: 5597632486160763653
+    second: Beat Target Point Update_7
+  - first:
+      213: 1999495961691423993
+    second: Beat Target Point Update_8
+  - first:
+      213: -6085840972978634550
+    second: Beat Target Point Update_9
+  - first:
+      213: 8253677516177499611
+    second: Beat Target Point Update_10
+  - first:
+      213: -6767056716149981464
+    second: Beat Target Point Update_11
+  - first:
+      213: -6443607451438168336
+    second: Beat Target Point Update_12
+  - first:
+      213: -2455695989312616053
+    second: Beat Target Point Update_13
+  - first:
+      213: -6232784783460946032
+    second: Beat Target Point Update_14
+  - first:
+      213: -2833144092925466636
+    second: Beat Target Point Update_15
+  - first:
+      213: -1805519857220635439
+    second: Beat Target Point Update_16
+  - first:
+      213: -3283396094299953471
+    second: Beat Target Point Update_17
+  - first:
+      213: 1048575320093822086
+    second: Beat Target Point Update_18
+  - first:
+      213: 540441194873043648
+    second: Beat Target Point Update_19
+  - first:
+      213: 2235938700819888566
+    second: Beat Target Point Update_20
+  - first:
+      213: -908059088447884069
+    second: Beat Target Point Update_21
+  - first:
+      213: -2043733531019848642
+    second: Beat Target Point Update_22
+  - first:
+      213: 3367053266098009382
+    second: Beat Target Point Update_23
+  - first:
+      213: 913143460576504211
+    second: Beat Target Point Update_24
+  - first:
+      213: 3060816736073385036
+    second: Beat Target Point Update_25
+  - first:
+      213: -4130428663055809153
+    second: Beat Target Point Update_26
+  - first:
+      213: 2580897172640247469
+    second: Beat Target Point Update_27
+  - first:
+      213: -6874096119394449354
+    second: Beat Target Point Update_28
+  - first:
+      213: -6333733858320662875
+    second: Beat Target Point Update_29
+  - first:
+      213: -6949972326555215648
+    second: Beat Target Point Update_30
+  - first:
+      213: -7853090247809870628
+    second: Beat Target Point Update_31
+  - first:
+      213: -2673035325824738452
+    second: Beat Target Point Update_32
+  - first:
+      213: 5997680090133792399
+    second: Beat Target Point Update_33
+  - first:
+      213: 4831088591263679379
+    second: Beat Target Point Update_34
+  - first:
+      213: 7992908970118991814
+    second: Beat Target Point Update_35
+  - first:
+      213: 6605169804586733467
+    second: Beat Target Point Update_36
+  - first:
+      213: -2358976530663666215
+    second: Beat Target Point Update_37
+  - first:
+      213: 7521497985616741402
+    second: Beat Target Point Update_38
+  - first:
+      213: -1024236618826508852
+    second: Beat Target Point Update_39
+  - first:
+      213: 2471959501293413216
+    second: Beat Target Point Update_40
+  - first:
+      213: -7583221758501828386
+    second: Beat Target Point Update_41
+  - first:
+      213: 1490888655170172479
+    second: Beat Target Point Update_42
+  - first:
+      213: -5128725637296514447
+    second: Beat Target Point Update_43
+  - first:
+      213: 6565661490290929943
+    second: Beat Target Point Update_44
+  - first:
+      213: 2448491401008101447
+    second: Beat Target Point Update_45
+  - first:
+      213: -8416408499774966702
+    second: Beat Target Point Update_46
+  - first:
+      213: 3379891205690574079
+    second: Beat Target Point Update_47
+  - first:
+      213: -1432096798039456788
+    second: Beat Target Point Update_48
+  - first:
+      213: -3132821117223955272
+    second: Beat Target Point Update_49
+  - first:
+      213: -2419806385442060955
+    second: Beat Target Point Update_50
+  - first:
+      213: 2215233661488372429
+    second: Beat Target Point Update_51
+  - first:
+      213: 8148554919183906798
+    second: Beat Target Point Update_52
+  - first:
+      213: -3501560085795011040
+    second: Beat Target Point Update_53
+  - first:
+      213: 3362176802095487506
+    second: Beat Target Point Update_54
+  - first:
+      213: -7073046644359433152
+    second: Beat Target Point Update_55
+  - first:
+      213: 4156353958833892408
+    second: Beat Target Point Update_56
+  - first:
+      213: -6599041296824727199
+    second: Beat Target Point Update_57
+  - first:
+      213: 2514828558400016314
+    second: Beat Target Point Update_58
+  - first:
+      213: -2807930394884181587
+    second: Beat Target Point Update_59
+  - first:
+      213: 7516492493153875268
+    second: Beat Target Point Update_60
+  - first:
+      213: -6707067653033442839
+    second: Beat Target Point Update_61
+  - first:
+      213: 5713839727469463776
+    second: Beat Target Point Update_62
+  - first:
+      213: 6040501658959707265
+    second: Beat Target Point Update_63
+  - first:
+      213: -6008042308763763764
+    second: Beat Target Point Update_64
+  - first:
+      213: 6691355796062057511
+    second: Beat Target Point Update_65
+  - first:
+      213: -4913284513806926925
+    second: Beat Target Point Update_66
+  - first:
+      213: 8263805313393814795
+    second: Beat Target Point Update_67
+  - first:
+      213: 1718697978955754505
+    second: Beat Target Point Update_68
+  - first:
+      213: -329212883507224416
+    second: Beat Target Point Update_69
+  - first:
+      213: 3094445763670147523
+    second: Beat Target Point Update_70
+  - first:
+      213: -3584864078142999142
+    second: Beat Target Point Update_71
+  - first:
+      213: 948220461502471607
+    second: Beat Target Point Update_72
+  - first:
+      213: -1903920269085933336
+    second: Beat Target Point Update_73
+  - first:
+      213: -3482343920096647417
+    second: Beat Target Point Update_74
+  - first:
+      213: -8134737687540568702
+    second: Beat Target Point Update_75
+  - first:
+      213: -162311296044408912
+    second: Beat Target Point Update_76
+  - first:
+      213: 2095685242250521061
+    second: Beat Target Point Update_77
+  - first:
+      213: -5628376727915339076
+    second: Beat Target Point Update_78
+  - first:
+      213: -1303474918908258444
+    second: Beat Target Point Update_79
+  - first:
+      213: -7537273714539373398
+    second: Beat Target Point Update_80
+  - first:
+      213: 7112415365826591181
+    second: Beat Target Point Update_81
+  - first:
+      213: 8226384837526128609
+    second: Beat Target Point Update_82
+  - first:
+      213: 8182123010739401689
+    second: Beat Target Point Update_83
+  - first:
+      213: -1536079682786796310
+    second: Beat Target Point Update_84
+  - first:
+      213: 8289533372913995473
+    second: Beat Target Point Update_85
+  - first:
+      213: 769164833156816076
+    second: Beat Target Point Update_86
+  - first:
+      213: 3817664248171346291
+    second: Beat Target Point Update_87
+  - first:
+      213: -7492587438627801338
+    second: Beat Target Point Update_88
+  - first:
+      213: 7207789966652621700
+    second: Beat Target Point Update_89
+  - first:
+      213: -2701050166114836059
+    second: Beat Target Point Update_90
+  - first:
+      213: 9044958877771400916
+    second: Beat Target Point Update_91
+  - first:
+      213: 1740318848704314853
+    second: Beat Target Point Update_92
+  - first:
+      213: 4382499706102421175
+    second: Beat Target Point Update_93
+  - first:
+      213: 6118350497883798072
+    second: Beat Target Point Update_94
+  - first:
+      213: 4019698042750867183
+    second: Beat Target Point Update_95
+  - first:
+      213: -8802437751460559994
+    second: Beat Target Point Update_96
+  - first:
+      213: 6268982282934238343
+    second: Beat Target Point Update_97
+  - first:
+      213: 1026437390433596673
+    second: Beat Target Point Update_98
+  - first:
+      213: -2392493485502656771
+    second: Beat Target Point Update_99
+  - first:
+      213: -5384469393837835852
+    second: Beat Target Point Update_100
+  - first:
+      213: 6209811428280274366
+    second: Beat Target Point Update_101
+  - first:
+      213: -659479396989721092
+    second: Beat Target Point Update_102
+  - first:
+      213: -6946145685256513771
+    second: Beat Target Point Update_103
+  - first:
+      213: 5770817958588064983
+    second: Beat Target Point Update_104
+  - first:
+      213: 7357181693944635618
+    second: Beat Target Point Update_105
+  - first:
+      213: -3741845616582394453
+    second: Beat Target Point Update_106
+  - first:
+      213: 3867373922034277388
+    second: Beat Target Point Update_107
+  - first:
+      213: 89531159388644625
+    second: Beat Target Point Update_108
+  - first:
+      213: -4088474334285751983
+    second: Beat Target Point Update_109
+  - first:
+      213: 6126917397666280080
+    second: Beat Target Point Update_110
+  - first:
+      213: -8360849489989597294
+    second: Beat Target Point Update_111
+  - first:
+      213: 1663559386232510909
+    second: Beat Target Point Update_112
+  - first:
+      213: -7112613132286215781
+    second: Beat Target Point Update_113
+  - first:
+      213: -6657350727541505776
+    second: Beat Target Point Update_114
+  - first:
+      213: -3072613379137947732
+    second: Beat Target Point Update_115
+  - first:
+      213: -4130986524223560987
+    second: Beat Target Point Update_116
+  - first:
+      213: 473866467738407183
+    second: Beat Target Point Update_117
+  - first:
+      213: -5805189529563181380
+    second: Beat Target Point Update_118
+  - first:
+      213: 992095054167868139
+    second: Beat Target Point Update_119
+  - first:
+      213: -7672929489510594756
+    second: Beat Target Point Update_120
+  - first:
+      213: -3436830608381129743
+    second: Beat Target Point Update_121
+  - first:
+      213: -1573371500895067185
+    second: Beat Target Point Update_122
+  - first:
+      213: 6637436687673677322
+    second: Beat Target Point Update_123
+  - first:
+      213: -7180128249692030431
+    second: Beat Target Point Update_124
+  - first:
+      213: 4752789497982161328
+    second: Beat Target Point Update_125
+  - first:
+      213: 3257860458378955073
+    second: Beat Target Point Update_126
+  - first:
+      213: -898523986813355056
+    second: Beat Target Point Update_127
+  - first:
+      213: -1177652294993181790
+    second: Beat Target Point Update_128
+  - first:
+      213: 1434946700511540815
+    second: Beat Target Point Update_129
+  - first:
+      213: 7834830155122571966
+    second: Beat Target Point Update_130
+  - first:
+      213: -2509885491722824626
+    second: Beat Target Point Update_131
+  - first:
+      213: 3836064069660844634
+    second: Beat Target Point Update_132
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beat Target Point Update_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9ac1d98bc4de580800000000000000
+      internalID: -8796290141391115834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482764f1fbcbf5bd0800000000000000
+      internalID: -2639183327566335356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b8211c900fa05c0800000000000000
+      internalID: -4248319373786051808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd95ff135b4786e0800000000000000
+      internalID: -1835415502739628612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53bf58996cb405f30800000000000000
+      internalID: 4562229738877614901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c049a64c416e510800000000000000
+      internalID: 1577971553274170449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062aca1ad59ea54c0800000000000000
+      internalID: -4297866306018041248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b8cc0b619cead40800000000000000
+      internalID: 5597632486160763653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_8
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4027ebbf2afbb10800000000000000
+      internalID: 1999495961691423993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_9
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0471611efba8ba0800000000000000
+      internalID: -6085840972978634550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_10
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5636a98f3fa8270800000000000000
+      internalID: 8253677516177499611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_11
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee75f225c59612a0800000000000000
+      internalID: -6767056716149981464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_12
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6c7f0a925b396a0800000000000000
+      internalID: -6443607451438168336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_13
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b898ba0328d9bedd0800000000000000
+      internalID: -2455695989312616053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_14
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fa95c1343b089a0800000000000000
+      internalID: -6232784783460946032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_15
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f76ea74576aea8d0800000000000000
+      internalID: -2833144092925466636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_16
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d43373814181f6e0800000000000000
+      internalID: -1805519857220635439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_17
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6a85ef5a80f62d0800000000000000
+      internalID: -3283396094299953471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_18
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c0f62b2b94d8e00800000000000000
+      internalID: 1048575320093822086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_19
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca35624768008700800000000000000
+      internalID: 540441194873043648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_20
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9fae1e666a70f10800000000000000
+      internalID: 2235938700819888566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_21
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4bff5f11de563f0800000000000000
+      internalID: -908059088447884069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_22
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34d1048e2333a3e0800000000000000
+      internalID: -2043733531019848642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_23
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62537992b1d2abe20800000000000000
+      internalID: 3367053266098009382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_24
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39922aca3232cac00800000000000000
+      internalID: 913143460576504211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_25
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c448934ca943a7a20800000000000000
+      internalID: 3060816736073385036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_26
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f758770d305cda6c0800000000000000
+      internalID: -4130428663055809153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_27
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae2809ed4031d320800000000000000
+      internalID: 2580897172640247469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_28
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6384a9bfffd4a90a0800000000000000
+      internalID: -6874096119394449354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_29
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aebee80d9e0a18a0800000000000000
+      internalID: -6333733858320662875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_30
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e891e4ddfcbc8f90800000000000000
+      internalID: -6949972326555215648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_31
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4553ee608340390800000000000000
+      internalID: -7853090247809870628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_32
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b5524988877ead0800000000000000
+      internalID: -2673035325824738452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_33
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f868bd0d34a0c3350800000000000000
+      internalID: 5997680090133792399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_34
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393c6b04a797b0340800000000000000
+      internalID: 4831088591263679379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_35
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfc9fd2c548cee60800000000000000
+      internalID: 7992908970118991814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_36
+      rect:
+        serializedVersion: 2
+        x: 4212
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f478b01f64aab50800000000000000
+      internalID: 6605169804586733467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_37
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd0f40085b334fd0800000000000000
+      internalID: -2358976530663666215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_38
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14808b319ab16860800000000000000
+      internalID: 7521497985616741402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_39
+      rect:
+        serializedVersion: 2
+        x: 4536
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc516e8c83e29c1f0800000000000000
+      internalID: -1024236618826508852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_40
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063eeb5c11a2e4220800000000000000
+      internalID: 2471959501293413216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_41
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed84c7ffcfbf2c690800000000000000
+      internalID: -7583221758501828386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_42
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36f3133553b0b410800000000000000
+      internalID: 1490888655170172479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_43
+      rect:
+        serializedVersion: 2
+        x: 4968
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a908eb43b13d8b0800000000000000
+      internalID: -5128725637296514447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_44
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711b04cc65aed1b50800000000000000
+      internalID: 6565661490290929943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_45
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748bfa0e4f9caf120800000000000000
+      internalID: 2448491401008101447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_46
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254b55ebf09e23b80800000000000000
+      internalID: -8416408499774966702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_47
+      rect:
+        serializedVersion: 2
+        x: 5508
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff447a6e429c7ee20800000000000000
+      internalID: 3379891205690574079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_48
+      rect:
+        serializedVersion: 2
+        x: 5616
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce342ecbc8b202ce0800000000000000
+      internalID: -1432096798039456788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_49
+      rect:
+        serializedVersion: 2
+        x: 5724
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b41603dacbf584d0800000000000000
+      internalID: -3132821117223955272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Target Point Update_50
+      rect:
+        serializedVersion: 2
+        x: 5832
+        y: 0
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5650182c9ee1b6ed0800000000000000
+      internalID: -2419806385442060955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 29f6b862949485046adfa78fe4322907
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":108.0,"y":108.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Beat Target Point Update_0: -8796290141391115834
+      Beat Target Point Update_1: -2639183327566335356
+      Beat Target Point Update_10: 8253677516177499611
+      Beat Target Point Update_11: -6767056716149981464
+      Beat Target Point Update_12: -6443607451438168336
+      Beat Target Point Update_13: -2455695989312616053
+      Beat Target Point Update_14: -6232784783460946032
+      Beat Target Point Update_15: -2833144092925466636
+      Beat Target Point Update_16: -1805519857220635439
+      Beat Target Point Update_17: -3283396094299953471
+      Beat Target Point Update_18: 1048575320093822086
+      Beat Target Point Update_19: 540441194873043648
+      Beat Target Point Update_2: -4248319373786051808
+      Beat Target Point Update_20: 2235938700819888566
+      Beat Target Point Update_21: -908059088447884069
+      Beat Target Point Update_22: -2043733531019848642
+      Beat Target Point Update_23: 3367053266098009382
+      Beat Target Point Update_24: 913143460576504211
+      Beat Target Point Update_25: 3060816736073385036
+      Beat Target Point Update_26: -4130428663055809153
+      Beat Target Point Update_27: 2580897172640247469
+      Beat Target Point Update_28: -6874096119394449354
+      Beat Target Point Update_29: -6333733858320662875
+      Beat Target Point Update_3: -1835415502739628612
+      Beat Target Point Update_30: -6949972326555215648
+      Beat Target Point Update_31: -7853090247809870628
+      Beat Target Point Update_32: -2673035325824738452
+      Beat Target Point Update_33: 5997680090133792399
+      Beat Target Point Update_34: 4831088591263679379
+      Beat Target Point Update_35: 7992908970118991814
+      Beat Target Point Update_36: 6605169804586733467
+      Beat Target Point Update_37: -2358976530663666215
+      Beat Target Point Update_38: 7521497985616741402
+      Beat Target Point Update_39: -1024236618826508852
+      Beat Target Point Update_4: 4562229738877614901
+      Beat Target Point Update_40: 2471959501293413216
+      Beat Target Point Update_41: -7583221758501828386
+      Beat Target Point Update_42: 1490888655170172479
+      Beat Target Point Update_43: -5128725637296514447
+      Beat Target Point Update_44: 6565661490290929943
+      Beat Target Point Update_45: 2448491401008101447
+      Beat Target Point Update_46: -8416408499774966702
+      Beat Target Point Update_47: 3379891205690574079
+      Beat Target Point Update_48: -1432096798039456788
+      Beat Target Point Update_49: -3132821117223955272
+      Beat Target Point Update_5: 1577971553274170449
+      Beat Target Point Update_50: -2419806385442060955
+      Beat Target Point Update_6: -4297866306018041248
+      Beat Target Point Update_7: 5597632486160763653
+      Beat Target Point Update_8: 1999495961691423993
+      Beat Target Point Update_9: -6085840972978634550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

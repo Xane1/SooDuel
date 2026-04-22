@@ -508,7 +508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7855170804220149527, guid: 267910cdc75e0d443b572147220aa63e, type: 3}
+  m_Sprite: {fileID: -231858569, guid: 267910cdc75e0d443b572147220aa63e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1422,12 +1422,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
   - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
-  secPerBeat: 0
-  songPosition: 0
-  songPositionInBeats: 0
-  dspSongTime: 0
-  firstBeatOffset: 0
-  endBeatOffset: 0
 --- !u!1 &562976147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
   beatTimestamps: []
+  attackTimestamps: []
   songPosition: 0
   firstBeatOffset: 0
   easyClips:
