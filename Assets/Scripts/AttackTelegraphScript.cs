@@ -54,6 +54,9 @@ public class AttackTelegraphScript : MonoBehaviour
         sibling.gameObject.SetActive(true);
         gameObject.SetActive(false);
 
+        RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.15f, p1Gamepad);
+        RumbleManager.instance.RumblePulse(0.8f, 0.8f, 0.15f, p2Gamepad);
+        
         return (true);
     }
 
@@ -65,6 +68,10 @@ public class AttackTelegraphScript : MonoBehaviour
 
         sibling.gameObject.SetActive(true);
         gameObject.SetActive(false);
+        
+        RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.15f, p2Gamepad);
+        RumbleManager.instance.RumblePulse(0.8f, 0.8f, 0.15f, p1Gamepad);
+        
         return (true);
     }
 

@@ -164,12 +164,12 @@ public class HybridCursor : MonoBehaviour
                 if (opponentStick != null && opponentStick.IsTouching(atck.GetComponentInChildren<CircleCollider2D>()))
                 {
                     atck.P2Success();
-                    otherPlayer.TriggerHurt();                }
+                    otherPlayer.TriggerHurt();
+                }
                 else
                 {
                     atck.P1Success();
                     StartCoroutine(PlayerHurt());
-
                 }
             }
             else if (playerNumber == 2 && atck.player2Target)
@@ -177,11 +177,13 @@ public class HybridCursor : MonoBehaviour
                 if (opponentStick != null && opponentStick.IsTouching(atck.GetComponentInChildren<CircleCollider2D>()))
                 {
                     atck.P1Success();
-                    otherPlayer.TriggerHurt();                }
+                    otherPlayer.TriggerHurt();
+                }
                 else
                 {
                     atck.P2Success();
-                    StartCoroutine(PlayerHurt());                }
+                    StartCoroutine(PlayerHurt());
+                }
             }
         }
     }
