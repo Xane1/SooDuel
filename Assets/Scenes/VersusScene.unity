@@ -1134,7 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   GameOverScreen: {fileID: 1972298939}
-  RhythmAudioScriptAlt: {fileID: 2102850987}
+  RhythmAudioScriptVersus: {fileID: 2102850988}
   MusicPlayer: {fileID: 1795742785}
   MusicBeatPlayer: {fileID: 2102850982}
   BeatSpawner: {fileID: 1559238284}
@@ -5416,8 +5416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102850985}
-  - component: {fileID: 2102850987}
-  - component: {fileID: 2102850983}
+  - component: {fileID: 2102850988}
   - component: {fileID: 2102850986}
   m_Layer: 0
   m_Name: MusicBeatPlayer
@@ -5426,32 +5425,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &2102850983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102850982}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 954a407ddb79df2469961cdb56e06708, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  songBPM: 102
-  secPerBeat: 0
-  songPosition: 0
-  songPositionInBeats: 0
-  dspSongTime: 0
-  firstBeatOffset: 6.1
-  endBeatOffset: 7
-  easyClips:
-  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
-  normalClips:
-  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
-  hardClips:
-  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
-  musicSource: {fileID: 2102850986}
 --- !u!4 &2102850985
 Transform:
   m_ObjectHideFlags: 0
@@ -5564,7 +5537,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2102850987
+--- !u!114 &2102850988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5573,9 +5546,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2102850982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0b861f347e909f4980928d5aef7c085, type: 3}
+  m_Script: {fileID: 11500000, guid: 54f426352ad7a2945847300ce5ff6990, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptAlt
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmAudioScriptVersus
   beatTimestamps: []
   attackTimestamps: []
   songPosition: 0

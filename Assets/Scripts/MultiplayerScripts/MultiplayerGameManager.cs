@@ -6,7 +6,7 @@ using System.Linq;
 public class MultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
-    public RhythmAudioScriptAlt RhythmAudioScriptAlt;
+    public RhythmAudioScriptVersus RhythmAudioScriptVersus;
 
     public GameObject MusicPlayer;
     public GameObject MusicBeatPlayer;
@@ -46,15 +46,15 @@ public class MultiplayerGameManager : MonoBehaviour
 
         if (gameEnded) return;
 
-        if (ScoreManager.instance.P1score > ScoreManager.instance.P2score && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
+        if (ScoreManager.instance.P1score > ScoreManager.instance.P2score && RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
         {
             P1WinGame();
         }
-        else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
+        else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score && RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
         {
             P2WinGame();
         }
-        else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
+        else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score && RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
         {
             DrawGame();
         }
