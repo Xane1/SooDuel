@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 7687906278564141321}
   - component: {fileID: 3710570725070672159}
   - component: {fileID: 6580087345947708680}
+  - component: {fileID: 3319852969394534034}
   - component: {fileID: 3170642886264029686}
   - component: {fileID: 8186898343761788299}
   m_Layer: 3
@@ -355,7 +356,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d1cdf17514de0c14b90fd5221eac461c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -377,7 +378,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d01103bdcd0629b4eb3c751d79f1c9ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c5ee12d85b686942a16d051262437d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -500,6 +501,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.4892152, y: 1.2527962}
   m_EdgeRadius: 0
+--- !u!114 &3319852969394534034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3269536100099638183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e81930696ec7a4eb9882292d048fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageFlashScript
+  flashDuration: 5
 --- !u!114 &3170642886264029686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1487,6 +1501,7 @@ MonoBehaviour:
   attackObject: {fileID: 5248922588372351282}
   cooldown: {fileID: 7085442542169086487}
   hurtDuration: 3
+  damageFlash: {fileID: 3319852969394534034}
   otherPlayer: {fileID: 0}
   isHurt: 0
   playerNumber: 2

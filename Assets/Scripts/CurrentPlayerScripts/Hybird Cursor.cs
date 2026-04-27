@@ -24,6 +24,8 @@ public class HybridCursor : MonoBehaviour
     
     [SerializeField] private float hurtDuration = 3f;
     
+    [SerializeField] private DamageFlashScript damageFlash;
+    
     public HybridCursor otherPlayer;
     
     private bool onBeatTarget;
@@ -234,6 +236,7 @@ public class HybridCursor : MonoBehaviour
         if (otherPlayer != null)
         {
             otherPlayer.enabled = false;
+            otherPlayer.damageFlash.Flash();
             yield return new WaitForSeconds(hurtDuration);
             otherPlayer.enabled = true;
         }
