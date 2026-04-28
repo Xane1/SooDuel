@@ -25,6 +25,12 @@ public class TitleScreenScript : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("MultiplayerModeSelectScreen");
     }
+    public void MultiplayerVersusButton()
+    {
+        Time.timeScale = 1f;
+        PlayerPrefs.SetString("TargetScene", "VersusScene");
+        SceneManager.LoadScene("DifficultySelect");
+    }
 
     public void MousePlayButton()
     {
@@ -52,6 +58,11 @@ public class TitleScreenScript : MonoBehaviour
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
         SceneManager.LoadScene("DifficultySelect");
+    }
+
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 
     void Update()

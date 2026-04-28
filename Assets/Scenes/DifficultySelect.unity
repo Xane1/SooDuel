@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -735.4849, y: -477.14}
-  m_SizeDelta: {x: 449.0304, y: 125.7118}
+  m_AnchoredPosition: {x: -755.48, y: -477.14}
+  m_SizeDelta: {x: 489.03, y: 125.7118}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &159312759
 MonoBehaviour:
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9169811, g: 0, b: 0.04144699, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.047008514, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -228,7 +228,7 @@ RectTransform:
   m_GameObject: {fileID: 273770163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.67001, y: 0.68126404, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1982133679}
@@ -471,7 +471,7 @@ RectTransform:
   m_GameObject: {fileID: 710591685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.67001, y: 0.69388, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 834625363}
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5641509, g: 0.66974056, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.24324322, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1114,14 +1114,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2186773800653210123, guid: f9d9edb0d31d0474b9bcddef8b1ae5d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1260,7 +1260,7 @@ RectTransform:
   m_GameObject: {fileID: 2035931700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.67001, y: 0.674956, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1155189966}
