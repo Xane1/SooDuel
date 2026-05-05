@@ -63,6 +63,7 @@ public class MultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleP2WinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+        PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P2score);
         GameObject p2WinText = GameObject.Find("GameOverBackground").transform.Find("Player2 WinText").gameObject;
         p2WinText.SetActive(true);
@@ -73,6 +74,7 @@ public class MultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleP1WinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+        PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P1score);
         GameObject p1WinText = GameObject.Find("GameOverBackground").transform.Find("Player1 WinText").gameObject;
         p1WinText.SetActive(true);
@@ -83,6 +85,7 @@ public class MultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleDrawGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+        PauseManager.instance.DisableAllCursors(); 
         GameObject drawText = GameObject.Find("GameOverBackground").transform.Find("Draw Text").gameObject;
         drawText.SetActive(true);
         Time.timeScale = 0f;
@@ -94,6 +97,7 @@ public class MultiplayerGameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
     }
     
+
     void DrawGame()
     {
         if (gameEnded) return;

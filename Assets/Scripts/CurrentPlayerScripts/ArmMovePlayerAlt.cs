@@ -27,7 +27,7 @@ public class StickIK2D : MonoBehaviour
         
         if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            SceneManager.LoadScene("TitleScreen");
+            PauseManager.instance.PauseGame();
         }
     }
 }

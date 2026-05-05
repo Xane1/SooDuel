@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 public class HybridCursor : MonoBehaviour
 {
-    [SerializeField] private PlayerInput playerInput;
+   
+    [SerializeField] public PlayerInput playerInput;
     [SerializeField] public Transform worldCursor;
     [SerializeField] private Camera mainCamera;
     
@@ -40,17 +41,25 @@ public class HybridCursor : MonoBehaviour
     private Vector2 screenPosition;
     private bool usingGamepad;
     private bool previousMouseState;
+    
     public bool isHurt = false;
+    
+    private InputAction pauseAction;
     
     public int playerNumber;
     
     private Gamepad myGamepad;
+    public static object instance;
+
     private void Awake()
     {
         PlayerInput playerInput = GetComponent<PlayerInput>();
         myGamepad = playerInput.devices.Count > 0 
             ? playerInput.devices[0] as Gamepad 
             : null;
+        
+        pauseAction = playerInput.actions["Pause"];
+        
     }
     void Start()
     {
@@ -191,16 +200,16 @@ public class HybridCursor : MonoBehaviour
     }
     private void Update ()
     {
+        if (pauseAction.WasPressedThisFrame())
+        {
+            PauseManager.instance.TogglePause();
+        }
+        
         if (attackObject == null) return;
         if (isHurt) return;
         if (cooldown.IsCoolDown) return;
         Gamepad gp = playerInput.user.pairedDevices[0] as Gamepad;
-    
-        /*   if (gp != null && gp.rightShoulder.wasPressedThisFrame)
-           {
-               StartCoroutine(ActivateAttack());
-               cooldown.StartCoolDown();
-           } */
+        
     }
    
    
@@ -287,10 +296,7 @@ public class HybridCursor : MonoBehaviour
         {
             UpdateRealMouseCursor();
         }
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene("TitleScreen");
-        }
+ 
     }
 
     private void DetectInputSource()

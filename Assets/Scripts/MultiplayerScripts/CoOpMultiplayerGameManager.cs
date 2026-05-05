@@ -93,6 +93,7 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleLoseGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+        PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P1score + ScoreManager.instance.P2score);
         GameObject lossText = GameObject.Find("GameOverBackground").transform.Find("Loss Text").gameObject;
         lossText.SetActive(true);
@@ -103,6 +104,7 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     private IEnumerator HandleWinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+        PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P1score + ScoreManager.instance.P2score);
         GameObject winText = GameObject.Find("GameOverBackground").transform.Find("Win Text").gameObject;
         winText.SetActive(true);

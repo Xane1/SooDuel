@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleLoseGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+    //    PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P1score);
         GameObject lossText = GameObject.Find("GameOverBackground").transform.Find("Loss Text").gameObject;
         lossText.SetActive(true);
@@ -112,6 +113,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator HandleWinGame()
     {
         yield return new WaitForSecondsRealtime(1f);
+       // PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P1score);
         GameObject winText = GameObject.Find("GameOverBackground").transform.Find("Win Text").gameObject;
         winText.SetActive(true);

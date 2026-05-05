@@ -689,7 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13130f44828471a42b5ad9c9d2f0a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  firstSelectedButton: {fileID: 0}
   pointsText: {fileID: 1068218522}
 --- !u!1 &374402708
 GameObject:
@@ -1049,8 +1048,8 @@ GameObject:
   - component: {fileID: 519420034}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
-  - component: {fileID: 519420035}
   - component: {fileID: 519420036}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1419,7 +1418,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1467,7 +1466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5622641, g: 0.5622641, b: 0.5622641, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1824,7 +1823,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d47741b683218e4aadacb0f1b50a107, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PauseMenuScript
+  m_EditorClassIdentifier: '::'
   firstSelectedButton: {fileID: 599664816}
 --- !u!1 &722249048
 GameObject:
@@ -1879,7 +1878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13130f44828471a42b5ad9c9d2f0a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  firstSelectedButton: {fileID: 0}
   pointsText: {fileID: 0}
 --- !u!114 &722249051
 MonoBehaviour:
@@ -2082,7 +2080,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1972298939}
-        m_TargetAssemblyTypeName: GameControllerScripts.GameOverScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
         m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
@@ -2892,7 +2890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13130f44828471a42b5ad9c9d2f0a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  firstSelectedButton: {fileID: 0}
   pointsText: {fileID: 1893766703}
 --- !u!114 &1172489446
 MonoBehaviour:
@@ -5127,7 +5124,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.4415095, g: 0.4415095, b: 0.4415095, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5175,7 +5172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56078434, g: 0.56078434, b: 0.56078434, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5664,7 +5661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13130f44828471a42b5ad9c9d2f0a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  firstSelectedButton: {fileID: 964571635}
   pointsText: {fileID: 1008949760}
 --- !u!114 &1972298940
 MonoBehaviour:
@@ -5817,17 +5813,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_PointAction: {fileID: -1489247409126133592, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_MoveAction: {fileID: 2829564627709107940, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_SubmitAction: {fileID: 4046292066387423304, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_CancelAction: {fileID: 3946404968125186381, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_LeftClickAction: {fileID: 5493188594820633967, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_MiddleClickAction: {fileID: -3740205515233945492, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_RightClickAction: {fileID: 8313750058490110366, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_ScrollWheelAction: {fileID: -8905609830851062315, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6159654269780869941, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 4748390378807245768, guid: 56b25c5e7ddd15c40842748200fdb5f6, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -5844,7 +5840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 1553249513}
+  m_FirstSelected: {fileID: 964571635}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &2056283177
