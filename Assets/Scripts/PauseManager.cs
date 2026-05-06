@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PauseManager : MonoBehaviour
@@ -35,6 +36,14 @@ public class PauseManager : MonoBehaviour
     {
         if (isPaused) UnpauseGame();
         else PauseGame();
+    }
+    
+    public void GoToTitleScreen()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+        SceneManager.LoadScene("TitleScreen");
     }
 
     public void DisableAllCursors()

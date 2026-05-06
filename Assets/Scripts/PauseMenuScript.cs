@@ -22,7 +22,6 @@ public class PauseMenuScript : MonoBehaviour
 
     public void TitleScreenButton()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("TitleScreen");
+        PauseManager.instance.GoToTitleScreen();
     }
 }
