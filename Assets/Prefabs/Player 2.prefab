@@ -299,8 +299,8 @@ GameObject:
   - component: {fileID: 3710570725070672159}
   - component: {fileID: 6580087345947708680}
   - component: {fileID: 3319852969394534034}
-  - component: {fileID: 3170642886264029686}
   - component: {fileID: 8186898343761788299}
+  - component: {fileID: 4664520671182411513}
   m_Layer: 3
   m_Name: Player 2
   m_TagString: Player2
@@ -514,20 +514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageFlashScript
   flashDuration: 5
---- !u!114 &3170642886264029686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3269536100099638183}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df7f4e4855a36a4f83f56292d2c5f49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerReference
-  AttackObject: {fileID: 5248922588372351282}
-  AttackIndicator: {fileID: 6340780622622462802}
 --- !u!50 &8186898343761788299
 Rigidbody2D:
   serializedVersion: 5
@@ -555,6 +541,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4664520671182411513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3269536100099638183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbcfc622be02cc3478b096f820c5b8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  AncientSkin: {fileID: 21300000, guid: e35a37e679cd41c40a8962fe10a6573d, type: 3}
+  MedievalSkin: {fileID: 21300000, guid: 242fb4fb2401221479bbcebe603cc10c, type: 3}
 --- !u!1 &3565423377716527335
 GameObject:
   m_ObjectHideFlags: 0

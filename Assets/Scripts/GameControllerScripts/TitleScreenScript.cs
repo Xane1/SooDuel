@@ -29,7 +29,7 @@ public class TitleScreenScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
-        SceneManager.LoadScene("DifficultySelect");
+        SceneManager.LoadScene("StageSelect");
     }
 
     public void MousePlayButton()
@@ -57,7 +57,7 @@ public class TitleScreenScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
-        SceneManager.LoadScene("DifficultySelect");
+        SceneManager.LoadScene("StageSelect");
     }
 
     public void QuitButton()

@@ -28,7 +28,7 @@ public class DifficultySelectorUI : MonoBehaviour
 
     private void GoBack()
     {
-        SceneManager.LoadScene("TitleScreen");
+        SceneManager.LoadScene("StageSelect");
     }
 
     public void SelectEasy()

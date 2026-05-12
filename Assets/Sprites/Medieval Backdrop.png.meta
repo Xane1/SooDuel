@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f4a48deb3699a7468fa69a9f0d900ea
+guid: 306574a7cc03f1b45ba2588aeed073c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4552207992891982411
-    second: Screeny Art 1_0
+      213: -7179326339679722128
+    second: Medieval Backdrop_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screeny Art 1_0
+      name: Medieval Backdrop_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 511
-        height: 382
+        width: 720
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bdbaf7f2fe43d0c0800000000000000
-      internalID: -4552207992891982411
+      spriteID: 075e8c45bb8ed5c90800000000000000
+      internalID: -7179326339679722128
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screeny Art 1_0: -4552207992891982411
+      Medieval Backdrop_0: -7179326339679722128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

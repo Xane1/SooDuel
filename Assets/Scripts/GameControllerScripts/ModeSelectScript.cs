@@ -17,14 +17,14 @@ public class ModeSelectScreenScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "ControllerScene");
-        SceneManager.LoadScene("DifficultySelect");
+        SceneManager.LoadScene("StageSelect");
     }
 
     public void SinglePlayerMouseButton()
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "MouseScene");
-        SceneManager.LoadScene("DifficultySelect");
+        SceneManager.LoadScene("StageSelect");
     }
 
     // MULTIPLAYER MODE BUTTONS
@@ -32,14 +32,14 @@ public class ModeSelectScreenScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "CoOpScene");
-        SceneManager.LoadScene("DifficultySelect");
+        SceneManager.LoadScene("StageSelect");
     }
 
     public void MultiplayerVersusButton()
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
-        SceneManager.LoadScene("DifficultySelect");
+        SceneManager.LoadScene("StageSelect");
     }
 
     void GoBack()
