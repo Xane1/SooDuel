@@ -33,18 +33,21 @@ public class DifficultySelectorUI : MonoBehaviour
 
     public void SelectEasy()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         DifficultyManager.Instance.CurrentDifficulty = DifficultyManager.Difficulty.Easy;
         SceneManager.LoadScene(targetScene);
     }
 
     public void SelectNormal()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         DifficultyManager.Instance.CurrentDifficulty = DifficultyManager.Difficulty.Normal;
         SceneManager.LoadScene(targetScene);
     }
 
     public void SelectHard()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         DifficultyManager.Instance.CurrentDifficulty = DifficultyManager.Difficulty.Hard;
         SceneManager.LoadScene(targetScene);
     }

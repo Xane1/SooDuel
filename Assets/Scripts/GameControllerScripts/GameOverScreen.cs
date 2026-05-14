@@ -21,6 +21,7 @@ namespace GameControllerScripts
 
         public void RestartButton()
         {
+            UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
             Scene scene = SceneManager.GetActiveScene(); 
             SceneManager.LoadScene(scene.name);
             Time.timeScale = 1f;
@@ -28,6 +29,7 @@ namespace GameControllerScripts
 
         public void TitleScreenButton()
         {
+            UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
             Time.timeScale = 1f;
             SceneManager.LoadScene("TitleScreen");
         }

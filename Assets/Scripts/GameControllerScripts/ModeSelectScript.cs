@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class ModeSelectScreenScript : MonoBehaviour
 {
+    
     void Update()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame || Gamepad.current?.buttonEast.wasPressedThisFrame == true)
@@ -15,6 +17,7 @@ public class ModeSelectScreenScript : MonoBehaviour
     // SINGLEPLAYER MODE BUTTONS
     public void SinglePlayerControllerButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "ControllerScene");
         SceneManager.LoadScene("StageSelect");
@@ -22,6 +25,7 @@ public class ModeSelectScreenScript : MonoBehaviour
 
     public void SinglePlayerMouseButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "MouseScene");
         SceneManager.LoadScene("StageSelect");

@@ -4235,7 +4235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   PresentStage: {fileID: 1960128624}
-  MedievalStage: {fileID: 0}
+  MedievalStage: {fileID: 287782719}
   AncientStage: {fileID: 99125191}
 --- !u!4 &2022596605
 Transform:

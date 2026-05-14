@@ -17,11 +17,13 @@ public class PauseMenuScript : MonoBehaviour
 
     public void ResumeButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         PauseManager.instance.UnpauseGame();
     }
 
     public void TitleScreenButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         PauseManager.instance.GoToTitleScreen();
     }
 }

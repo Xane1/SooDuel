@@ -30,18 +30,21 @@ public class MapSelector : MonoBehaviour
 
     public void SelectAncient()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         MapManager.Instance.CurrentStage = MapManager.Stage.Ancient;
         SceneManager.LoadScene("DifficultySelect");
     }
 
     public void SelectMedieval()
     {  
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         MapManager.Instance.CurrentStage = MapManager.Stage.Medieval;
         SceneManager.LoadScene("DifficultySelect");
     }
 
     public void SelectPresent()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         MapManager.Instance.CurrentStage = MapManager.Stage.Present;
         SceneManager.LoadScene("DifficultySelect");
     }

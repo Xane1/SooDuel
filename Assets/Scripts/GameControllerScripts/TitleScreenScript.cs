@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class TitleScreenScript : MonoBehaviour
 {
+    
     private void Start()
     {
         // Ensure SimpleDifficultyManager exists
@@ -16,65 +18,54 @@ public class TitleScreenScript : MonoBehaviour
 
     public void SinglePlayerButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         SceneManager.LoadScene("SingleplayerModeSelectScreen");
     }
-    
+
     public void MultiPlayerButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MultiplayerModeSelectScreen");
     }
+
     public void MultiplayerVersusButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
         SceneManager.LoadScene("StageSelect");
     }
 
-    public void MousePlayButton()
-    {
-        Time.timeScale = 1f;
-        PlayerPrefs.SetString("TargetScene", "MouseScene");
-        SceneManager.LoadScene("DifficultySelect");
-    }
-
-    public void ControllerPlayButton()
-    {
-        Time.timeScale = 1f;
-        PlayerPrefs.SetString("TargetScene", "ControllerScene");
-        SceneManager.LoadScene("DifficultySelect");
-    }
 
     public void CoOpPlayButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "CoOpScene");
         SceneManager.LoadScene("DifficultySelect");
     }
 
-    public void VersusPlayButton()
-    {
-        Time.timeScale = 1f;
-        PlayerPrefs.SetString("TargetScene", "VersusScene");
-        SceneManager.LoadScene("StageSelect");
-    }
 
     public void QuitButton()
     {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Application.Quit();
     }
 
     void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame || (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame))
+        if (Keyboard.current.escapeKey.wasPressedThisFrame ||
+            (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame))
         {
             GoBack();
         }
     }
-
+    
     void GoBack()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("TitleScreen");
     }
 }
