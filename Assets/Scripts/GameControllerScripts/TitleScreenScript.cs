@@ -43,8 +43,8 @@ public class TitleScreenScript : MonoBehaviour
     {
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
-        PlayerPrefs.SetString("TargetScene", "CoOpScene");
-        SceneManager.LoadScene("DifficultySelect");
+        PlayerPrefs.SetString("TargetScene", "VersusScene");
+        SceneManager.LoadScene("StageSelect");
     }
 
 

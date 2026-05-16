@@ -13,7 +13,6 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     public GameObject BeatSpawner;
 
     public GameObject PlayerMessage;
-    public GameObject Tutorial;
     public GameObject P1ScoreKeeper;
     public GameObject P2ScoreKeeper;
     
@@ -32,10 +31,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     {
         if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
         {
-            Tutorial.SetActive(false);
             P1ScoreKeeper.SetActive(true);
             activated = true;
-            PlayerMessage.SetActive(true);
             FindObjectOfType<MultiplayerManager>().EnableJoining();
         }
         if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0))

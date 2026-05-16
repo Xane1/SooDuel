@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject MusicBeatPlayer;
     public GameObject BeatSpawner;
     
-    public GameObject Tutorial;
+    public GameObject ReadyMessage;
     public GameObject ScoreKeeper;
 
     public int easyWinScore = 7000;
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         MusicPlayer.SetActive(true);
         MusicBeatPlayer.SetActive(true);
         BeatSpawner.SetActive(true);
-        Tutorial.SetActive(false);
+        ReadyMessage.SetActive(false);
         ScoreKeeper.SetActive(true);
         activated = true;
     }

@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 273770166}
   - component: {fileID: 273770165}
   m_Layer: 5
-  m_Name: Medeival
+  m_Name: Medieval
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1219,7 +1219,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medeival
+  m_Text: 'Medieval
+
+'
 --- !u!222 &1982133681
 CanvasRenderer:
   m_ObjectHideFlags: 0
