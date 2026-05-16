@@ -8,9 +8,14 @@ public class GameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
     public RhythmAudioScriptAlt RhythmAudioScriptAlt;
+
     
-    public GameObject MusicPlayer;
-    public GameObject MusicBeatPlayer;
+    public GameObject AncientMusic;
+    public GameObject MedievalMusic;
+    public GameObject PresentMusic;
+    
+   /* public GameObject MusicPlayer;
+    public GameObject MusicBeatPlayer; */
     public GameObject BeatSpawner;
     
     public GameObject ReadyMessage;
@@ -32,9 +37,21 @@ public class GameManager : MonoBehaviour
     IEnumerator ActivateAfterDelay()
     {
         yield return new WaitForSeconds(0.5f);
-    
-        MusicPlayer.SetActive(true);
-        MusicBeatPlayer.SetActive(true);
+
+        if (MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+        {
+            AncientMusic.SetActive(true);
+        }
+        if (MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+        {
+            MedievalMusic.SetActive(true);
+        }
+        if (MapManager.Instance.CurrentStage == MapManager.Stage.Present)
+        {
+           PresentMusic.SetActive(true);
+        }
+     /*   MusicPlayer.SetActive(true);
+        MusicBeatPlayer.SetActive(true); */
         BeatSpawner.SetActive(true);
         ReadyMessage.SetActive(false);
         ScoreKeeper.SetActive(true);
