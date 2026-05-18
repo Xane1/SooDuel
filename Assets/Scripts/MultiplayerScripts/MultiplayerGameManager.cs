@@ -7,9 +7,12 @@ public class MultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
     public RhythmAudioScriptVersus RhythmAudioScriptVersus;
+    public RhythmAudioScriptVersus AncientRhythmAudioScriptVersus;
+    public RhythmAudioScriptVersus MedievalRhythmAudioScriptVersus;
 
-    public GameObject MusicPlayer;
-    public GameObject MusicBeatPlayer;
+    public GameObject AncientMusic;
+    public GameObject MedievalMusic;
+    public GameObject PresentMusic;
     public GameObject BeatSpawner;
     
     public GameObject PlayerMessage;
@@ -31,10 +34,27 @@ public class MultiplayerGameManager : MonoBehaviour
             FindObjectOfType<MultiplayerManager>().EnableJoining();
             activated = true;
         }
-        if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0))
+        if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Present)
         {
-            MusicPlayer.SetActive(true);
-            MusicBeatPlayer.SetActive(true);
+           PresentMusic.SetActive(true);
+            BeatSpawner.SetActive(true);
+            P2ScoreKeeper.SetActive(true);
+            PlayerMessage.SetActive(false);
+
+            activated2 = true;
+        }
+        else if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+        {
+            MedievalMusic.SetActive(true);
+            BeatSpawner.SetActive(true);
+            P2ScoreKeeper.SetActive(true);
+            PlayerMessage.SetActive(false);
+
+            activated2 = true;
+        }
+        else if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+        {
+            AncientMusic.SetActive(true);
             BeatSpawner.SetActive(true);
             P2ScoreKeeper.SetActive(true);
             PlayerMessage.SetActive(false);
@@ -43,20 +63,94 @@ public class MultiplayerGameManager : MonoBehaviour
         }
 
         if (gameEnded) return;
-
-        if (ScoreManager.instance.P1score > ScoreManager.instance.P2score && RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
-        {
-            P1WinGame();
-        }
-        else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score && RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
-        {
-            P2WinGame();
-        }
-        else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score && RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
-        {
-            DrawGame();
-        }
         
+               if (MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+               {
+                     if (AncientRhythmAudioScriptVersus == null || AncientRhythmAudioScriptVersus.musicSource == null || AncientRhythmAudioScriptVersus.musicSource.clip == null)
+                         return;
+               }
+               else if (MapManager.Instance.CurrentStage == MapManager.Stage.Medieval) 
+               {
+                     if (MedievalRhythmAudioScriptVersus == null || MedievalRhythmAudioScriptVersus.musicSource == null || MedievalRhythmAudioScriptVersus.musicSource.clip == null)
+                         return;
+               }
+               else if (MapManager.Instance.CurrentStage == MapManager.Stage.Present) 
+               {
+                     if (RhythmAudioScriptVersus == null || RhythmAudioScriptVersus.musicSource == null || RhythmAudioScriptVersus.musicSource.clip == null)
+                         return; 
+               }
+
+        if (DifficultyManager.Instance != null && MapManager.Instance != null)
+        {
+            //Present
+            if (MapManager.Instance.CurrentStage == MapManager.Stage.Present)
+            {
+                if (ScoreManager.instance.P1score > ScoreManager.instance.P2score &&
+                    RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    P1WinGame();
+                }
+                else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score &&
+                         RhythmAudioScriptVersus.songPosition >=
+                         RhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    P2WinGame();
+                }
+                else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score &&
+                         RhythmAudioScriptVersus.songPosition >=
+                         RhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    DrawGame();
+                }
+            }
+
+            //Medieval
+            if (MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+            {
+                if (ScoreManager.instance.P1score > ScoreManager.instance.P2score &&
+                    MedievalRhythmAudioScriptVersus.songPosition >=
+                    MedievalRhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    P1WinGame();
+                }
+                else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score &&
+                         MedievalRhythmAudioScriptVersus.songPosition >=
+                         MedievalRhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    P2WinGame();
+                }
+                else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score &&
+                         MedievalRhythmAudioScriptVersus.songPosition >=
+                         MedievalRhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    DrawGame();
+                }
+            }
+
+            //Ancient
+            if (MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+            {
+                if (ScoreManager.instance.P1score > ScoreManager.instance.P2score &&
+                    AncientRhythmAudioScriptVersus.songPosition >=
+                    AncientRhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    P1WinGame();
+                }
+                else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score &&
+                         AncientRhythmAudioScriptVersus.songPosition >=
+                         AncientRhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    P2WinGame();
+                }
+                else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score &&
+                         AncientRhythmAudioScriptVersus.songPosition >=
+                         AncientRhythmAudioScriptVersus.musicSource.clip.length)
+                {
+                    DrawGame();
+                }
+            }
+
+        }
     }
     private IEnumerator HandleP2WinGame()
     {

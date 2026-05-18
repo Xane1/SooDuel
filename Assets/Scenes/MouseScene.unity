@@ -1276,14 +1276,14 @@ MonoBehaviour:
   AncientRhythmAudioScriptAlt: {fileID: 1818980600}
   MedievalRhythmAudioScriptAlt: {fileID: 1356238180}
   AncientMusic: {fileID: 1389056550}
-  MedievalMusic: {fileID: 0}
+  MedievalMusic: {fileID: 1035749819}
   PresentMusic: {fileID: 1737339734}
   BeatSpawner: {fileID: 1559238284}
   ReadyMessage: {fileID: 1083503443}
   ScoreKeeper: {fileID: 1727156562}
   easyWinScore: 6000
-  normalWinScore: 11000
-  hardWinScore: 15999
+  normalWinScore: 12000
+  hardWinScore: 15000
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   normalClips:
   - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
   hardClips:
-  - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
+  - {fileID: 8300000, guid: e29f36460b2eaf04f84f6e88bf2a4106, type: 3}
 --- !u!1 &559452340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,9 +1526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 559452343}
   easyClips:
-  - {fileID: 8300000, guid: b535e06aedec0754f941bec7840a7fcb, type: 3}
+  - {fileID: 8300000, guid: d80d8a7461322ac4fb05955d2e6dd761, type: 3}
   normalClips:
-  - {fileID: 8300000, guid: ddd170360ea5ed2448918667e2834ccb, type: 3}
+  - {fileID: 8300000, guid: c34a7695b7c40e04abe6ad1910061052, type: 3}
   hardClips:
   - {fileID: 8300000, guid: e8388cf057084bd44ad86877dceaa994, type: 3}
 --- !u!82 &559452343
@@ -2261,11 +2261,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 896427595}
   easyClips:
-  - {fileID: 8300000, guid: b535e06aedec0754f941bec7840a7fcb, type: 3}
+  - {fileID: 8300000, guid: f726ce5f436e2d644983d9b803f3763e, type: 3}
   normalClips:
-  - {fileID: 8300000, guid: b52371eec3af03a4994337206694e219, type: 3}
+  - {fileID: 8300000, guid: 2f9247fa231423042909ac9452898ff9, type: 3}
   hardClips:
-  - {fileID: 8300000, guid: 4e9f81851f8e267459194b7ab82f5bb6, type: 3}
+  - {fileID: 8300000, guid: 31e916f6d670fc94b80857ce2b56dfce, type: 3}
 --- !u!82 &896427595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2513,7 +2513,7 @@ MonoBehaviour:
   normalClips:
   - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
   hardClips:
-  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
+  - {fileID: 8300000, guid: 1b6827d0ce041aa48ac32aa22012e6ef, type: 3}
   musicSource: {fileID: 915608560}
 --- !u!1 &918343744
 GameObject:
@@ -3936,7 +3936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1322705005
 Animator:
   serializedVersion: 7
@@ -4241,11 +4241,11 @@ MonoBehaviour:
   songPosition: 0
   firstBeatOffset: 0
   easyClips:
-  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
+  - {fileID: 8300000, guid: 5bc9e200c42cb994fa027e24f13dad06, type: 3}
   normalClips:
-  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  - {fileID: 8300000, guid: d8cad1e606fd005459356b4d3bd6b494, type: 3}
   hardClips:
-  - {fileID: 8300000, guid: 4043aef68a76a6e46878c9801a2c7538, type: 3}
+  - {fileID: 8300000, guid: 4086ce93ff698484b9e7911a9795b5cd, type: 3}
   musicSource: {fileID: 1356238179}
 --- !u!1 &1372296362
 GameObject:
@@ -5929,9 +5929,9 @@ MonoBehaviour:
   songPosition: 0
   firstBeatOffset: 0
   easyClips:
-  - {fileID: 8300000, guid: 9668024abf8160a47b2dc673584814c8, type: 3}
+  - {fileID: 8300000, guid: 01dd418a8f095c24a964202297abc2ee, type: 3}
   normalClips:
-  - {fileID: 8300000, guid: 5a2bbf47bf7c0ed4c96c31ddecb653f1, type: 3}
+  - {fileID: 8300000, guid: 93506fd2bc2ffe7438b3d4b21136fb26, type: 3}
   hardClips:
   - {fileID: 8300000, guid: 7abefaa06e45a0d4e83bcf7c55e76cab, type: 3}
   musicSource: {fileID: 1818980599}
