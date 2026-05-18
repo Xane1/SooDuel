@@ -7,14 +7,19 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
     public RhythmAudioScriptAlt RhythmAudioScriptAlt;
+    public RhythmAudioScriptAlt AncientRhythmAudioScriptAlt;
+    public RhythmAudioScriptAlt MedievalRhythmAudioScriptAlt;
     
-    public GameObject MusicPlayer;
-    public GameObject MusicBeatPlayer;
+    public GameObject AncientMusic;
+    public GameObject MedievalMusic;
+    public GameObject PresentMusic;
+    
     public GameObject BeatSpawner;
 
+    public GameObject Tutorial;
     public GameObject PlayerMessage;
-    public GameObject P1ScoreKeeper;
-    public GameObject P2ScoreKeeper;
+    public GameObject ScoreKeeper;
+  //  public GameObject P2ScoreKeeper;
     
     public int easyWinScore = 7000;
     public int normalWinScore = 12999;
@@ -31,25 +36,63 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     {
         if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
         {
-            P1ScoreKeeper.SetActive(true);
+            ScoreKeeper.SetActive(true);
             activated = true;
+            Tutorial.SetActive(false);
+            PlayerMessage.SetActive(true);
             FindObjectOfType<MultiplayerManager>().EnableJoining();
         }
-        if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0))
+        if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Present)
         {
-            MusicPlayer.SetActive(true);
-            MusicBeatPlayer.SetActive(true);
+           PresentMusic.SetActive(true);
             BeatSpawner.SetActive(true);
-            P2ScoreKeeper.SetActive(true);
+          //  P2ScoreKeeper.SetActive(true);
             PlayerMessage.SetActive(false);
-            
+
+            activated2 = true;
+        }
+        else if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+        {
+            MedievalMusic.SetActive(true);
+            BeatSpawner.SetActive(true);
+          //  P2ScoreKeeper.SetActive(true);
+            PlayerMessage.SetActive(false);
+
+            activated2 = true;
+        }
+        else if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+        {
+            AncientMusic.SetActive(true);
+            BeatSpawner.SetActive(true);
+        //    P2ScoreKeeper.SetActive(true);
+            PlayerMessage.SetActive(false);
+
             activated2 = true;
         }
         if (gameEnded) return;
         
-        if (DifficultyManager.Instance != null)
+        if (MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
         {
-            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy)
+            if (AncientRhythmAudioScriptAlt == null || AncientRhythmAudioScriptAlt.musicSource == null || AncientRhythmAudioScriptAlt.musicSource.clip == null)
+                return;
+        }
+        else if (MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+        {
+            if (MedievalRhythmAudioScriptAlt == null || MedievalRhythmAudioScriptAlt.musicSource == null || MedievalRhythmAudioScriptAlt.musicSource.clip == null)
+                return;
+        }
+        else if (MapManager.Instance.CurrentStage == MapManager.Stage.Present)
+        {
+            if (RhythmAudioScriptAlt == null || RhythmAudioScriptAlt.musicSource == null || RhythmAudioScriptAlt.musicSource.clip == null)
+                return;
+        }
+        
+        if (DifficultyManager.Instance != null && MapManager.Instance !=null)
+        {
+            
+            //Present
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy   &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Present)
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
@@ -61,7 +104,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
                     LoseGame();
                 }
             }
-            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal)
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Present)
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
@@ -73,13 +117,96 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
                     LoseGame();
                 }
             }
-            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard)
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Present)
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
+                {
+            
+                    LoseGame();
+                }
+            }
+            
+               //Medieval
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy   &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+            
+                    LoseGame();
+                }
+            }
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+            
+                    LoseGame();
+                }
+            }
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+            
+                    LoseGame();
+                }
+            }
+            
+                 //Ancient
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy   &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+            
+                    LoseGame();
+                }
+            }
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+            
+                    LoseGame();
+                }
+            }
+            if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard &&
+                MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
+            {
+                if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
+                {
+                    WinGame();
+                }
+                else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
                     LoseGame();

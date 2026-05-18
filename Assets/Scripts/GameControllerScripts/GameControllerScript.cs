@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public RhythmAudioScriptAlt AncientRhythmAudioScriptAlt;
     public RhythmAudioScriptAlt MedievalRhythmAudioScriptAlt;
 
+    public GameObject TutorialScreen;
     
     public GameObject AncientMusic;
     public GameObject MedievalMusic;
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
      /*   MusicPlayer.SetActive(true);
         MusicBeatPlayer.SetActive(true); */
         BeatSpawner.SetActive(true);
-        ReadyMessage.SetActive(false);
+        TutorialScreen.SetActive(false);
         ScoreKeeper.SetActive(true);
         activated = true;
     }

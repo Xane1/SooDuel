@@ -10,6 +10,8 @@ public class MultiplayerGameManager : MonoBehaviour
     public RhythmAudioScriptVersus AncientRhythmAudioScriptVersus;
     public RhythmAudioScriptVersus MedievalRhythmAudioScriptVersus;
 
+    public GameObject Tutorial;
+    
     public GameObject AncientMusic;
     public GameObject MedievalMusic;
     public GameObject PresentMusic;
@@ -32,7 +34,9 @@ public class MultiplayerGameManager : MonoBehaviour
         {
             P1ScoreKeeper.SetActive(true);
             FindObjectOfType<MultiplayerManager>().EnableJoining();
+            Tutorial.SetActive(false);
             activated = true;
+            PlayerMessage.SetActive(true);
         }
         if ((!activated2 && GameObject.FindGameObjectsWithTag("Player2").Length > 0) && MapManager.Instance.CurrentStage == MapManager.Stage.Present)
         {
