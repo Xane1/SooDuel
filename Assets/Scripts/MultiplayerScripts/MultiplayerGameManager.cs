@@ -3,6 +3,8 @@ using System.Collections;
 using GameControllerScripts;
 using UnityEngine.InputSystem;
 using System.Linq;
+using NUnit.Framework.Constraints;
+
 public class MultiplayerGameManager : MonoBehaviour
 {
     public GameOverScreen GameOverScreen;
@@ -16,6 +18,9 @@ public class MultiplayerGameManager : MonoBehaviour
     public GameObject MedievalMusic;
     public GameObject PresentMusic;
     public GameObject BeatSpawner;
+
+    public GameObject Soo;
+    public GameObject AncientSoo;
     
     public GameObject PlayerMessage;
  //   public GameObject Tutorial;
@@ -92,18 +97,21 @@ public class MultiplayerGameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score > ScoreManager.instance.P2score &&
                     RhythmAudioScriptVersus.songPosition >= RhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     P1WinGame();
                 }
                 else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score &&
                          RhythmAudioScriptVersus.songPosition >=
                          RhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     P2WinGame();
                 }
                 else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score &&
                          RhythmAudioScriptVersus.songPosition >=
                          RhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     DrawGame();
                 }
             }
@@ -115,18 +123,21 @@ public class MultiplayerGameManager : MonoBehaviour
                     MedievalRhythmAudioScriptVersus.songPosition >=
                     MedievalRhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     P1WinGame();
                 }
                 else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score &&
                          MedievalRhythmAudioScriptVersus.songPosition >=
                          MedievalRhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     P2WinGame();
                 }
                 else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score &&
                          MedievalRhythmAudioScriptVersus.songPosition >=
                          MedievalRhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     DrawGame();
                 }
             }
@@ -138,18 +149,21 @@ public class MultiplayerGameManager : MonoBehaviour
                     AncientRhythmAudioScriptVersus.songPosition >=
                     AncientRhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     P1WinGame();
                 }
                 else if (ScoreManager.instance.P1score < ScoreManager.instance.P2score &&
                          AncientRhythmAudioScriptVersus.songPosition >=
                          AncientRhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     P2WinGame();
                 }
                 else if (ScoreManager.instance.P1score == ScoreManager.instance.P2score &&
                          AncientRhythmAudioScriptVersus.songPosition >=
                          AncientRhythmAudioScriptVersus.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     DrawGame();
                 }
             }

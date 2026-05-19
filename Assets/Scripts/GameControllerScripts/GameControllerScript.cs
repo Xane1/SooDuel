@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     public GameObject ReadyMessage;
     public GameObject ScoreKeeper;
 
+    public GameObject Soo;
+    public GameObject AncientSoo;
+    
     public int easyWinScore = 7000;
     public int normalWinScore = 12999;
     public int hardWinScore = 15000;
@@ -102,12 +105,13 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= easyWinScore && RhythmAudioScriptAlt.songPosition >=
                     RhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < easyWinScore && RhythmAudioScriptAlt.songPosition >=
                          RhythmAudioScriptAlt.musicSource.clip.length)
                 {
-
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -118,12 +122,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= normalWinScore && RhythmAudioScriptAlt.songPosition >=
                     RhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < normalWinScore && RhythmAudioScriptAlt.songPosition >=
                          RhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -134,12 +140,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= hardWinScore && RhythmAudioScriptAlt.songPosition >=
                     RhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < hardWinScore && RhythmAudioScriptAlt.songPosition >=
                          RhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -153,12 +161,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= easyWinScore &&  MedievalRhythmAudioScriptAlt.songPosition >=
                     MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < easyWinScore &&  MedievalRhythmAudioScriptAlt.songPosition >=
                          MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -169,12 +179,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >=
                     MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >=
                          MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -185,12 +197,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >=
                     MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >=
                          MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -204,12 +218,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= easyWinScore && AncientRhythmAudioScriptAlt.songPosition >=
                     AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < easyWinScore && AncientRhythmAudioScriptAlt.songPosition >=
                          AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    AncientSoo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -220,12 +236,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= normalWinScore && AncientRhythmAudioScriptAlt.songPosition >=
                     AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < normalWinScore && AncientRhythmAudioScriptAlt.songPosition >=
                          AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    AncientSoo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -237,12 +255,14 @@ public class GameManager : MonoBehaviour
                 if (ScoreManager.instance.P1score >= hardWinScore && AncientRhythmAudioScriptAlt.songPosition >=
                   AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score < hardWinScore && AncientRhythmAudioScriptAlt.songPosition >=
                          AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
 
+                    AncientSoo.SetActive(true);
                     LoseGame();
                 }
             }

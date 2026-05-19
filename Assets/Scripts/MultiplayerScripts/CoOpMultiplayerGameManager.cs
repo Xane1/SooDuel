@@ -16,6 +16,10 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     
     public GameObject BeatSpawner;
 
+    public GameObject Soo;
+    public GameObject AncientSoo;
+
+    
     public GameObject Tutorial;
     public GameObject PlayerMessage;
     public GameObject ScoreKeeper;
@@ -96,11 +100,12 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
-            
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -109,11 +114,12 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
-            
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -122,11 +128,12 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
-            
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -137,11 +144,13 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -150,11 +159,13 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -163,11 +174,12 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    Soo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
-            
+                    Soo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -178,11 +190,12 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< easyWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
-            
+                    AncientSoo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -191,11 +204,13 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score < normalWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
             
+                    AncientSoo.SetActive(true);
                     LoseGame();
                 }
             }
@@ -204,11 +219,12 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             {
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
+                    AncientSoo.SetActive(true);
                     WinGame();
                 }
                 else if (ScoreManager.instance.P1score + ScoreManager.instance.P2score< hardWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
-            
+                    AncientSoo.SetActive(true);
                     LoseGame();
                 }
             }

@@ -5,6 +5,8 @@ using System.Collections;
 
 public class TitleScreenScript : MonoBehaviour
 {
+    public GameObject credits;
+    public GameObject ButtonText;
     
     private void Start()
     {
@@ -47,6 +49,13 @@ public class TitleScreenScript : MonoBehaviour
         SceneManager.LoadScene("StageSelect");
     }
 
+    public void CreditsButton()
+    {
+        UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
+        Time.timeScale = 1f;
+        credits.SetActive(true);
+        ButtonText.SetActive(false);
+    }
 
     public void QuitButton()
     {
@@ -67,5 +76,6 @@ public class TitleScreenScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("TitleScreen");
+        ButtonText.SetActive(true);
     }
 }
