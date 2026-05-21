@@ -10,6 +10,10 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
     public RhythmAudioScriptAlt AncientRhythmAudioScriptAlt;
     public RhythmAudioScriptAlt MedievalRhythmAudioScriptAlt;
     
+    public GameObject easyScoreGoal;
+    public GameObject mediumScoreGoal;
+    public GameObject hardScoreGoal;
+    
     public GameObject AncientMusic;
     public GameObject MedievalMusic;
     public GameObject PresentMusic;
@@ -98,6 +102,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy   &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Present)
             {
+                easyScoreGoal.SetActive(true);
+                
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     Soo.SetActive(true);
@@ -112,6 +118,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Present)
             {
+                mediumScoreGoal.SetActive(true);
+                
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     Soo.SetActive(true);
@@ -126,6 +134,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Present)
             {
+                hardScoreGoal.SetActive(true);
+
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && RhythmAudioScriptAlt.songPosition >= RhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     Soo.SetActive(true);
@@ -142,6 +152,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy   &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
             {
+                easyScoreGoal.SetActive(true);
+
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     Soo.SetActive(true);
@@ -157,6 +169,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
             {
+                mediumScoreGoal.SetActive(true);
+
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     Soo.SetActive(true);
@@ -172,6 +186,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Medieval)
             {
+                hardScoreGoal.SetActive(true);
+
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && MedievalRhythmAudioScriptAlt.songPosition >= MedievalRhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     Soo.SetActive(true);
@@ -188,6 +204,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Easy   &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
             {
+                easyScoreGoal.SetActive(true);
+
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= easyWinScore&& AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     AncientSoo.SetActive(true);
@@ -202,6 +220,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Normal &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
             {
+                mediumScoreGoal.SetActive(true);
+
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= normalWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     AncientSoo.SetActive(true);
@@ -217,6 +237,8 @@ public class CoOpMultiplayerGameManager : MonoBehaviour
             if (DifficultyManager.Instance.CurrentDifficulty == DifficultyManager.Difficulty.Hard &&
                 MapManager.Instance.CurrentStage == MapManager.Stage.Ancient)
             {
+                hardScoreGoal.SetActive(true);
+                
                 if (ScoreManager.instance.P1score + ScoreManager.instance.P2score >= hardWinScore && AncientRhythmAudioScriptAlt.songPosition >= AncientRhythmAudioScriptAlt.musicSource.clip.length)
                 {
                     AncientSoo.SetActive(true);

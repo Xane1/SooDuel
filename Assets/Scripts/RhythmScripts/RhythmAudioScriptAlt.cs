@@ -121,6 +121,8 @@ private readonly float[] easyPresentBeatTimestamps  = { 4.717855f,5.656353f,6.72
     
     private BeatSpawnerScript beatSpawnerScript;
     private AttackTelegraphManager attackTelegraphManager;
+    
+    private float originalVolume;
    // private int nextBeatIndex = 0;
     private Coroutine muteRoutine;
 
@@ -131,20 +133,27 @@ private readonly float[] easyPresentBeatTimestamps  = { 4.717855f,5.656353f,6.72
 
     IEnumerator TemporaryMute(float duration)
     {
-        musicSource.mute = true;
+        musicSource.volume = originalVolume * 0.2f;
         yield return new WaitForSeconds(duration);
-        musicSource.mute = false;
+        musicSource.volume = originalVolume;
         muteRoutine = null;
     }
 
+    void RestoreVolume()
+    {
+        if (musicSource != null)
+            musicSource.volume = originalVolume;
+    }
     void Awake()
     {
         originalFirstBeatOffset = firstBeatOffset;
 
     }
+    
 
    void Start()
     {
+        originalVolume = musicSource.volume; 
         
         firstBeatOffset = originalFirstBeatOffset - 0.36f;
 
@@ -246,6 +255,7 @@ private readonly float[] easyPresentBeatTimestamps  = { 4.717855f,5.656353f,6.72
             StopCoroutine(muteRoutine); 
             muteRoutine = null;
         }
+        RestoreVolume();
         musicSource.mute = false;
     }
 
@@ -255,6 +265,10 @@ private readonly float[] easyPresentBeatTimestamps  = { 4.717855f,5.656353f,6.72
         {
             StopCoroutine(muteRoutine);
             muteRoutine = null;
+        }
+        else
+        {
+            originalVolume = musicSource.volume; 
         }
 
         muteRoutine = StartCoroutine(TemporaryMute(10f));

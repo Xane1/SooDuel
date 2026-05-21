@@ -142,6 +142,8 @@ public class RhythmAudioScriptVersus : MonoBehaviour
    // private int nextBeatIndex = 0;
     private Coroutine muteRoutine;
 
+    private float originalVolume;
+    
     public AudioSource musicSource;
 
     private float dspSongTime;
@@ -149,20 +151,27 @@ public class RhythmAudioScriptVersus : MonoBehaviour
 
     IEnumerator TemporaryMute(float duration)
     {
-        musicSource.mute = true;
+        musicSource.volume = originalVolume * 0.2f;
         yield return new WaitForSeconds(duration);
-        musicSource.mute = false;
+        musicSource.volume = originalVolume;
         muteRoutine = null;
+    }
+    
+    void RestoreVolume()
+    {
+        if (musicSource != null)
+            musicSource.volume = originalVolume;
     }
 
     void Awake()
     {
         originalFirstBeatOffset = firstBeatOffset;
-
+        
     }
 
    void Start()
     {
+        originalVolume = musicSource.volume; 
         
         firstBeatOffset = originalFirstBeatOffset - 0.36f;
 
@@ -271,6 +280,7 @@ public class RhythmAudioScriptVersus : MonoBehaviour
             StopCoroutine(muteRoutine); 
             muteRoutine = null;
         }
+        RestoreVolume();
         musicSource.mute = false;
     }
 
@@ -280,6 +290,10 @@ public class RhythmAudioScriptVersus : MonoBehaviour
         {
             StopCoroutine(muteRoutine);
             muteRoutine = null;
+        }
+        else
+        {
+            originalVolume = musicSource.volume; 
         }
 
         muteRoutine = StartCoroutine(TemporaryMute(10f));
