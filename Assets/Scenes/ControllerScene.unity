@@ -1415,8 +1415,8 @@ MonoBehaviour:
   BeatSpawner: {fileID: 1559238284}
   ReadyMessage: {fileID: 419867917}
   ScoreKeeper: {fileID: 1727156562}
-  Soo: {fileID: 2103542931}
-  AncientSoo: {fileID: 1716069910}
+  Soo: {fileID: 1716069910}
+  AncientSoo: {fileID: 2103542931}
   easyWinScore: 6000
   normalWinScore: 11000
   hardWinScore: 12000

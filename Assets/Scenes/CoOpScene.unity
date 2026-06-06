@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   GameOverScreen: {fileID: 579576022}
-  RhythmAudioScriptAlt: {fileID: 1356484346}
+  RhythmAudioScriptAlt: {fileID: 1425441917}
   AncientRhythmAudioScriptAlt: {fileID: 1773124872}
   MedievalRhythmAudioScriptAlt: {fileID: 1527205869}
   easyScoreGoal: {fileID: 1572088434}
@@ -1408,7 +1408,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d0b03cb259dbb7429c0ea18e2ac483f, type: 3}
-    m_FontSize: 60
+    m_FontSize: 51
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
