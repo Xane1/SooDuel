@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameCursor : MonoBehaviour
 {
@@ -10,5 +11,19 @@ public class GameCursor : MonoBehaviour
     {
         Cursor.SetCursor(cursorTexture, hotSpot, CursorMode.Auto);
         new Vector2(cursorTexture.width * 0.5f, cursorTexture.height * 0.5f);
+        Cursor.visible = true;
     }
+
+
+    void Update()
+    {
+        if (Gamepad.current.leftShoulder.wasReleasedThisFrame)
+        {
+            Cursor.visible = false;
+        }
+        else if (Mouse.current != null)
+        {
+            Cursor.visible = true;
+        }
+    } 
 }

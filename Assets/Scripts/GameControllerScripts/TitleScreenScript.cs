@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using System.Collections;
 
@@ -10,14 +12,14 @@ public class TitleScreenScript : MonoBehaviour
     
     private void Start()
     {
-        // Ensure SimpleDifficultyManager exists
+        // Ensure DifficultyManager exists
         if (DifficultyManager.Instance == null)
         {
             var managerObject = new GameObject("SimpleDifficultyManager");
             managerObject.AddComponent<DifficultyManager>();
         }
+        StartCoroutine(ResetButtonVisuals());
     }
-
     public void SinglePlayerButton()
     {
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
@@ -25,6 +27,15 @@ public class TitleScreenScript : MonoBehaviour
         SceneManager.LoadScene("SingleplayerModeSelectScreen");
     }
 
+    private IEnumerator ResetButtonVisuals()
+    {
+        foreach (var button in FindObjectsOfType<Selectable>())
+        {
+            button.OnPointerEnter(new PointerEventData(EventSystem.current));
+            yield return null;
+            button.OnPointerExit(new PointerEventData(EventSystem.current));
+        }
+    }
     public void MultiPlayerButton()
     {
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
@@ -37,7 +48,8 @@ public class TitleScreenScript : MonoBehaviour
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
-        SceneManager.LoadScene("StageSelect");
+        PlayerPrefs.SetString("SelectedButton", "Versus");
+        SceneManager.LoadScene("Tutorial Screen");
     }
 
 
@@ -46,7 +58,8 @@ public class TitleScreenScript : MonoBehaviour
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "CoOpScene");
-        SceneManager.LoadScene("StageSelect");
+        PlayerPrefs.SetString("SelectedButton", "CoOp");
+        SceneManager.LoadScene("Tutorial Screen");
     }
 
     public void CreditsButton()

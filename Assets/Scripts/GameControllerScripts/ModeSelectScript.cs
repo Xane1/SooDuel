@@ -20,7 +20,8 @@ public class ModeSelectScreenScript : MonoBehaviour
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "ControllerScene");
-        SceneManager.LoadScene("StageSelect");
+        PlayerPrefs.SetString("SelectedButton", "Controller");
+        SceneManager.LoadScene("Tutorial Screen");
     }
 
     public void SinglePlayerMouseButton()
@@ -28,7 +29,8 @@ public class ModeSelectScreenScript : MonoBehaviour
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "MouseScene");
-        SceneManager.LoadScene("StageSelect");
+        PlayerPrefs.SetString("SelectedButton", "Mouse");
+        SceneManager.LoadScene("Tutorial Screen");
     }
 
     // MULTIPLAYER MODE BUTTONS

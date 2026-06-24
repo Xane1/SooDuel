@@ -10,6 +10,9 @@ EditorBuildSettings:
     guid: 2b8e10e3ce0b3ca42b52f907e9deae6e
   - enabled: 1
     path: Assets/Scenes/SingleplayerModeSelectScreen.unity
+    guid: 6acf810cd47ea6a46a5d1fb50ab7a016
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Screen.unity
     guid: 509820563438ee5428f49088615cfba9
   - enabled: 1
     path: Assets/Scenes/MultiplayerModeSelectScreen.unity
