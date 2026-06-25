@@ -17,11 +17,11 @@ public class GameCursor : MonoBehaviour
 
     void Update()
     {
-        if (Gamepad.current.leftShoulder.wasReleasedThisFrame)
+        if (Gamepad.current != null && Gamepad.current.leftShoulder.wasReleasedThisFrame)
         {
             Cursor.visible = false;
         }
-        else if (Mouse.current != null)
+        else if (Mouse.current != null && Mouse.current.delta.ReadValue() != Vector2.zero)
         {
             Cursor.visible = true;
         }
