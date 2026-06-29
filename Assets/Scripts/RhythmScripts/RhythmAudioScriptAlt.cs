@@ -113,6 +113,7 @@ public class RhythmAudioScriptAlt : MonoBehaviour
         62.938850f, 63.221193f, 63.785878f, 64.350563f, 64.915248f, 65.221119f, 65.774040f, 66.091675f,
  };
     
+    
     private BeatSpawnerScript beatSpawnerScript;
     private AttackTelegraphManager attackTelegraphManager;
     
@@ -226,7 +227,8 @@ public class RhythmAudioScriptAlt : MonoBehaviour
         
         musicSource.Play();
 
-        beatSpawnerScript = GameObject.Find("BeatSpawner").GetComponent<BeatSpawnerScript>();
+       // beatSpawnerScript = GameObject.Find("BeatSpawner").GetComponent<BeatSpawnerScript>();
+        beatSpawnerScript = FindObjectOfType<BeatSpawnerScript>();
         attackTelegraphManager = GameObject.Find("Main Camera").GetComponent<AttackTelegraphManager>();
     }
 
@@ -282,7 +284,7 @@ public class RhythmAudioScriptAlt : MonoBehaviour
         {
             nextBeat += 1;
             beatSpawnerScript.SpawnObjectAtRandom();
-            if (SceneManager.GetActiveScene().name == "CoOpScene")
+            if (MultiplayerModeManager.Instance.CurrentMultiplayerMode == MultiplayerModeManager.MultiplayerMode.CoOp)
             {
                 beatSpawnerScript.SpawnObjectAtRandom();
             }

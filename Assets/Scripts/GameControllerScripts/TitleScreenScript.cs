@@ -18,13 +18,21 @@ public class TitleScreenScript : MonoBehaviour
             var managerObject = new GameObject("SimpleDifficultyManager");
             managerObject.AddComponent<DifficultyManager>();
         }
+
+        if (MultiplayerModeManager.Instance == null)
+        {
+            var managerObject = new GameObject("MultiplayerModeManager");
+            managerObject.AddComponent<MultiplayerModeManager>();
+        }
         StartCoroutine(ResetButtonVisuals());
     }
     public void SinglePlayerButton()
     {
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
-        SceneManager.LoadScene("SingleplayerModeSelectScreen");
+        PlayerPrefs.SetString("TargetScene", "SingleplayerUscene");
+        PlayerPrefs.SetString("SelectedButton", "Controller");
+        SceneManager.LoadScene("Tutorial Screen");
     }
 
     private IEnumerator ResetButtonVisuals()
@@ -49,6 +57,7 @@ public class TitleScreenScript : MonoBehaviour
         Time.timeScale = 1f;
         PlayerPrefs.SetString("TargetScene", "VersusScene");
         PlayerPrefs.SetString("SelectedButton", "Versus");
+        MultiplayerModeManager.Instance.CurrentMultiplayerMode = MultiplayerModeManager.MultiplayerMode.Versus;
         SceneManager.LoadScene("Tutorial Screen");
     }
 
@@ -57,8 +66,9 @@ public class TitleScreenScript : MonoBehaviour
     {
         UISoundManager.Instance.playSound(UISoundManager.Instance.clickSound);
         Time.timeScale = 1f;
-        PlayerPrefs.SetString("TargetScene", "CoOpScene");
+        PlayerPrefs.SetString("TargetScene", "VersusScene");
         PlayerPrefs.SetString("SelectedButton", "CoOp");
+        MultiplayerModeManager.Instance.CurrentMultiplayerMode = MultiplayerModeManager.MultiplayerMode.CoOp;
         SceneManager.LoadScene("Tutorial Screen");
     }
 

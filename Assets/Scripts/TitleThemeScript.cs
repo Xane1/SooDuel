@@ -30,8 +30,8 @@ public class TitleThemeScript : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "VersusScene" || scene.name == "ControllerScene" || 
-            scene.name == "CoOpScene" || scene.name == "MouseScene")
+        if (scene.name == "VersusScene" || scene.name == "SingleplayerUscene" || 
+            scene.name == "CoOpScene")
         {
             audioSource.Stop();
         }

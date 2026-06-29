@@ -175,7 +175,7 @@ public class MultiplayerGameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P2score);
-        GameObject p2WinText = GameObject.Find("GameOverBackground").transform.Find("Player2 WinText").gameObject;
+        GameObject p2WinText = GameObject.Find("VersusGameOverBackground").transform.Find("Player2 WinText").gameObject;
         p2WinText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
@@ -186,7 +186,7 @@ public class MultiplayerGameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         PauseManager.instance.DisableAllCursors(); 
         GameOverScreen.Setup(ScoreManager.instance.P1score);
-        GameObject p1WinText = GameObject.Find("GameOverBackground").transform.Find("Player1 WinText").gameObject;
+        GameObject p1WinText = GameObject.Find("VersusGameOverBackground").transform.Find("Player1 WinText").gameObject;
         p1WinText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();
@@ -196,7 +196,7 @@ public class MultiplayerGameManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1f);
         PauseManager.instance.DisableAllCursors(); 
-        GameObject drawText = GameObject.Find("GameOverBackground").transform.Find("Draw Text").gameObject;
+        GameObject drawText = GameObject.Find("VersusGameOverBackground").transform.Find("Draw Text").gameObject;
         drawText.SetActive(true);
         Time.timeScale = 0f;
         DestroyAllBeats();

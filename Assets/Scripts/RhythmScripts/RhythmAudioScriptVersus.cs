@@ -272,7 +272,8 @@ public class RhythmAudioScriptVersus : MonoBehaviour
         
         musicSource.Play();
 
-        beatSpawnerScript = GameObject.Find("BeatSpawner").GetComponent<BeatSpawnerScript>();
+       // beatSpawnerScript = GameObject.Find("BeatSpawner").GetComponent<BeatSpawnerScript>();
+        beatSpawnerScript = FindObjectOfType<BeatSpawnerScript>();
         attackTelegraphManager = GameObject.Find("Main Camera").GetComponent<AttackTelegraphManager>();
     }
 

@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public RhythmAudioScriptAlt AncientRhythmAudioScriptAlt;
     public RhythmAudioScriptAlt MedievalRhythmAudioScriptAlt;
 
-    public GameObject TutorialScreen;
+    public GameObject ControllerJoinMessage;
+    public GameObject MouseJoinMessage;
 
     public GameObject easyScoreGoal;
     public GameObject mediumScoreGoal;
@@ -23,13 +24,16 @@ public class GameManager : MonoBehaviour
     
    /* public GameObject MusicPlayer;
     public GameObject MusicBeatPlayer; */
-    public GameObject BeatSpawner;
+    public GameObject ControllerBeatSpawner;
+    public GameObject MouseBeatSpawner;
     
-    public GameObject ReadyMessage;
     public GameObject ScoreKeeper;
 
     public GameObject Soo;
     public GameObject AncientSoo;
+
+    public GameObject MousePlayer;
+    public GameObject ControllerPlayer;
     
     public int easyWinScore = 7000;
     public int normalWinScore = 12999;
@@ -38,6 +42,10 @@ public class GameManager : MonoBehaviour
     bool gameEnded = false;
     
     bool activated = false;
+
+    void Start()
+    {
+    }
    
     void ActivateGame()
     {
@@ -62,14 +70,38 @@ public class GameManager : MonoBehaviour
         }
      /*   MusicPlayer.SetActive(true);
         MusicBeatPlayer.SetActive(true); */
-        BeatSpawner.SetActive(true);
-        TutorialScreen.SetActive(false);
+     if (ControllerPlayer.activeSelf == true)
+     {
+         ControllerBeatSpawner.SetActive(true);
+         ControllerJoinMessage.SetActive(false);
+     }
+
+     if (MousePlayer.activeSelf == true)
+     {
+         MouseBeatSpawner.SetActive(true);
+         MouseJoinMessage.SetActive(false);
+     }
+       
         ScoreKeeper.SetActive(true);
         activated = true;
     }
     
     void Update()
     {
+        
+        if ((Mouse.current != null && Mouse.current.delta.ReadValue() != Vector2.zero))
+        {
+            ControllerPlayer.SetActive(false);
+            MousePlayer.SetActive(true);
+            ControllerJoinMessage.SetActive(false);
+        }
+        else if (Gamepad.current != null && Gamepad.current.leftShoulder.wasReleasedThisFrame || Gamepad.current.rightStick.ReadValue() != Vector2.zero)
+        {
+            MousePlayer.SetActive(false);
+            ControllerPlayer.SetActive(true);
+            MouseJoinMessage.SetActive(false);
+        }
+        
       //Tutorial Screen
          if ((!activated && Gamepad.all.Any(g => g.leftShoulder.wasPressedThisFrame)))
          {
